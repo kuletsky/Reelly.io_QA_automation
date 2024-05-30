@@ -4,7 +4,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 
-# from app.application import Application
+from app.application import Application
 from log_files.logger import logger
 
 
@@ -57,7 +57,7 @@ def browser_init(context, scenario_name):
     context.driver.implicitly_wait(6)
     context.driver.wait = WebDriverWait(context.driver, 15)
 
-    # context.app = Application(context.driver)
+    context.app = Application(context.driver)
 
 
 def before_scenario(context, scenario):
