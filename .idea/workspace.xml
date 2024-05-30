@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/steps/secondary_deals_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/secondary_deals_steps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/tests/secondary_deals_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/secondary_deals_tests.feature" afterDir="false" />
     </list>
@@ -69,7 +68,7 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.secondary_deals_tests.feature">
+  <component name="RunManager" selected="Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to sell&quot; option">
     <configuration name="secondary_deals_tests.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -126,8 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Behave.secondary_deals_tests.feature" />
         <item itemvalue="Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to sell&quot; option" />
+        <item itemvalue="Behave.secondary_deals_tests.feature" />
         <item itemvalue="Python.secondary_deals_steps" />
       </list>
     </recent_temporary>
@@ -151,7 +150,7 @@
       <workItem from="1716861624703" duration="666000" />
       <workItem from="1716862319302" duration="5961000" />
       <workItem from="1716943049895" duration="12175000" />
-      <workItem from="1717029160849" duration="4298000" />
+      <workItem from="1717029160849" duration="5271000" />
     </task>
     <servers />
   </component>

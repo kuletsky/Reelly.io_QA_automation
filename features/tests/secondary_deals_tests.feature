@@ -5,7 +5,7 @@ Feature: Tests for secondary deals page
   Scenario: Verify user can filter the Secondary deals by "want to sell" option
     Given Open the main page
     When Click on the "Open in browser"
-    When Log in to the page
+    When Log in to the page kuletsky@gmail.com, bJyxsHf5Y@6dnEV
     When Click on "Secondary" option at the left side menu
     Then Verify the right page opens
     When Filter the products by "want to sell"

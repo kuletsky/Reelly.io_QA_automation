@@ -27,10 +27,10 @@ def open_in_browser(context):
     context.driver.find_element(*BTN_OPEN_IN_BROWSER).click()
 
 
-@when('Log in to the page')
-def login(context):
-    context.driver.find_element(*INPUT_EMAIL).send_keys('kuletsky@gmail.com')
-    context.driver.find_element(*INPUT_PSWD).send_keys('bJyxsHf5Y@6dnEV')
+@when('Log in to the page {lgn}, {psw}')
+def login(context, lgn, psw):
+    context.driver.find_element(*INPUT_EMAIL).send_keys(lgn)
+    context.driver.find_element(*INPUT_PSWD).send_keys(psw)
     context.driver.find_element(*BTN_CONTINUE).click()
 
 
