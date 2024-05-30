@@ -14,7 +14,7 @@ GRID = (By.CSS_SELECTOR, 'div:nth-of-type > img')
 BTN_FILTER = (By.CSS_SELECTOR, '.filter-text')
 FILTER_SELL = (By.XPATH, '//div[text()="Want to sell"]')
 BTN_APPLY_FILTER = (By.XPATH, '//a[text()="Apply filter"]')
-TAG_FOR_SALE = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
+ALL_LIST_FOR_SALE = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
 
 
 @given('Open the main page')
@@ -48,15 +48,16 @@ def verify_right_page(context):
 @when('Filter the products by "want to sell"')
 def filter_want_sell(context):
     sleep(6)
-    # context.driver.wait.until(EC.presence_of_all_elements_located(GRID))
     context.driver.find_element(*BTN_FILTER).click()
-    # sleep(6)
-    # context.driver.wait.until(EC.presence_of_element_located(FILTER_SELL)).click()
     context.driver.find_element(*FILTER_SELL).click()
     context.driver.find_element(*BTN_APPLY_FILTER).click()
-    sleep(5)
+    sleep(6)
 
 
 @then('Verify that all cards have "for sale" tag')
 def verify_tag_for_sale(context):
-    context.driver.find_elements(*TAG_FOR_SALE)
+    all_property = context.driver.find_elements(*ALL_LIST_FOR_SALE)
+    # print(len(all_property))
+    for property in all_property:
+        # print(property.text)
+        assert property.text == 'For sale', f'Error! {property.text} IS NOT "For sale" '

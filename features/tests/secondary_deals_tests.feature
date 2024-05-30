@@ -1,6 +1,6 @@
 # Created by costa at 5/28/24
 Feature: Tests for secondary deals page
-#  All testing scenarios for secondary deals page
+  All testing scenarios for secondary deals page are located here
 
   Scenario: Verify user can filter the Secondary deals by "want to sell" option
     Given Open the main page
@@ -9,4 +9,4 @@ Feature: Tests for secondary deals page
     When Click on "Secondary" option at the left side menu
     Then Verify the right page opens
     When Filter the products by "want to sell"
-#    Then Verify that all cards have "for sale" tag
+    Then Verify that all cards have "for sale" tag
