@@ -9,4 +9,4 @@ Feature: Tests for secondary deals page
     When Click on "Secondary" option at the left side menu
     Then Verify the right page opens
     When Filter the products by "want to sell"
-#    Then Verify all cards have "for sale" tag
+#    Then Verify that all cards have "for sale" tag

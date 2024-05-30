@@ -10,10 +10,11 @@ INPUT_PSWD = (By.CSS_SELECTOR, '#field')
 BTN_CONTINUE = (By.CSS_SELECTOR, 'a[wized="loginButton"]')
 MENU_SECONDARY = (By.XPATH, '//div[@class="menu-button-text" and text()="Secondary"]')
 TXT_LISTINGS = (By.XPATH, '//div[text()="Listings"]')
-GRID = (By.CSS_SELECTOR, '.listing-grid')
+GRID = (By.CSS_SELECTOR, 'div:nth-of-type > img')
 BTN_FILTER = (By.CSS_SELECTOR, '.filter-text')
 FILTER_SELL = (By.XPATH, '//div[text()="Want to sell"]')
 BTN_APPLY_FILTER = (By.XPATH, '//a[text()="Apply filter"]')
+TAG_FOR_SALE = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
 
 
 @given('Open the main page')
@@ -56,6 +57,6 @@ def filter_want_sell(context):
     sleep(5)
 
 
-# @then('Verify all cards have "for sale" tag')
-# def verify_tag_for_sale(context):
-#     context.driver.find_elements
+@then('Verify that all cards have "for sale" tag')
+def verify_tag_for_sale(context):
+    context.driver.find_elements(*TAG_FOR_SALE)
