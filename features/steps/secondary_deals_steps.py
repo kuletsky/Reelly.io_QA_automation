@@ -5,7 +5,7 @@ from time import sleep
 
 
 GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
-ALL_LIST_FOR_SALE = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
+# ALL_LIST_FOR_SALE = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
 
 
 @given('Open the main page')
@@ -35,7 +35,7 @@ def verify_right_page(context):
 
 @when('Filter the products by "want to sell"')
 def filter_want_sell(context):
-    context.driver.wait.until(EC.visibility_of_all_elements_located(GRID))
+    context.app.secondary_page.wait_until_visible(GRID)
 
     context.app.secondary_page.btn_filter()
     context.app.secondary_page.btn_filter_want_to_sell()
@@ -44,10 +44,5 @@ def filter_want_sell(context):
 
 @then('Verify that all cards have "for sale" tag')
 def verify_tag_for_sale(context):
-    context.driver.wait.until(EC.visibility_of_all_elements_located(GRID))
-    all_property = context.driver.find_elements(*ALL_LIST_FOR_SALE)
-    expected_result = 'For sale'
-    # print(len(all_property))
-    for property in all_property:
-        # print(property.text)
-        assert property.text == expected_result, f'Error! {property.text} IS NOT "For sale" '
+    context.app.secondary_page.wait_until_visible(GRID)
+    context.app.secondary_page.verify_tag_for_sale()

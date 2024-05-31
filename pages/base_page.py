@@ -18,5 +18,5 @@ class Page:
     def input_text(self, text, *locator):
         self.find_element(*locator).send_keys(text)
 
-    # def wait_until_visible(self, *locator):
-    #     self.wait.until(EC.visibility_of_all_elements_located(locator))
+    def wait_until_visible(self, *locator):
+        self.driver.wait.until(EC.visibility_of_all_elements_located(*locator))
