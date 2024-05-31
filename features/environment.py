@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.firefox.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 
@@ -24,17 +26,22 @@ def browser_init(context, scenario_name):
     # service = Service(driver_path)
     # context.driver = webdriver.Firefox(service=service)
 
+    ### BROWSERS WITH DRIVERS: provide path to the driver file ###
+    # service = Service(executable_path='/Users/svetlanalevinsohn/careerist/18-python-selenium-automation/geckodriver')
+    # context.driver = webdriver.Firefox(service=service)
+
     ### SAFARI ###
     # context.driver = webdriver.Safari()
 
     ### HEADLESS MODE ###
-    # options = webdriver.ChromeOptions()
-    # options.add_argument('headless')
-    # service = Service(ChromeDriverManager().install())
-    # context.driver = webdriver.Chrome(
-    #     options=options,
-    #     service=service
-    # )
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+    options.add_argument('--window-size=1920,1080')
+    service = Service(ChromeDriverManager().install())
+    context.driver = webdriver.Chrome(
+        options=options,
+        service=service
+    )
 
 
     ## BROWSERSTACK ###
