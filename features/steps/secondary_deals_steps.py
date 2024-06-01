@@ -5,7 +5,6 @@ from time import sleep
 
 
 GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
-# ALL_LIST_FOR_SALE = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
 
 
 @given('Open the main page')
