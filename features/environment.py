@@ -34,14 +34,14 @@ def browser_init(context, scenario_name):
     # context.driver = webdriver.Safari()
 
     ### HEADLESS MODE ###
-    options = webdriver.ChromeOptions()
-    options.add_argument('headless')
-    options.add_argument('--window-size=1920,1080')
-    service = Service(ChromeDriverManager().install())
-    context.driver = webdriver.Chrome(
-        options=options,
-        service=service
-    )
+    # options = webdriver.ChromeOptions()
+    # options.add_argument('headless')
+    # options.add_argument('--window-size=1920,1080')
+    # service = Service(ChromeDriverManager().install())
+    # context.driver = webdriver.Chrome(
+    #     options=options,
+    #     service=service
+    # )
 
 
     ## BROWSERSTACK ###

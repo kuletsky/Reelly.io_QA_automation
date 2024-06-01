@@ -11,7 +11,6 @@ class SecondaryPage(Page):
     ALL_LIST_FOR_SALE = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
     GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
 
-
     def btn_filter(self):
         self.click(*self.BTN_FILTER)
 
