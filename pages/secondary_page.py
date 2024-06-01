@@ -21,7 +21,8 @@ class SecondaryPage(Page):
         self.click(*self.BTN_APPLY_FILTER)
 
     def verify_right_page(self):
-        self.find_element(*self.TXT_LISTINGS)
+        self.verify_right_page_opened(*self.TXT_LISTINGS)
+        # self.find_element(*self.TXT_LISTINGS)
 
     def verify_tag_for_sale(self):
         all_property = self.find_elements(*self.ALL_LIST_FOR_SALE)

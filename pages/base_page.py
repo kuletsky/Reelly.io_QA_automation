@@ -36,4 +36,10 @@ class Page:
 
     def wait_until_visible(self, *locator):
         logger.info(f'Waiting until visible by: {locator}')
-        self.driver.wait.until(EC.visibility_of_all_elements_located(*locator))
+        self.driver.wait.until(
+            EC.visibility_of_all_elements_located(*locator),
+            f'Element not visible by: {locator}')
+
+    def verify_right_page_opened(self, *locator):
+        logger.info(f'Verifying right page by: {locator}')
+        self.find_element(*locator)
