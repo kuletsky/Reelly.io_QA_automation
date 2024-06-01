@@ -5,26 +5,6 @@ from time import sleep
 
 GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
 
-#
-# @given('Open the main page')
-# def open_main_page(context):
-#     context.app.main_page.open()
-#
-#
-# @when('Click on the "Open in browser"')
-# def open_in_browser(context):
-#     context.app.main_page.open_in_browser()
-#
-#
-# @when('Log in to the page {lgn}, {psw}')
-# def login_to(context, lgn, psw):
-#     context.app.login_page.login_to(lgn, psw)
-
-
-# @when('Click on "Secondary" option at the left side menu')
-# def secondary_side_menu(context):
-#     context.app.main_page.menu_secondary()
-
 
 @then('Verify the right page opens')
 def verify_right_page(context):
@@ -40,7 +20,23 @@ def filter_want_sell(context):
     context.app.secondary_page.btn_apply_filter()
 
 
+@when('Filter the products by "want to buy"')
+def filter_want_sell(context):
+    context.app.secondary_page.wait_until_visible(GRID)
+
+    context.app.secondary_page.btn_filter()
+    context.app.secondary_page.btn_filter_want_to_buy()
+    context.app.secondary_page.btn_apply_filter()
+
+
 @then('Verify that all cards have "for sale" tag')
 def verify_tag_for_sale(context):
     context.app.secondary_page.wait_until_visible(GRID)
-    context.app.secondary_page.verify_tag_for_sale()
+    # context.app.secondary_page.verify_tag_for_sale()
+    context.app.secondary_page.verify_text_for_sale_tag()
+
+
+@then('Verify that all cards have "want to buy" tag')
+def verify_tag_for_buy(context):
+    context.app.secondary_page.wait_until_visible(GRID)
+    context.app.secondary_page.verify_text_for_buy_tag()

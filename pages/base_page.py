@@ -30,16 +30,25 @@ class Page:
             f'Element not clickable by: {locator}'
         ).click()
 
-    def input_text(self, text, *locator):
-        logger.info(f'Input text by: {text}')
-        self.find_element(*locator).send_keys(text)
-
     def wait_until_visible(self, *locator):
         logger.info(f'Waiting until visible by: {locator}')
         self.driver.wait.until(
             EC.visibility_of_all_elements_located(*locator),
             f'Element not visible by: {locator}')
 
+    def input_text(self, text, *locator):
+        logger.info(f'Input text by: {text}')
+        self.find_element(*locator).send_keys(text)
+
     def verify_right_page_opened(self, *locator):
         logger.info(f'Verifying right page by: {locator}')
         self.find_element(*locator)
+
+    def verify_text_for_all_elements(self, expected_text, *locator):
+        logger.info(f'Verifying text for all elements by: {locator}')
+        all_elements = self.find_elements(*locator)
+        print(f'How many elements on the page?: {len(all_elements)}')
+
+        for element in all_elements:
+            # print(element.text)
+            assert element.text == expected_text, f'Error! {expected_text} IS NOT {element.text}'
