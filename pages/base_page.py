@@ -1,4 +1,5 @@
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
 from log_files.logger import logger
 
 
@@ -6,10 +7,11 @@ class Page:
 
     def __init__(self, driver):
         self.driver = driver
+        self.driver.wait = WebDriverWait(driver, 15)
 
     def open(self, url):
-        self.driver.get(url)
         logger.info(f'Page opened: {url}')
+        self.driver.get(url)
 
     def find_element(self, *locator):
         logger.info(f'Searching by: {locator}')
@@ -41,7 +43,7 @@ class Page:
         self.find_element(*locator).send_keys(text)
 
     def verify_right_page_opened(self, *locator):
-        logger.info(f'Verifying right page by: {locator}')
+        logger.info(f'Verifying right page opened by: {locator}')
         self.find_element(*locator)
 
     def verify_text_for_all_elements(self, expected_text, *locator):
@@ -51,4 +53,16 @@ class Page:
 
         for element in all_elements:
             # print(element.text)
-            assert element.text == expected_text, f'Error! {expected_text} IS NOT {element.text}'
+            assert element.text == expected_text, f'Error! Expected {expected_text}, but got {element.text}'
+
+    def verify_text(self, expected_text, *locator):
+        actual_text = self.find_element(*locator).text
+        assert expected_text == actual_text, f'Error! Expected {expected_text}, but got {actual_text}'
+
+    def verify_partial_text(self, expected_text, *locator):
+        actual_text = self.find_element(*locator).text
+        assert expected_text in actual_text, f'Error! Expected {expected_text} not in {actual_text}'
+
+    def verify_partial_url(self, expected_partial_url):
+        self.driver.wait.until(EC.url_contains(expected_partial_url),
+                               message=f'URL does not contain {expected_partial_url}')

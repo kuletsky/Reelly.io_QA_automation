@@ -29,14 +29,14 @@ def filter_want_sell(context):
     context.app.secondary_page.btn_apply_filter()
 
 
-@then('Verify that all cards have "for sale" tag')
-def verify_tag_for_sale(context):
-    context.app.secondary_page.wait_until_visible(GRID)
-    # context.app.secondary_page.verify_tag_for_sale()
-    context.app.secondary_page.verify_text_for_sale_tag()
+# @then('Verify that all cards have "for sale" tag')
+# def verify_tag_for_sale(context):
+#     context.app.secondary_page.wait_until_visible(GRID)
+#     # context.app.secondary_page.verify_tag_for_sale()
+#     context.app.secondary_page.verify_text_for_sale_tag()
 
 
-@then('Verify that all cards have "want to buy" tag')
-def verify_tag_for_buy(context):
+@then('Verify that all cards have {expected_filter} tag')
+def verify_tag_for_buy(context, expected_filter):
     context.app.secondary_page.wait_until_visible(GRID)
-    context.app.secondary_page.verify_text_for_buy_tag()
+    context.app.secondary_page.verify_text_for_secondary_filter(expected_filter)

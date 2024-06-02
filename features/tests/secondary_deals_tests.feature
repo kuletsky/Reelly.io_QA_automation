@@ -9,7 +9,7 @@ Feature: Tests for secondary deals page
     When Click on "Secondary" option at the left side menu
     Then Verify the right page opens
     When Filter the products by "want to sell"
-    Then Verify that all cards have "for sale" tag
+    Then Verify that all cards have For sale tag
 
   Scenario: Verify user can filter the Secondary deals by "want to buy" option
     Given Open the main page
@@ -18,4 +18,4 @@ Feature: Tests for secondary deals page
     When Click on "Secondary" option at the left side menu
     Then Verify the right page opens
     When Filter the products by "want to buy"
-    Then Verify that all cards have "want to buy" tag
+    Then Verify that all cards have Want to buy tag
