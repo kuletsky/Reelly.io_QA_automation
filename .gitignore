@@ -78,12 +78,6 @@ target/
 mobile_app/*
 !mobile_app/.gitkeep
 
-step_failed_screens/*
-!step_failed_screens/.gitkeep
-
-screenshots_of_failed_steps/*
-!screenshots_of_failed_steps/.gitkeep
-
 # Jupyter Notebook
 .ipynb_checkpoints
 

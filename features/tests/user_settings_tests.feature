@@ -7,9 +7,10 @@ Feature: Tests for user settings page
     When Click on the "Open in browser"
     When Log in to the page kuletsky@gmail.com, bJyxsHf5Y@6dnEV
     When Click on "Settings" option at the left side menu
+    Given Store original window
     When Click on "Support" option
 #    When Switch to the new tab
-    Then Verify that URL of new tab contains api.whatsapp.com
+    Then Verify that URL of tab contains api.whatsapp.com
 #    When Go back
 #    When Click on news option. (The link contains “t.me”)
-#    Then Verify the right page opens
+    Then Verify that URL of tab contains t.me

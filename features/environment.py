@@ -81,7 +81,7 @@ def before_step(context, step):
 def after_step(context, step):
     if step.status == 'failed':
         logger.warning(f'Step failed: {step}')
-        context.driver.save_screenshot(f'Screenshots of failed steps/{step}.png')
+        context.driver.save_screenshot(f'screenshots_of_failed_steps/{step}.png')
         print('Step failed: ', step)
 
 
