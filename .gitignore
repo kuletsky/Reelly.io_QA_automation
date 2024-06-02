@@ -15,6 +15,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+lib/
 lib64/
 parts/
 sdist/
@@ -79,6 +80,9 @@ mobile_app/*
 
 step_failed_screens/*
 !step_failed_screens/.gitkeep
+
+screenshots_of_failed_steps/*
+!screenshots_of_failed_steps/.gitkeep
 
 # Jupyter Notebook
 .ipynb_checkpoints

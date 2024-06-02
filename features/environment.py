@@ -80,9 +80,9 @@ def before_step(context, step):
 
 def after_step(context, step):
     if step.status == 'failed':
-        print('Step failed: ', step)
         logger.warning(f'Step failed: {step}')
-        # context.app.base_page.save_screenshot(step)
+        context.driver.save_screenshot(f'Screenshots of failed steps/{step}.png')
+        print('Step failed: ', step)
 
 
 def after_scenario(context, feature):

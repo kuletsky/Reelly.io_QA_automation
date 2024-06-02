@@ -22,10 +22,6 @@ class Page:
         return self.driver.find_elements(*locator)
 
     def click(self, *locator):
-        logger.info(f'Clicking by: {locator}')
-        self.find_element(*locator).click()
-
-    def wait_until_clickable_click(self, *locator):
         logger.info(f'Waiting until clickable by: {locator}')
         self.driver.wait.until(
             EC.element_to_be_clickable(locator),
@@ -37,6 +33,13 @@ class Page:
         self.driver.wait.until(
             EC.visibility_of_all_elements_located(*locator),
             f'Element not visible by: {locator}')
+
+    def wait_until_disappears(self, *locator):
+        logger.info(f'Waiting until disappears by: {locator}')
+        self.driver.wait.until(
+            EC.invisibility_of_element_located(locator),
+            f'Element still visible by: {locator}'
+        )
 
     def input_text(self, text, *locator):
         logger.info(f'Input text by: {text}')
@@ -66,3 +69,7 @@ class Page:
     def verify_partial_url(self, expected_partial_url):
         self.driver.wait.until(EC.url_contains(expected_partial_url),
                                message=f'URL does not contain {expected_partial_url}')
+
+    def verify_url(self, expected_url):
+        self.driver.wait.until(EC.url_matches(expected_url),
+                               message=f'URL does not contain {expected_url}')
