@@ -45,6 +45,24 @@ class Page:
         logger.info(f'Input text by: {text}')
         self.find_element(*locator).send_keys(text)
 
+    def get_current_window(self):
+        current_window = self.driver.current_window_handle
+        print('Current window', current_window)
+        print('ALL windows', self.driver.window_handles)
+        return current_window
+
+    def switch_window_by_id(self, window_id):
+        print('Switching to...', window_id)
+        self.driver.switch_to.window(window_id)
+        print('ALL windows', self.driver.window_handles)
+
+    def switch_to_new_window(self):
+        self.driver.wait.until(EC.new_window_is_opened)
+        all_windows = self.driver.window_handles
+        print('ALL windows', self.driver.window_handles)
+        print('Switching to...', all_windows[1])
+        self.driver.switch_to.window(all_windows[1])
+
     def verify_right_page_opened(self, *locator):
         logger.info(f'Verifying right page opened by: {locator}')
         self.find_element(*locator)
@@ -73,3 +91,6 @@ class Page:
     def verify_url(self, expected_url):
         self.driver.wait.until(EC.url_matches(expected_url),
                                message=f'URL does not contain {expected_url}')
+
+    def close(self):
+        self.driver.close()
