@@ -53,7 +53,8 @@ def browser_init(context, scenario_name):
     bstack_options = {
         'os': 'Windows',
         'osVersion': '11',
-        # 'deviceName': 'iPhone 13',
+        # 'deviceName': 'iPhone 14',
+        # "realMobile": "true",
         'browserName': 'Chrome',
         'sessionName': scenario_name
     }

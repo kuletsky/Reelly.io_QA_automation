@@ -4,8 +4,8 @@ from pages.base_page import Page
 
 
 class LoginPage(Page):
-    INPUT_EMAIL = (By.CSS_SELECTOR, '#email-2')
-    INPUT_PSW = (By.CSS_SELECTOR, '#field')
+    INPUT_EMAIL = (By.ID, 'email-2')
+    INPUT_PSW = (By.ID, 'field')
     BTN_CONTINUE = (By.CSS_SELECTOR, 'a[wized="loginButton"]')
 
     def login_to(self, lgn, psw):
