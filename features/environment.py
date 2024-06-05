@@ -27,7 +27,7 @@ def browser_init(context, scenario_name):
     # context.driver = webdriver.Firefox(service=service)
 
     ### BROWSERS WITH DRIVERS: provide path to the driver file ###
-    # service = Service(executable_path='/Users/svetlanalevinsohn/careerist/18-python-selenium-automation/geckodriver')
+    # service = Service(executable_path='/Users/svetlanalevinsohn/18-python-selenium-automation/geckodriver')
     # context.driver = webdriver.Firefox(service=service)
 
     ### SAFARI ###
@@ -51,8 +51,8 @@ def browser_init(context, scenario_name):
 
     options = Options()
     bstack_options = {
-        'os': 'Windows',
-        'osVersion': '11',
+        'os': 'OS X',
+        'osVersion': 'Monterey',
         # 'deviceName': 'iPhone 14',
         # "realMobile": "true",
         'browserName': 'Chrome',
