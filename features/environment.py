@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-# from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support.wait import WebDriverWait
@@ -23,8 +23,9 @@ def browser_init(context, scenario_name):
 
     ### FIREFOX ###
     # driver_path = GeckoDriverManager().install()
-    # service = Service(driver_path)
+    # service = FirefoxService(driver_path)
     # context.driver = webdriver.Firefox(service=service)
+    # context.driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
 
     ### BROWSERS WITH DRIVERS: provide path to the driver file ###
     # service = Service(executable_path='/Users/svetlanalevinsohn/18-python-selenium-automation/geckodriver')
