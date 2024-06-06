@@ -7,8 +7,13 @@ def click_edit_profile(context):
 
 
 @when('Select {topic} role')
-def select_broker_role(context, topic):
-    context.app.profile_page.select_topic(topic)
+def select_topic_role(context, topic):
+    context.app.profile_page.select_role(topic)
+
+
+@when('Select {topic} position')
+def select_topic_position(context, topic):
+    context.app.profile_page.select_position(topic)
 
 
 @then('Verify that Profile page opened')
@@ -18,4 +23,9 @@ def verify_profile_opened(context):
 
 @then('Verify that {topic} role selected')
 def verify_role(context, topic):
-    context.app.profile_page.verify_topic(topic)
+    context.app.profile_page.verify_role(topic)
+
+
+@then('Verify that {topic} position selected')
+def verify_role(context, topic):
+    context.app.profile_page.verify_position(topic)
