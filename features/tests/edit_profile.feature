@@ -9,5 +9,5 @@ Feature: Tests for user profile page
     When Click on "Settings" option at the left side menu
     When Click on "Edit profile" option
     Then Verify that Profile page opened
-#    When Select Broker role
-#    Then Verify that Broker role selected
+    When Select Developer role
+    Then Verify that Developer role selected
