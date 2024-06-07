@@ -8,15 +8,21 @@ class ProfilePage(Page):
     BTN_EDIT_PROFILE = (By.XPATH, '//div[text()="Edit profile"]')
     TXT_PROFILE = (By.XPATH, '//div[text()="Profile"]')
     TOPIC_ROLE = (By.ID, 'field')
-    TOPIC_DEVELOPER = (By.CSS_SELECTOR, '[value="Developer"]')
     TOPIC_POSITION = (By.ID, 'Position')
-    TOPIC_CEO = (By.CSS_SELECTOR, '[value="Manager / Director"]')
+    TOPIC_OPTION = (By.XPATH, '//option[text()="{TOPIC_OPTION}"]')
+
+    def _get_locator(self, text):
+        return [self.TOPIC_OPTION[0], self.TOPIC_OPTION[1].replace('{TOPIC_OPTION}', text)]
 
     def btn_edit_profile(self):
         self.click(*self.BTN_EDIT_PROFILE)
 
-    def verify_profile_opened(self):
-        self.verify_text('Profile', *self.TXT_PROFILE)
+    # def select_option(self, topic):
+    #     locator = self._get_locator(topic)
+    #     print(locator)
+    #     topic_dd = self.find_element(*locator)
+    #     select = Select(topic_dd)
+    #     select.select_by_visible_text(topic)
 
     def select_role(self, topic):
         topic_dd = self.find_element(*self.TOPIC_ROLE)
@@ -28,8 +34,10 @@ class ProfilePage(Page):
         select = Select(topic_dd)
         select.select_by_visible_text(topic)
 
-    def verify_role(self, topic):
-        self.verify_text(topic, *self.TOPIC_DEVELOPER)
+    def verify_option(self, topic):
+        locator = self._get_locator(topic)
+        self.verify_text(topic, *locator)
 
-    def verify_position(self, topic):
-        self.verify_text(topic, *self.TOPIC_CEO)
+    def verify_profile_opened(self):
+        self.verify_text('Profile', *self.TXT_PROFILE)
+

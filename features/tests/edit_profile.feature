@@ -10,7 +10,7 @@ Feature: Tests for user profile page
     When Click on "Edit profile" option
     Then Verify that Profile page opened
     When Select Developer role
-    Then Verify that Developer role selected
+    Then Verify that Developer option selected
 
   Scenario: User can select different position
     Given Open the main page
@@ -20,4 +20,4 @@ Feature: Tests for user profile page
     When Click on "Edit profile" option
     Then Verify that Profile page opened
     When Select Director / CEO position
-    Then Verify that Director / CEO position selected
+    Then Verify that Director / CEO option selected
