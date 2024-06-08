@@ -2,19 +2,18 @@
 Feature: Tests for secondary deals page
   All testing scenarios for secondary deals page are located here
 
-  Scenario: Verify user can filter the Secondary deals by "want to sell" option
+  Background:
     Given Open the main page
     When Click on the "Open in browser"
     When Log in to the page kuletsky@gmail.com, bJyxsHf5Y@6dnEV
+
+  Scenario: Verify user can filter the Secondary deals by "want to sell" option
     When Click on "Secondary" option at the left side menu
     Then Verify the right page opens
     When Filter the products by "want to sell"
     Then Verify that all cards have For sale tag
 
   Scenario: Verify user can filter the Secondary deals by "want to buy" option
-    Given Open the main page
-    When Click on the "Open in browser"
-    When Log in to the page kuletsky@gmail.com, bJyxsHf5Y@6dnEV
     When Click on "Secondary" option at the left side menu
     Then Verify the right page opens
     When Filter the products by "want to buy"

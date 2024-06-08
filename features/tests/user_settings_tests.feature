@@ -2,10 +2,12 @@
 Feature: Tests for user settings page
   All testing scenarios for user settings page are located here
 
-  Scenario: User can access Whatsapp and Telegram communities
+  Background:
     Given Open the main page
     When Click on the "Open in browser"
     When Log in to the page kuletsky@gmail.com, bJyxsHf5Y@6dnEV
+
+  Scenario: User can access Whatsapp and Telegram communities
     When Click on "Settings" option at the left side menu
     Given Store original window
     When Click on "Support" option
