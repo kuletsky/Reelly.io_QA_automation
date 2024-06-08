@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test_results/1f3165ad-f5a6-44b8-accf-943f24325e5e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_results/5a7f15b1-25f2-40e5-8cc2-6d0f2a701c7a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_results/74964dd0-3c4c-4537-b9d6-eb3546847d28-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_results/bb12218f-0569-4d85-99ef-a78c1d2dd212-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_results/c524a86f-88f6-40df-ad35-9a964504b823-result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/tests/edit_profile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/edit_profile.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/tests/secondary_deals_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/secondary_deals_tests.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/tests/user_settings_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/user_settings_tests.feature" afterDir="false" />
     </list>
@@ -195,7 +199,7 @@
       <workItem from="1717624044595" duration="8606000" />
       <workItem from="1717710454786" duration="4078000" />
       <workItem from="1717715738316" duration="6538000" />
-      <workItem from="1717760077261" duration="2610000" />
+      <workItem from="1717760077261" duration="7925000" />
     </task>
     <servers />
   </component>
