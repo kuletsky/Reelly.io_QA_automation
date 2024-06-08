@@ -17,13 +17,6 @@ class ProfilePage(Page):
     def btn_edit_profile(self):
         self.click(*self.BTN_EDIT_PROFILE)
 
-    # def select_option(self, topic):
-    #     locator = self._get_locator(topic)
-    #     print(locator)
-    #     topic_dd = self.find_element(*locator)
-    #     select = Select(topic_dd)
-    #     select.select_by_visible_text(topic)
-
     def select_role(self, topic):
         topic_dd = self.find_element(*self.TOPIC_ROLE)
         select = Select(topic_dd)
