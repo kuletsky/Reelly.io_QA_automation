@@ -8,18 +8,20 @@ class SecondaryPage(Page):
     BTN_FILTER = (By.CSS_SELECTOR, '.filter-text')
     FILTER_SELL = (By.XPATH, '//div[text()="Want to sell"]')
     FILTER_BUY = (By.XPATH, '//div[@class="tag-text-filters" and text()="Want to buy"]')
+    FILTER_BUY_SELL = (By.XPATH, '//div[@class="tag-text-filters" and text()="{FILTER}"]')
     BTN_APPLY_FILTER = (By.XPATH, '//a[text()="Apply filter"]')
     ALL_LIST_FOR_FILTER = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
     GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
 
+    def _get_locator(self, text):
+        return [self.FILTER_BUY_SELL[0], self.FILTER_BUY_SELL[1].replace('{FILTER}', text)]
+
     def btn_filter(self):
         self.click(*self.BTN_FILTER)
 
-    def btn_filter_want_to_sell(self):
-        self.click(*self.FILTER_SELL)
-
-    def btn_filter_want_to_buy(self):
-        self.click(*self.FILTER_BUY)
+    def filter_want_to_sell_buy(self, filter_sell_buy):
+        locator = self._get_locator(filter_sell_buy)
+        self.click(*locator)
 
     def btn_apply_filter(self):
         self.click(*self.BTN_APPLY_FILTER)
