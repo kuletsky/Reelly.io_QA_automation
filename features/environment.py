@@ -45,28 +45,28 @@ def browser_init(context, scenario_name):
     # )
 
     ### MOBILE WEB ###
-    # mobile_emulation = {"deviceName": "Pixel 7"}
-    # options = webdriver.ChromeOptions()
-    # options.add_experimental_option("mobileEmulation", mobile_emulation)
-    # context.driver = webdriver.Remote(command_executor='http://127.0.0.1:4444/wd/hub',
-    #                                   options=options)
+    mobile_emulation = {"deviceName": "Pixel 7"}
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option("mobileEmulation", mobile_emulation)
+    context.driver = webdriver.Remote(command_executor='http://127.0.0.1:4444/wd/hub',
+                                      options=options)
 
     ### BROWSERSTACK ###
-    bs_user = 'kuletsky_D18EAl'
-    bs_key = 'cjrUnYqkUDR8xPwnqxXj'
-    url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
-
-    options = Options()
-    bstack_options = {
-        # 'os': 'OS X',
-        # 'osVersion': 'Monterey',
-        'deviceName': 'Pixel 7',
-        "realMobile": "true",
-        'browserName': 'Chrome',
-        'sessionName': scenario_name
-    }
-    options.set_capability('bstack:options', bstack_options)
-    context.driver = webdriver.Remote(command_executor=url, options=options)
+    # bs_user = 'kuletsky_D18EAl'
+    # bs_key = 'cjrUnYqkUDR8xPwnqxXj'
+    # url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
+    #
+    # options = Options()
+    # bstack_options = {
+    #     # 'os': 'OS X',
+    #     # 'osVersion': 'Monterey',
+    #     'deviceName': 'Pixel 7',
+    #     "realMobile": "true",
+    #     'browserName': 'Chrome',
+    #     'sessionName': scenario_name
+    # }
+    # options.set_capability('bstack:options', bstack_options)
+    # context.driver = webdriver.Remote(command_executor=url, options=options)
 
     context.driver.maximize_window()
     context.driver.implicitly_wait(6)

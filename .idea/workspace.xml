@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.edit_profile.feature:User can select different roles">
+  <component name="RunManager" selected="Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to buy&quot; option">
     <configuration name="edit_profile.feature:User can select different position" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -155,9 +154,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Behave.edit_profile.feature:User can select different roles" />
         <item itemvalue="Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to buy&quot; option" />
         <item itemvalue="Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to sell&quot; option" />
+        <item itemvalue="Behave.edit_profile.feature:User can select different roles" />
         <item itemvalue="Behave.edit_profile.feature:User can select different position" />
         <item itemvalue="Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities" />
       </list>
@@ -194,7 +193,7 @@
       <workItem from="1717715738316" duration="6538000" />
       <workItem from="1717760077261" duration="8967000" />
       <workItem from="1717981142741" duration="2164000" />
-      <workItem from="1718153961947" duration="5754000" />
+      <workItem from="1718153961947" duration="5939000" />
     </task>
     <servers />
   </component>
@@ -203,7 +202,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_Verify_user_can_filter_the_Secondary_deals_by__want_to_sell__option.coverage" NAME="secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to sell&quot; option Coverage Results" MODIFIED="1718159169494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_roles.coverage" NAME="edit_profile.feature:User can select different roles Coverage Results" MODIFIED="1718159599770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_roles.coverage" NAME="edit_profile.feature:User can select different roles Coverage Results" MODIFIED="1718159721747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_position.coverage" NAME="edit_profile.feature:User can select different position Coverage Results" MODIFIED="1717728780441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_steps.coverage" NAME="secondary_deals_steps Coverage Results" MODIFIED="1716943009283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features/steps" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_Verify_user_can_filter_the_Secondary_deals_by__want_to_buy__option.coverage" NAME="secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to buy&quot; option Coverage Results" MODIFIED="1718159220892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
