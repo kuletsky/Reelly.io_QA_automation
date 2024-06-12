@@ -17,9 +17,9 @@ def browser_init(context, scenario_name):
     """
 
     ### CHROME ###
-    driver_path = ChromeDriverManager().install()
-    service = Service(driver_path)
-    context.driver = webdriver.Chrome(service=service)
+    # driver_path = ChromeDriverManager().install()
+    # service = Service(driver_path)
+    # context.driver = webdriver.Chrome(service=service)
 
     ### FIREFOX ###
     # driver_path = GeckoDriverManager().install()
@@ -44,6 +44,12 @@ def browser_init(context, scenario_name):
     #     service=service
     # )
 
+    ### MOBILE WEB ###
+    mobile_emulation = {"deviceName": "iPhone X"}
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option("mobileEmulation", mobile_emulation)
+    context.driver = webdriver.Remote(command_executor='http://127.0.0.1:4444/wd/hub',
+                                      options=options)
 
     ### BROWSERSTACK ###
     # bs_user = 'kuletsky_D18EAl'
