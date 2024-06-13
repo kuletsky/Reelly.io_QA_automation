@@ -6,6 +6,11 @@ def click_edit_profile(context):
     context.app.profile_page.btn_edit_profile()
 
 
+@when('Click on "Menu"')
+def click_menu(context):
+    context.app.main_page.mob_top_menu()
+
+
 @when('Select {topic} option')
 def select_topic(context, topic):
     context.app.profile_page.select_option(topic)

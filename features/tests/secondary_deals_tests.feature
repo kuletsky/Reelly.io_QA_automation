@@ -20,3 +20,17 @@ Feature: Tests for secondary deals page
     Then Verify the right page opens
     When Filter the products by Want to buy
     Then Verify that all cards have Want to buy tag
+
+  @mobile_web
+  Scenario: MOB_WEB Verify user can filter the Secondary deals by "want to sell" option
+    When Click on "Secondary" MOBILE menu
+    Then Verify the right page opens
+    When Filter the products by Want to sell
+    Then Verify that all cards have For sale tag
+
+  @mobile_web
+  Scenario: MOB_WEB Verify user can filter the Secondary deals by "want to buy" option
+    When Click on "Secondary" MOBILE menu
+    Then Verify the right page opens
+    When Filter the products by Want to buy
+    Then Verify that all cards have Want to buy tag

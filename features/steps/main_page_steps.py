@@ -26,6 +26,11 @@ def secondary_side_menu(context):
     context.app.main_page.menu_secondary()
 
 
+@when('Click on "Secondary" MOBILE menu')
+def secondary_menu(context):
+    context.app.main_page.mob_secondary_menu()
+
+
 @when('Click on "Settings" option at the left side menu')
 def settings_side_menu(context):
     context.app.main_page.menu_settings()

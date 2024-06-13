@@ -18,3 +18,15 @@ Feature: Tests for user settings page
     When Go back to original window
     When Click on "News" option
     Then Verify that URL of window contains t.me
+
+  @mobile_web
+  Scenario: MOB_WEB User can access Whatsapp and Telegram communities
+    When Click on "Menu"
+    Given Store original window
+    When Click on "Support" option
+    When Switch to the new window
+    Then Verify that URL of window contains api.whatsapp.com
+    When Close current page
+    When Go back to original window
+    When Click on "News" option
+    Then Verify that URL of window contains t.me
