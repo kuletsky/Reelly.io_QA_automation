@@ -17,9 +17,9 @@ def browser_init(context, scenario_name):
     """
 
     ### CHROME ###
-    # driver_path = ChromeDriverManager().install()
-    # service = Service(driver_path)
-    # context.driver = webdriver.Chrome(service=service)
+    driver_path = ChromeDriverManager().install()
+    service = Service(driver_path)
+    context.driver = webdriver.Chrome(service=service)
 
     ### FIREFOX ###
     # driver_path = GeckoDriverManager().install()
@@ -45,13 +45,13 @@ def browser_init(context, scenario_name):
     # )
 
     ### MOBILE WEB ###
-    mobile_emulation = {"deviceName": "Pixel 7"}
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option("mobileEmulation", mobile_emulation)
-
-    driver_path = ChromeDriverManager().install()
-    service = Service(driver_path)
-    context.driver = webdriver.Chrome(service=service, options=options)
+    # mobile_emulation = {"deviceName": "Pixel 7"}
+    # options = webdriver.ChromeOptions()
+    # options.add_experimental_option("mobileEmulation", mobile_emulation)
+    #
+    # driver_path = ChromeDriverManager().install()
+    # service = Service(driver_path)
+    # context.driver = webdriver.Chrome(service=service, options=options)
 
     # context.driver = webdriver.Remote(command_executor='http://127.0.0.1:4444/wd/hub',
     #                                   options=options)
