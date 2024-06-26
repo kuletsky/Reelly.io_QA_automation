@@ -6,11 +6,6 @@ from time import sleep
 GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
 
 
-@then('Verify the right page opens')
-def verify_right_page(context):
-    context.app.secondary_page.verify_right_page()
-
-
 @when('Filter the products by {filter_sell_buy}')
 def filter_want_sell_buy(context, filter_sell_buy):
     context.app.secondary_page.wait_until_visible(GRID)
@@ -24,3 +19,8 @@ def filter_want_sell_buy(context, filter_sell_buy):
 def verify_tag_for_buy(context, expected_filter):
     context.app.secondary_page.wait_until_visible(GRID)
     context.app.secondary_page.verify_text_for_secondary_filter(expected_filter)
+
+
+@then('Verify the right page opens')
+def verify_right_page(context):
+    context.app.secondary_page.verify_right_page()

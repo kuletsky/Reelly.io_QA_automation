@@ -9,7 +9,7 @@ Feature: Tests for Sign Up page
     When Fill in the Full name
     When Fill in Phone
     When Fill in Email
-    When Fill in password
+    When Fill in psw
     When Select <string> role
     When Select <string> position
     When Select country
