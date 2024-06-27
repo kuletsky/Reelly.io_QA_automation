@@ -6,12 +6,13 @@ Feature: Tests for Sign Up page
     Given Open the main page
     When Click on the "Open in browser"
     When Click on the "Create account"
-    When Fill in the Full name
-    When Fill in Phone
-    When Fill in Email
-    When Fill in psw
-    When Select <string> role
-    When Select <string> position
+    When Fill in the Full name Tester
+    When Fill in random Phone
+    When Fill in random Email
+    When Fill in random PSW
+    When Fill website
+    When Select Broker roles
+    When Select Seller / Manager position
     When Select country
     When Select your company size
     When Click "Create account"

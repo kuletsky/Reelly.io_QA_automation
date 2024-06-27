@@ -11,9 +11,9 @@ def click_menu(context):
     context.app.main_page.mob_top_menu()
 
 
-@when('Select {topic} option')
-def select_topic(context, topic):
-    context.app.profile_page.select_option(topic)
+# @when('Select {topic} option')
+# def select_topic(context, topic):
+#     context.app.profile_page.select_option(topic)
 
 
 @when('Select {topic} role')
