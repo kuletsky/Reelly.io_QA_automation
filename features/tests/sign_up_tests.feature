@@ -10,7 +10,7 @@ Feature: Tests for Sign Up page
     When Fill in random Phone
     When Fill in random Email
     When Fill in random PSW
-    When Fill website
+    When Fill in random Website
     When Select Broker roles
     When Select Seller / Manager position
     When Select country

@@ -9,6 +9,7 @@ class SignUpPage(Page):
     PHONE_NUMBER = (By.CSS_SELECTOR, '[data-name="Phone"]')
     EMAIL = (By.CSS_SELECTOR, '[data-name="Email"]')
     PSW = (By.CSS_SELECTOR, '[data-name="Password"]')
+    WEBSITE = (By.CSS_SELECTOR, '[data-name="Company website"]')
     TOPIC_ROLES = (By.ID, 'Role')
     POSITION = (By.ID, 'Position')
 
@@ -26,6 +27,9 @@ class SignUpPage(Page):
 
     def fill_in_psw(self, password):
         self.input_text(password, *self.PSW)
+
+    def fill_in_website(self, website):
+        self.input_text(website, *self.WEBSITE)
 
     def select_role_sign(self, topic):
         topic_dd = self.find_element(*self.TOPIC_ROLES)

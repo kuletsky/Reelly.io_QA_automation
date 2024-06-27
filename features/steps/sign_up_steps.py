@@ -24,6 +24,11 @@ def generate_random_password(length=9):
     return password
 
 
+def generate_random_website(prefix="test", domain="com"):
+    suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=4))
+    return f"{prefix}{suffix}.{domain}"
+
+
 @when('Click on the "Create account"')
 def create_account(context):
     context.app.sign_up_page.btn_create_account()
@@ -47,6 +52,11 @@ def fill_in_email(context):
 @when('Fill in random PSW')
 def fill_in_psw(context):
     context.app.sign_up_page.fill_in_psw(generate_random_password())
+
+
+@when('Fill in random Website')
+def fill_in_website(context):
+    context.app.sign_up_page.fill_in_website(generate_random_website())
 
 
 @when('Select {topic} roles')
@@ -76,4 +86,4 @@ def click_create_account(context):
 
 @then('Verify the right information is present')
 def verify(context):
-    pass
+    sleep(10)
