@@ -77,7 +77,10 @@ class Page:
             assert element.text == expected_text, f'Error! Expected {expected_text}, but got {element.text}'
 
     def verify_text(self, expected_text, *locator):
+        print(*locator)
+        print(self.find_element(*locator).text)
         actual_text = self.find_element(*locator).text
+        print(actual_text)
         assert expected_text == actual_text, f'Error! Expected {expected_text}, but got {actual_text}'
 
     def verify_partial_text(self, expected_text, *locator):

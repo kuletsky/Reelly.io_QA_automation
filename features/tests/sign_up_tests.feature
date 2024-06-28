@@ -16,4 +16,6 @@ Feature: Tests for Sign Up page
     When Select country Germany
     When Select your company size 500+
     When Click "Create account"
-    Then Verify the right information is present
+    When Click on "Settings" option at the left side menu
+    When Click on "Edit profile" option
+    Then Verify the right User is present

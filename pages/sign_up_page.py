@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from pages.base_page import Page
+from time import sleep
 
 
 class SignUpPage(Page):
@@ -14,6 +15,9 @@ class SignUpPage(Page):
     POSITION = (By.ID, 'Position')
     COUNTRY = (By.ID, 'country-select')
     SIZE = (By.ID, 'Agents-amount-2')
+    CREATE_ACCOUNT = (By.XPATH, '//a[text()="Create account"]')
+
+    FULL_NAME_VERIFACATION = (By.CSS_SELECTOR, '[id="Fullname"]')
 
     def btn_create_account(self):
         self.click(*self.BTN_CREATE_ACCOUNT)
@@ -47,6 +51,17 @@ class SignUpPage(Page):
         size_dd = self.find_element(*self.SIZE)
         select = Select(size_dd)
         select.select_by_value(size)
+
+    def sign_up_page_create_account(self):
+        self.click(*self.CREATE_ACCOUNT)
+
+    def verify_user_presence(self, name):
+        sleep(4)
+        # self.wait_until_visible(*self.FULL_NAME_VERIFACATION)
+        print(*self.FULL_NAME_VERIFACATION)
+        self.verify_text(name, *self.FULL_NAME_VERIFACATION)
+
+
 
     # def select_position_sign(self, position):
     #     position_dd = self.find_element(*self.POSITION)

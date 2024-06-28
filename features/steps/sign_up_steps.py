@@ -36,6 +36,7 @@ def create_account(context):
 
 @when('Fill in the Full name {name}')
 def fill_in_full_name(context, name):
+    context.name = name
     context.app.sign_up_page.fill_in_full_name(name)
 
 
@@ -81,9 +82,22 @@ def select_size(context, size):
 
 @when('Click "Create account"')
 def click_create_account(context):
-    pass
+    context.app.sign_up_page.sign_up_page_create_account()
 
 
-@then('Verify the right information is present')
-def verify(context):
-    sleep(10)
+@then('Verify the right User is present')
+def verify_user_name(context):
+    context.app.sign_up_page.verify_user_presence(context.name)
+
+#
+# def verify_user_email(context):
+#     context.app.sign_up_page.verify_user_presence(generate_random_email())
+#
+#
+# def verify_company(context):
+#     context.app.sign_up_page.verify_company(generate_random_website())
+#
+#
+# def verify_user_phone(context):
+#     context.app.sign_up_page.verify_user_presence(generate_random_phone_number())
+#     sleep(10)
