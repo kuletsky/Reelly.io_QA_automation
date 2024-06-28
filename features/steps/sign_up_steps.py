@@ -85,9 +85,9 @@ def click_create_account(context):
     context.app.sign_up_page.sign_up_page_create_account()
 
 
-@then('Verify the right User is present')
-def verify_user_name(context):
-    context.app.sign_up_page.verify_user_presence(context.name)
+# @then('Verify the right User is present')
+# def verify_user_name(context):
+#     context.app.profile_page.verify_user_presence(context.name)
 
 #
 # def verify_user_email(context):

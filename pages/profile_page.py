@@ -5,6 +5,7 @@ from time import sleep
 
 
 class ProfilePage(Page):
+    FULL_NAME = (By.CSS_SELECTOR, '[id="Fullname"]')
     BTN_EDIT_PROFILE = (By.XPATH, '//div[text()="Edit profile"]')
     TXT_PROFILE = (By.XPATH, '//div[text()="Profile"]')
     TOPIC_ROLE = (By.ID, 'field')
@@ -16,6 +17,7 @@ class ProfilePage(Page):
 
     def btn_edit_profile(self):
         self.click(*self.BTN_EDIT_PROFILE)
+        sleep(4)
 
     def select_role(self, topic):
         topic_dd = self.find_element(*self.TOPIC_ROLE)
@@ -34,3 +36,5 @@ class ProfilePage(Page):
     def verify_profile_opened(self):
         self.verify_text('Profile', *self.TXT_PROFILE)
 
+    def verify_user_presence(self, name):
+        self.verify_input(name, *self.FULL_NAME)

@@ -17,7 +17,7 @@ class SignUpPage(Page):
     SIZE = (By.ID, 'Agents-amount-2')
     CREATE_ACCOUNT = (By.XPATH, '//a[text()="Create account"]')
 
-    FULL_NAME_VERIFACATION = (By.CSS_SELECTOR, '[id="Fullname"]')
+    # FULL_NAME_VERIFACATION = (By.CSS_SELECTOR, '[id="Fullname"]')
 
     def btn_create_account(self):
         self.click(*self.BTN_CREATE_ACCOUNT)
@@ -55,11 +55,9 @@ class SignUpPage(Page):
     def sign_up_page_create_account(self):
         self.click(*self.CREATE_ACCOUNT)
 
-    def verify_user_presence(self, name):
-        sleep(4)
-        # self.wait_until_visible(*self.FULL_NAME_VERIFACATION)
-        print(*self.FULL_NAME_VERIFACATION)
-        self.verify_text(name, *self.FULL_NAME_VERIFACATION)
+    # def verify_user_presence(self, name):
+    #     # self.wait_until_visible(*self.FULL_NAME_VERIFACATION)
+    #     self.verify_input(name, *self.FULL_NAME_VERIFACATION)
 
 
 
