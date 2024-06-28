@@ -69,14 +69,14 @@ def select_role_sign(context, topic):
 #     context.app.sign_up_page.select_position_sign(position)
 
 
-@when('Select country')
-def select_country(context):
-    pass
+@when('Select country {country}')
+def select_country(context, country):
+    context.app.sign_up_page.select_country(country)
 
 
-@when('Select your company size')
-def select_size(context):
-    pass
+@when('Select your company size {size}')
+def select_size(context, size):
+    context.app.sign_up_page.select_size(size)
 
 
 @when('Click "Create account"')

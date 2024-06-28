@@ -12,6 +12,8 @@ class SignUpPage(Page):
     WEBSITE = (By.CSS_SELECTOR, '[data-name="Company website"]')
     TOPIC_ROLES = (By.ID, 'Role')
     POSITION = (By.ID, 'Position')
+    COUNTRY = (By.ID, 'country-select')
+    SIZE = (By.ID, 'Agents-amount-2')
 
     def btn_create_account(self):
         self.click(*self.BTN_CREATE_ACCOUNT)
@@ -35,6 +37,16 @@ class SignUpPage(Page):
         topic_dd = self.find_element(*self.TOPIC_ROLES)
         select = Select(topic_dd)
         select.select_by_value(topic)
+
+    def select_country(self, country):
+        country_dd = self.find_element(*self.COUNTRY)
+        select = Select(country_dd)
+        select.select_by_value(country)
+
+    def select_size(self, size):
+        size_dd = self.find_element(*self.SIZE)
+        select = Select(size_dd)
+        select.select_by_value(size)
 
     # def select_position_sign(self, position):
     #     position_dd = self.find_element(*self.POSITION)

@@ -13,7 +13,7 @@ Feature: Tests for Sign Up page
     When Fill in random Website
     When Select Broker roles
     When Select Seller / Manager position
-    When Select country
-    When Select your company size
+    When Select country Germany
+    When Select your company size 500+
     When Click "Create account"
     Then Verify the right information is present
