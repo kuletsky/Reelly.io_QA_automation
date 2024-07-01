@@ -60,7 +60,7 @@ def browser_init(context, scenario_name):
     # bs_user = 'kuletsky_D18EAl'
     # bs_key = 'cjrUnYqkUDR8xPwnqxXj'
     # url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
-
+    #
     # options = Options()
     # bstack_options = {
     #     'os': 'OS X',
