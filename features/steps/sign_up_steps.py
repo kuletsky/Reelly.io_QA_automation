@@ -50,7 +50,8 @@ def fill_in_phone(context):
 
 @when('Fill in random Email')
 def fill_in_email(context):
-    context.app.sign_up_page.fill_in_email(generate_random_email())
+    context.email = generate_random_email()
+    context.app.sign_up_page.fill_in_email(context.email)
 
 
 @when('Fill in random PSW')

@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/steps/edit_profile_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/edit_profile_steps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/steps/sign_up_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/sign_up_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/tests/edit_profile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/edit_profile_tests.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/tests/sign_up_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/sign_up_tests.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/profile_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile_page.py" afterDir="false" />
     </list>
@@ -48,40 +49,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Behave.edit_profile.feature:MOB_WEB User can select different position.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile.feature:MOB_WEB User can select different roles.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile.feature:User can select different position.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile.feature:User can select different roles.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \&quot;want to buy\&quot; option.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \&quot;want to sell\&quot; option.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \&quot;want to buy\&quot; option.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \&quot;want to sell\&quot; option.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities.executor&quot;: &quot;Run&quot;,
-    &quot;Python.secondary_deals_steps.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/costa/code/QA/Projects/Reelly.io_QA_automation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Behave.edit_profile.feature:MOB_WEB User can select different position.executor": "Run",
+    "Behave.edit_profile.feature:MOB_WEB User can select different roles.executor": "Run",
+    "Behave.edit_profile.feature:User can select different position.executor": "Run",
+    "Behave.edit_profile.feature:User can select different roles.executor": "Run",
+    "Behave.secondary_deals_tests.feature.executor": "Run",
+    "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
+    "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
+    "Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
+    "Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
+    "Behave.sign_up_tests.feature:Verify the right information is present into the input fields on the registration page.executor": "Run",
+    "Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page.executor": "Run",
+    "Behave.user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities.executor": "Run",
+    "Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities.executor": "Run",
+    "Python.secondary_deals_steps.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/costa/code/QA/Projects/Reelly.io_QA_automation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page">
+  <component name="RunManager" selected="Behave.sign_up_tests.feature:Verify the right information is present into the input fields on the registration page">
     <configuration name="secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to buy&quot; option" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -98,22 +100,6 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to sell&quot; option" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly.io_QA_automation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/secondary_deals_tests.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="MOB_WEB Verify user can filter the Secondary deals by &quot;want to sell&quot; option" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to buy&quot; option" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -127,6 +113,22 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/secondary_deals_tests.feature" />
       <SCENRAIO_NAMES SCENRAIO_NAMES="Verify user can filter the Secondary deals by &quot;want to buy&quot; option" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sign_up_tests.feature:Verify the right information is present into the input fields on the registration page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly.io_QA_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/sign_up_tests.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="Verify the right information is present into the input fields on the registration page" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -164,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.sign_up_tests.feature:Verify the right information is present into the input fields on the registration page" />
         <item itemvalue="Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page" />
         <item itemvalue="Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to buy&quot; option" />
         <item itemvalue="Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to buy&quot; option" />
         <item itemvalue="Behave.user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities" />
-        <item itemvalue="Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to sell&quot; option" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +210,7 @@
       <workItem from="1718759994142" duration="1323000" />
       <workItem from="1718844974187" duration="2549000" />
       <workItem from="1718932241196" duration="21114000" />
-      <workItem from="1719839017769" duration="2974000" />
+      <workItem from="1719839017769" duration="5374000" />
     </task>
     <servers />
   </component>
@@ -220,12 +222,13 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_roles.coverage" NAME="edit_profile.feature:User can select different roles Coverage Results" MODIFIED="1718159721747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_MOB_WEB_User_can_access_Whatsapp_and_Telegram_communities.coverage" NAME="user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities Coverage Results" MODIFIED="1718240801776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_MOB_WEB_User_can_select_different_roles.coverage" NAME="edit_profile.feature:MOB_WEB User can select different roles Coverage Results" MODIFIED="1718238380854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$sign_up_tests_feature_Verify_the_right_information_is_present_into_the_input_fields_on_the_registration_page.coverage" NAME="sign_up_tests.feature:Verify the right information is present into the input fields on the registration page Coverage Results" MODIFIED="1719843678664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_Verify_user_can_filter_the_Secondary_deals_by__want_to_buy__option.coverage" NAME="secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to buy&quot; option Coverage Results" MODIFIED="1718415451775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_Verify_user_can_filter_the_Secondary_deals_by__want_to_sell__option.coverage" NAME="secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to sell&quot; option Coverage Results" MODIFIED="1718160767437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_MOB_WEB_Verify_user_can_filter_the_Secondary_deals_by__want_to_buy__option.coverage" NAME="secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to buy&quot; option Coverage Results" MODIFIED="1718415416518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_position.coverage" NAME="edit_profile.feature:User can select different position Coverage Results" MODIFIED="1717728780441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_steps.coverage" NAME="secondary_deals_steps Coverage Results" MODIFIED="1716943009283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features/steps" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$sign_up_tests_feature_Verify_user_can_enter_the_information_into_the_input_fields_on_the_registration_page.coverage" NAME="sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page Coverage Results" MODIFIED="1719841369715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$sign_up_tests_feature_Verify_user_can_enter_the_information_into_the_input_fields_on_the_registration_page.coverage" NAME="sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page Coverage Results" MODIFIED="1719843191970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_MOB_WEB_User_can_select_different_position.coverage" NAME="edit_profile.feature:MOB_WEB User can select different position Coverage Results" MODIFIED="1718238639604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature.coverage" NAME="secondary_deals_tests.feature Coverage Results" MODIFIED="1717033369364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_access_Whatsapp_and_Telegram_communities.coverage" NAME="user_settings_tests.feature:User can access Whatsapp and Telegram communities Coverage Results" MODIFIED="1717556485620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

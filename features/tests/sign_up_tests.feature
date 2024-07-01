@@ -2,7 +2,7 @@
 Feature: Tests for Sign Up page
   All testing scenarios for Sign Up page are located here
 
-  Scenario: Verify user can enter the information into the input fields on the registration page
+  Scenario: Verify the right information is present into the input fields on the registration page
     Given Open the main page
     When Click on the "Open in browser"
     And Click on the "Create account"
@@ -18,6 +18,8 @@ Feature: Tests for Sign Up page
     And Click "Create account"
     And Click on "Settings" option at the left side menu
     And Click on "Edit profile" option
-    Then Verify the right User name
-    And Verify the right Phone number
-    And Verify the right Company website
+    Then Verify the right information is present into the input fields on the registration page
+#    And Verify the right User name
+#    And Verify the right Phone number
+#    And Verify the right Company website
+#    And Verify the Email
