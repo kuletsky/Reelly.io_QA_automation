@@ -58,9 +58,10 @@ def fill_in_psw(context):
     context.app.sign_up_page.fill_in_psw(generate_random_password())
 
 
-@when('Fill in random Website')
+@when('Fill in random Company website')
 def fill_in_website(context):
-    context.app.sign_up_page.fill_in_website(generate_random_website())
+    context.website = generate_random_website()
+    context.app.sign_up_page.fill_in_website(context.website)
 
 
 @when('Select {topic} roles')

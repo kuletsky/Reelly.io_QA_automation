@@ -39,3 +39,8 @@ def verify_user_name(context):
 @then('Verify the right Phone number')
 def verify_user_phone(context):
     context.app.profile_page.verify_user_phone(context.phone)
+
+
+@then('Verify the right Company website')
+def verify_company_website(context):
+    context.app.profile_page.verify_company_website(context.website)

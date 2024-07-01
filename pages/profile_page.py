@@ -12,6 +12,7 @@ class ProfilePage(Page):
     TOPIC_OPTION = (By.XPATH, '//option[text()="{TOPIC_OPTION}"]')
     VERIFY_NAME = (By.CSS_SELECTOR, '[id="Fullname"]')
     VERIFY_PHONE = (By.CSS_SELECTOR, '[data-name="number"]')
+    VERIFY_WEBSITE = (By.CSS_SELECTOR, '[data-name="Company name"]')
 
     def _get_locator(self, text):
         return [self.TOPIC_OPTION[0], self.TOPIC_OPTION[1].replace('{TOPIC_OPTION}', text)]
@@ -42,3 +43,6 @@ class ProfilePage(Page):
 
     def verify_user_phone(self, phone):
         self.verify_input(phone, *self.VERIFY_PHONE)
+
+    def verify_company_website(self, website):
+        self.verify_input(website, *self.VERIFY_WEBSITE)

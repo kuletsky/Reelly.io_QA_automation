@@ -10,7 +10,7 @@ Feature: Tests for Sign Up page
     And Fill in random Phone
     And Fill in random Email
     And Fill in random PSW
-    And Fill in random Website
+    And Fill in random Company website
     And Select Broker roles
     And Select Seller / Manager position
     And Select country Germany
@@ -20,3 +20,4 @@ Feature: Tests for Sign Up page
     And Click on "Edit profile" option
     Then Verify the right User name
     And Verify the right Phone number
+    And Verify the right Company website
