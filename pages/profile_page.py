@@ -5,12 +5,13 @@ from time import sleep
 
 
 class ProfilePage(Page):
-    FULL_NAME = (By.CSS_SELECTOR, '[id="Fullname"]')
     BTN_EDIT_PROFILE = (By.XPATH, '//div[text()="Edit profile"]')
     TXT_PROFILE = (By.XPATH, '//div[text()="Profile"]')
     TOPIC_ROLE = (By.ID, 'field')
     TOPIC_POSITION = (By.ID, 'Position')
     TOPIC_OPTION = (By.XPATH, '//option[text()="{TOPIC_OPTION}"]')
+    VERIFY_NAME = (By.CSS_SELECTOR, '[id="Fullname"]')
+    VERIFY_PHONE = (By.CSS_SELECTOR, '[data-name="number"]')
 
     def _get_locator(self, text):
         return [self.TOPIC_OPTION[0], self.TOPIC_OPTION[1].replace('{TOPIC_OPTION}', text)]
@@ -37,4 +38,7 @@ class ProfilePage(Page):
         self.verify_text('Profile', *self.TXT_PROFILE)
 
     def verify_user_presence(self, name):
-        self.verify_input(name, *self.FULL_NAME)
+        self.verify_input(name, *self.VERIFY_NAME)
+
+    def verify_user_phone(self, phone):
+        self.verify_input(phone, *self.VERIFY_PHONE)

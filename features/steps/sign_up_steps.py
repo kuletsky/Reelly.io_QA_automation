@@ -15,6 +15,8 @@ def generate_random_phone_number():
     area_code = ''.join(random.choices("0123456789", k=3))
     first_part = ''.join(random.choices("0123456789", k=3))
     second_part = ''.join(random.choices("0123456789", k=4))
+    # phone_number = f"{country_code}{area_code}{first_part}{second_part}"
+    # return phone_number
     return f"{country_code} {area_code} {first_part} {second_part}"
 
 
@@ -42,7 +44,8 @@ def fill_in_full_name(context, name):
 
 @when('Fill in random Phone')
 def fill_in_phone(context):
-    context.app.sign_up_page.fill_in_phone(generate_random_phone_number())
+    context.phone = generate_random_phone_number()
+    context.app.sign_up_page.fill_in_phone(context.phone)
 
 
 @when('Fill in random Email')
@@ -84,6 +87,10 @@ def select_size(context, size):
 def click_create_account(context):
     context.app.sign_up_page.sign_up_page_create_account()
 
+
+# @then('Verify the right phone number')
+# def verify_user_phone(context):
+#     context.app.sign_up_page.verify_user_phone(context.phone)
 
 # @then('Verify the right User is present')
 # def verify_user_name(context):

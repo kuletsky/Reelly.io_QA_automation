@@ -18,4 +18,5 @@ Feature: Tests for Sign Up page
     And Click "Create account"
     And Click on "Settings" option at the left side menu
     And Click on "Edit profile" option
-    Then Verify the right User is present
+    Then Verify the right User name
+    And Verify the right Phone number

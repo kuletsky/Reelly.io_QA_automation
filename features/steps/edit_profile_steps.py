@@ -31,6 +31,11 @@ def verify_role(context, topic):
     context.app.profile_page.verify_option(topic)
 
 
-@then('Verify the right User is present')
+@then('Verify the right User name')
 def verify_user_name(context):
     context.app.profile_page.verify_user_presence(context.name)
+
+
+@then('Verify the right Phone number')
+def verify_user_phone(context):
+    context.app.profile_page.verify_user_phone(context.phone)

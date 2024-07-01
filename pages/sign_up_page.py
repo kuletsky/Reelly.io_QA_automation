@@ -16,6 +16,7 @@ class SignUpPage(Page):
     COUNTRY = (By.ID, 'country-select')
     SIZE = (By.ID, 'Agents-amount-2')
     CREATE_ACCOUNT = (By.XPATH, '//a[text()="Create account"]')
+    VERIFY_PHONE = (By.CSS_SELECTOR, '[data-name="number"]')
 
     # FULL_NAME_VERIFACATION = (By.CSS_SELECTOR, '[id="Fullname"]')
 
@@ -54,6 +55,9 @@ class SignUpPage(Page):
 
     def sign_up_page_create_account(self):
         self.click(*self.CREATE_ACCOUNT)
+
+    # def verify_user_phone(self, phone):
+    #     self.verify_input(phone, *self.VERIFY_PHONE)
 
     # def verify_user_presence(self, name):
     #     # self.wait_until_visible(*self.FULL_NAME_VERIFACATION)
