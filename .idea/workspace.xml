@@ -45,34 +45,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Behave.edit_profile.feature:MOB_WEB User can select different position.executor": "Run",
-    "Behave.edit_profile.feature:MOB_WEB User can select different roles.executor": "Run",
-    "Behave.edit_profile.feature:User can select different position.executor": "Run",
-    "Behave.edit_profile.feature:User can select different roles.executor": "Run",
-    "Behave.secondary_deals_tests.feature.executor": "Run",
-    "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
-    "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
-    "Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
-    "Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
-    "Behave.sign_up_tests.feature:Verify the right information is present into the input fields on the registration page.executor": "Run",
-    "Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page.executor": "Run",
-    "Behave.user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities.executor": "Run",
-    "Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities.executor": "Run",
-    "Python.secondary_deals_steps.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/costa/code/QA/Projects/Reelly.io_QA_automation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Behave.edit_profile.feature:MOB_WEB User can select different position.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile.feature:MOB_WEB User can select different roles.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile.feature:User can select different position.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile.feature:User can select different roles.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \&quot;want to buy\&quot; option.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \&quot;want to sell\&quot; option.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \&quot;want to buy\&quot; option.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \&quot;want to sell\&quot; option.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.sign_up_tests.feature:Verify the right information is present into the input fields on the registration page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities.executor&quot;: &quot;Run&quot;,
+    &quot;Python.secondary_deals_steps.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/costa/code/QA/Projects/Reelly.io_QA_automation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -207,6 +207,7 @@
       <workItem from="1718844974187" duration="2549000" />
       <workItem from="1718932241196" duration="21114000" />
       <workItem from="1719839017769" duration="7104000" />
+      <workItem from="1719922001178" duration="342000" />
     </task>
     <servers />
   </component>
