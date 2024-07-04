@@ -34,3 +34,8 @@ def secondary_menu(context):
 @when('Click on "Settings" option at the left side menu')
 def settings_side_menu(context):
     context.app.main_page.menu_settings()
+
+
+@when('Click on "Connect the company"')
+def connect_company(context):
+    context.app.main_page.connect_company()
