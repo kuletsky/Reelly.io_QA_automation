@@ -9,10 +9,14 @@ Feature: Tests for Main page
 
   Scenario: Verify the user can click on “Connect the company” on the left side of the main page
     Given Store original window
-    When Click on "Connect the company"
+    When Click on Main page "Connect the company"
     When Switch to the new window
     Then Verify that URL of window contains book-presentation
 
   Scenario: Verify the user can click on “App Store” on the left side of the main page
-    When Click on "App Store"
+    When Click on Main page "App Store"
     Then Verify that URL of window contains apps.apple.com
+
+  Scenario: Verify the user can click on “Android” on the left side of the main page
+    When Click on Main page "Android"
+    Then Verify that URL of window contains play.google.com
