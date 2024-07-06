@@ -20,3 +20,7 @@ Feature: Tests for Main page
   Scenario: Verify the user can click on “Android” on the left side of the main page
     When Click on Main page "Android"
     Then Verify that URL of window contains play.google.com
+
+  Scenario: Verify the user can click on “Off-plan” on the left menu of the main page
+    When Click on Main page "Off-plan"
+    Then Verify that URL of window contains soft.reelly.io/
