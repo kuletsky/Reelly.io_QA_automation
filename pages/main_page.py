@@ -9,6 +9,7 @@ class MainPage(Page):
     MOB_TOP_MENU = (By.CSS_SELECTOR, '.mobile-top-menu')
     MOB_MENU_SECONDARY = (By.XPATH, '//div[@class="menu-text" and text()="Secondary"]')
     CONNECT_COMPANY = (By.XPATH, '//div[text()="Connect the company"]')
+    APP_STORE = (By.XPATH, '//div[text()="App Store"]')
 
     def open_main_page(self):
         self.open('https://reelly.io/')
@@ -30,3 +31,6 @@ class MainPage(Page):
 
     def connect_company(self):
         self.click(*self.CONNECT_COMPANY)
+
+    def app_store(self):
+        self.click(*self.APP_STORE)

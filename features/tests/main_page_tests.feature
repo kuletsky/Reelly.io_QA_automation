@@ -12,3 +12,7 @@ Feature: Tests for Main page
     When Click on "Connect the company"
     When Switch to the new window
     Then Verify that URL of window contains book-presentation
+
+  Scenario: Verify the user can click on “App Store” on the left side of the main page
+    When Click on "App Store"
+    Then Verify that URL of window contains apps.apple.com

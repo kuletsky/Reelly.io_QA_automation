@@ -39,3 +39,8 @@ def settings_side_menu(context):
 @when('Click on "Connect the company"')
 def connect_company(context):
     context.app.main_page.connect_company()
+
+
+@when('Click on "App Store"')
+def app_store(context):
+    context.app.main_page.app_store()
