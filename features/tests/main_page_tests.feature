@@ -29,3 +29,6 @@ Feature: Tests for Main page
     When Click on Main page "Secondary"
     Then Verify that URL of window contains secondary-listings
 
+  Scenario: Verify the user can click on “Calendar” on the left menu of the main page
+    When Click on Main page "Calendar"
+    Then Verify that URL of window contains calendar
