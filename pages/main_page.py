@@ -33,11 +33,11 @@ class MainPage(Page):
     def mob_top_menu(self):
         self.click(*self.MOB_TOP_MENU)
 
-    def connect_company(self):
-        self.click(*self.CONNECT_COMPANY)
-
-    def app_store(self):
-        self.click(*self.APP_STORE)
+    # def connect_company(self):
+    #     self.click(*self.CONNECT_COMPANY)
+    #
+    # def app_store(self):
+    #     self.click(*self.APP_STORE)
 
     def click_link(self, link_text):
         locator = self._get_locator(link_text)
