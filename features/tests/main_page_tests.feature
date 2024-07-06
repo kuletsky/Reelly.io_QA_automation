@@ -32,3 +32,7 @@ Feature: Tests for Main page
   Scenario: Verify the user can click on “Calendar” on the left menu of the main page
     When Click on Main page "Calendar"
     Then Verify that URL of window contains calendar
+
+  Scenario: Verify the user can click on “Referral ” on the left menu of the main page
+    When Click on Main page "Referral "
+    Then Verify that URL of window contains referral
