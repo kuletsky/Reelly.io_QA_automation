@@ -54,7 +54,9 @@
     "Behave.main_page_tests.feature.executor": "Run",
     "Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page.executor": "Run",
     "Behave.main_page_tests.feature:Verify the user can click on “App Store” on the left side of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page.executor": "Run",
     "Behave.main_page_tests.feature:Verify the user can click on “Connect the company” on the left side of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page.executor": "Run",
     "Behave.secondary_deals_tests.feature.executor": "Run",
     "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
     "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
@@ -83,22 +85,7 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page">
-    <configuration name="main_page_tests.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly.io_QA_automation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/main_page_tests.feature" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Behave.main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page">
     <configuration name="main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -131,7 +118,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main_page_tests.feature:Verify the user can click on “Connect the company” on the left side of the main page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,7 +130,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/main_page_tests.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="Verify the user can click on “Connect the company” on the left side of the main page" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="Verify the user can click on “Calendar” on the left menu of the main page" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -163,13 +150,29 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main_page_tests.feature:Verify the user can click on “Secondary” on the left menu of the main page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly.io_QA_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/main_page_tests.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="Verify the user can click on “Secondary” on the left menu of the main page" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page" />
+        <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Secondary” on the left menu of the main page" />
         <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page" />
         <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page" />
         <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “App Store” on the left side of the main page" />
-        <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Connect the company” on the left side of the main page" />
-        <item itemvalue="Behave.main_page_tests.feature" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +215,7 @@
       <workItem from="1719839017769" duration="7104000" />
       <workItem from="1719922001178" duration="2146000" />
       <workItem from="1720116257167" duration="2468000" />
-      <workItem from="1720225668663" duration="2458000" />
+      <workItem from="1720225668663" duration="2821000" />
     </task>
     <servers />
   </component>
@@ -222,6 +225,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_MOB_WEB_Verify_user_can_filter_the_Secondary_deals_by__want_to_sell__option.coverage" NAME="secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to sell&quot; option Coverage Results" MODIFIED="1718240473785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_App_Store_on_the_left_side_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “App Store” on the left side of the main page Coverage Results" MODIFIED="1720227582511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Off_plan_on_the_left_menu_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page Coverage Results" MODIFIED="1720228129051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_roles.coverage" NAME="edit_profile.feature:User can select different roles Coverage Results" MODIFIED="1718159721747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_MOB_WEB_User_can_access_Whatsapp_and_Telegram_communities.coverage" NAME="user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities Coverage Results" MODIFIED="1718240801776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_MOB_WEB_User_can_select_different_roles.coverage" NAME="edit_profile.feature:MOB_WEB User can select different roles Coverage Results" MODIFIED="1718238380854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -235,6 +239,7 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$sign_up_tests_feature_Verify_user_can_enter_the_information_into_the_input_fields_on_the_registration_page.coverage" NAME="sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page Coverage Results" MODIFIED="1719843191970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Android_on_the_left_side_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page Coverage Results" MODIFIED="1720227605684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Connect_the_company_on_the_left_side_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Connect the company” on the left side of the main page Coverage Results" MODIFIED="1720227519406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Calendar_on_the_left_menu_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page Coverage Results" MODIFIED="1720228347693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_MOB_WEB_User_can_select_different_position.coverage" NAME="edit_profile.feature:MOB_WEB User can select different position Coverage Results" MODIFIED="1718238639604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature.coverage" NAME="secondary_deals_tests.feature Coverage Results" MODIFIED="1717033369364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_access_Whatsapp_and_Telegram_communities.coverage" NAME="user_settings_tests.feature:User can access Whatsapp and Telegram communities Coverage Results" MODIFIED="1717556485620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

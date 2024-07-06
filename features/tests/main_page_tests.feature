@@ -23,4 +23,9 @@ Feature: Tests for Main page
 
   Scenario: Verify the user can click on “Off-plan” on the left menu of the main page
     When Click on Main page "Off-plan"
-    Then Verify that URL of window contains soft.reelly.io/
+    Then Verify that URL of window contains soft.reelly.io
+
+  Scenario: Verify the user can click on “Secondary” on the left menu of the main page
+    When Click on Main page "Secondary"
+    Then Verify that URL of window contains secondary-listings
+
