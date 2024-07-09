@@ -1,5 +1,6 @@
-from pages.main_page import MainPage
 from pages.login_page import LoginPage
+from pages.main_page import MainPage
+from pages.off_plan_page import OffPlanPage
 from pages.profile_page import ProfilePage
 from pages.secondary_page import SecondaryPage
 from pages.settings_page import SettingsPage
@@ -10,6 +11,7 @@ class Application:
 
     def __init__(self, driver):
         self.login_page = LoginPage(driver)
+        self.off_plan_page = OffPlanPage(driver)
         self.main_page = MainPage(driver)
         self.profile_page = ProfilePage(driver)
         self.secondary_page = SecondaryPage(driver)
