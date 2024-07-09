@@ -32,4 +32,5 @@ class SecondaryPage(Page):
         self.verify_right_page_opened(*self.TXT_LISTINGS)
 
     def verify_text_for_secondary_filter(self, expected_filter):
+        self.wait_until_visible(self.GRID)
         self.verify_text_for_all_elements(expected_filter, *self.ALL_LIST_FOR_FILTER)

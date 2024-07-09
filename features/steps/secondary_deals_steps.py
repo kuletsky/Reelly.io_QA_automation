@@ -3,9 +3,6 @@ from behave import given, when, then
 from time import sleep
 
 
-GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
-
-
 @when('Filter the products by {filter_sell_buy}')
 def filter_want_sell_buy(context, filter_sell_buy):
     # context.app.secondary_page.wait_until_visible(GRID)
@@ -16,7 +13,7 @@ def filter_want_sell_buy(context, filter_sell_buy):
 
 @then('Verify that all cards have {expected_filter} tag')
 def verify_tag_for_buy(context, expected_filter):
-    context.app.secondary_page.wait_until_visible(GRID)
+    # context.app.secondary_page.wait_until_visible(GRID)
     context.app.secondary_page.verify_text_for_secondary_filter(expected_filter)
 
 
