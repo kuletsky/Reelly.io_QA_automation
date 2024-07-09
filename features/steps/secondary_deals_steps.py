@@ -8,8 +8,7 @@ GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
 
 @when('Filter the products by {filter_sell_buy}')
 def filter_want_sell_buy(context, filter_sell_buy):
-    context.app.secondary_page.wait_until_visible(GRID)
-
+    # context.app.secondary_page.wait_until_visible(GRID)
     context.app.secondary_page.btn_filter()
     context.app.secondary_page.filter_want_to_sell_buy(filter_sell_buy)
     context.app.secondary_page.btn_apply_filter()

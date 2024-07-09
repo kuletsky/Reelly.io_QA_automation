@@ -11,4 +11,5 @@ class OffPlanPage(Page):
         print(f'How many elements on the page?: {len(all_projects)}')
 
         for project in all_projects:
-            assert project
+            assert project, f'Error! Projects are not shown'
+        print(f'All {len(all_projects)} projects are shown')
