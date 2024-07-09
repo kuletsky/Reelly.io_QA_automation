@@ -12,7 +12,6 @@ class SecondaryPage(Page):
     FILTER_BUY_SELL = (By.XPATH, '//div[@class="tag-text-filters" and text()="{FILTER}"]')
     BTN_APPLY_FILTER = (By.XPATH, '//a[text()="Apply filter"]')
     ALL_LIST_FOR_FILTER = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
-    # GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
 
     def _get_locator(self, text):
         return [self.FILTER_BUY_SELL[0], self.FILTER_BUY_SELL[1].replace('{FILTER}', text)]
