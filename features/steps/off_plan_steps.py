@@ -5,5 +5,3 @@ from behave import given, when, then
 @then ('Verify that all projects are shown')
 def verify_all_projects(context):
     context.app.off_plan_page.verify_all_projects()
-    # context.app.off_plan_page.wait_until_visible(GRID)
-
