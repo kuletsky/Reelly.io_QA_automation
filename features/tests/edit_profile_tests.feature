@@ -28,7 +28,7 @@ Feature: Tests for user profile page
     And Edit random Phone
     And Edit random Email
 #    And Fill in random PSW
-#    And Fill in random Company website
+    And Edit random Company website
 #    And Select Broker roles
 #    And Select Seller / Manager position
 #    And Select country Germany

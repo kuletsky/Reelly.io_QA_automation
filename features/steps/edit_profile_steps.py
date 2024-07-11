@@ -18,6 +18,11 @@ def generate_random_email(prefix="testuser", domain="test.com"):
     return f"{prefix}_{suffix}@{domain}"
 
 
+def generate_random_website(prefix="test", domain="com"):
+    suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=4))
+    return f"{prefix}{suffix}.{domain}"
+
+
 @when('Click on "Edit profile" option')
 def click_edit_profile(context):
     context.app.profile_page.btn_edit_profile()
@@ -44,6 +49,12 @@ def fill_in_phone(context):
 def fill_in_email(context):
     context.email = generate_random_email()
     context.app.profile_page.edit_email(context.email)
+
+
+@when('Edit random Company website')
+def fill_in_website(context):
+    context.website = generate_random_website()
+    context.app.profile_page.edit_website(context.website)
 
 
 @when('Select {topic} role')
