@@ -26,7 +26,7 @@ Feature: Tests for user profile page
     And Click on "Edit profile" option
     And Edit the Full name Tester
     And Edit random Phone
-#    And Fill in random Email
+    And Edit random Email
 #    And Fill in random PSW
 #    And Fill in random Company website
 #    And Select Broker roles

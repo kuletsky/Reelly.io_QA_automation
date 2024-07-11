@@ -1,5 +1,6 @@
 from behave import given, when, then
 import random
+import string
 
 
 def generate_random_phone_number():
@@ -10,6 +11,11 @@ def generate_random_phone_number():
     # phone_number = f"{country_code}{area_code}{first_part}{second_part}"
     # return phone_number
     return f"{country_code} {area_code} {first_part} {second_part}"
+
+
+def generate_random_email(prefix="testuser", domain="test.com"):
+    suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
+    return f"{prefix}_{suffix}@{domain}"
 
 
 @when('Click on "Edit profile" option')
@@ -32,6 +38,12 @@ def fill_in_full_name(context, name):
 def fill_in_phone(context):
     context.phone = generate_random_phone_number()
     context.app.profile_page.edit_phone(context.phone)
+
+
+@when('Edit random Email')
+def fill_in_email(context):
+    context.email = generate_random_email()
+    context.app.profile_page.edit_email(context.email)
 
 
 @when('Select {topic} role')
