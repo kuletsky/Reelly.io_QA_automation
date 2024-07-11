@@ -77,6 +77,11 @@ def save_changes(context):
     context.app.profile_page.save_changes()
 
 
+@when('Click on "Close"')
+def close_profile(context):
+    context.app.profile_page.close_profile()
+
+
 @then('Verify that Profile page opened')
 def verify_profile_opened(context):
     context.app.profile_page.verify_profile_opened()

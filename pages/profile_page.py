@@ -15,7 +15,8 @@ class ProfilePage(Page):
     EMAIL = (By.CSS_SELECTOR, '[data-name="Email 2"]')
     COMP_WEBSITE = (By.CSS_SELECTOR, '[data-name="Company name"]')
     LANGUAGE = (By.CSS_SELECTOR, '[data-name="Languages"]')
-    BTN_SAVE_CHANGES =
+    BTN_SAVE_CHANGES = (By.XPATH, '//div[text()="Save changes"]')
+    BTN_CLOSE = (By.XPATH, '//a[text()="Close"]')
 
     VERIFY_NAME = (By.CSS_SELECTOR, '[id="Fullname"]')
     VERIFY_PHONE = (By.CSS_SELECTOR, '[data-name="number"]')
@@ -56,6 +57,9 @@ class ProfilePage(Page):
 
     def save_changes(self):
         self.click(*self.BTN_SAVE_CHANGES)
+
+    def close_profile(self):
+        self.click(*self.BTN_CLOSE)
 
     def verify_option(self, topic):
         locator = self._get_locator(topic)
