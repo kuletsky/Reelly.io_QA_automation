@@ -14,6 +14,8 @@ class ProfilePage(Page):
     NUMBER = (By.CSS_SELECTOR, '[data-name="number"]')
     EMAIL = (By.CSS_SELECTOR, '[data-name="Email 2"]')
     COMP_WEBSITE = (By.CSS_SELECTOR, '[data-name="Company name"]')
+    LANGUAGE = (By.CSS_SELECTOR, '[data-name="Languages"]')
+    BTN_SAVE_CHANGES =
 
     VERIFY_NAME = (By.CSS_SELECTOR, '[id="Fullname"]')
     VERIFY_PHONE = (By.CSS_SELECTOR, '[data-name="number"]')
@@ -48,6 +50,12 @@ class ProfilePage(Page):
 
     def edit_website(self, company):
         self.input_text(company, *self.COMP_WEBSITE)
+
+    def select_language(self, language):
+        self.input_text(language, *self.LANGUAGE)
+
+    def save_changes(self):
+        self.click(*self.BTN_SAVE_CHANGES)
 
     def verify_option(self, topic):
         locator = self._get_locator(topic)

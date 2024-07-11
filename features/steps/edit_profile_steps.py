@@ -67,6 +67,16 @@ def select_topic_position(context, topic):
     context.app.profile_page.select_position(topic)
 
 
+@when('Select language {language}')
+def select_country(context, language):
+    context.app.profile_page.select_language(language)
+
+
+@when('Click on "Save changes"')
+def save_changes(context):
+    context.app.profile_page.save_changes()
+
+
 @then('Verify that Profile page opened')
 def verify_profile_opened(context):
     context.app.profile_page.verify_profile_opened()

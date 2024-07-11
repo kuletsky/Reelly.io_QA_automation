@@ -29,10 +29,13 @@ Feature: Tests for user profile page
     And Edit random Email
 #    And Fill in random PSW
     And Edit random Company website
-#    And Select Broker roles
-#    And Select Seller / Manager position
-#    And Select country Germany
-#    And Select your company size 500+
+    And Select Broker role
+    And Select Director / CEO position
+    And Select language English
+    And Click on "Save changes"
+    And Click on "Close"
+
+
 
   @mobile_web
   Scenario: MOB_WEB User can select different roles
