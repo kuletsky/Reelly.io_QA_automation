@@ -11,6 +11,12 @@ def click_menu(context):
     context.app.main_page.mob_top_menu()
 
 
+@when('Edit the Full name {name}')
+def fill_in_full_name(context, name):
+    context.name = name
+    context.app.profile_page.edit_full_name(name)
+
+
 @when('Select {topic} role')
 def select_topic_role(context, topic):
     context.app.profile_page.select_role(topic)

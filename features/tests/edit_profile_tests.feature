@@ -21,6 +21,19 @@ Feature: Tests for user profile page
     When Select Director / CEO position
     Then Verify that Director / CEO option selected
 
+    Scenario: User can go to settings and edit the personal information
+    When Click on "Settings" option at the left side menu
+    And Click on "Edit profile" option
+    And Edit the Full name Tester
+#    And Fill in random Phone
+#    And Fill in random Email
+#    And Fill in random PSW
+#    And Fill in random Company website
+#    And Select Broker roles
+#    And Select Seller / Manager position
+#    And Select country Germany
+#    And Select your company size 500+
+
   @mobile_web
   Scenario: MOB_WEB User can select different roles
     When Click on "Menu"

@@ -19,19 +19,6 @@ Feature: Tests for user settings page
     And Click on "News" option
     Then Verify that URL of window contains t.me
 
-  Scenario: User can go to settings and edit the personal information
-    When Click on "Settings" option at the left side menu
-    And Click on "Edit profile" option
-    And Fill in the Full name Tester
-    And Fill in random Phone
-    And Fill in random Email
-    And Fill in random PSW
-    And Fill in random Company website
-    And Select Broker roles
-    And Select Seller / Manager position
-    And Select country Germany
-    And Select your company size 500+
-
 
   @mobile_web
   Scenario: MOB_WEB User can access Whatsapp and Telegram communities

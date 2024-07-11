@@ -31,7 +31,7 @@ class Page:
     def wait_until_visible(self, *locator):
         logger.info(f'Waiting until visible by: {locator}')
         self.driver.wait.until(
-            EC.visibility_of_all_elements_located(*locator),
+            EC.visibility_of_all_elements_located(locator),
             f'Element not visible by: {locator}')
 
     def wait_until_disappears(self, *locator):
@@ -43,6 +43,7 @@ class Page:
 
     def input_text(self, text, *locator):
         logger.info(f'Input text by: {text}')
+        self.find_element(*locator).clear()
         self.find_element(*locator).send_keys(text)
 
     def get_current_window(self):

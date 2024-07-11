@@ -10,6 +10,7 @@ class ProfilePage(Page):
     TOPIC_ROLE = (By.ID, 'field')
     TOPIC_POSITION = (By.ID, 'Position')
     TOPIC_OPTION = (By.XPATH, '//option[text()="{TOPIC_OPTION}"]')
+    FULL_NAME_PROFILE = (By.CSS_SELECTOR, '[data-name="Fullname"]')
     VERIFY_NAME = (By.CSS_SELECTOR, '[id="Fullname"]')
     VERIFY_PHONE = (By.CSS_SELECTOR, '[data-name="number"]')
     VERIFY_WEBSITE = (By.CSS_SELECTOR, '[data-name="Company name"]')
@@ -31,6 +32,9 @@ class ProfilePage(Page):
         topic_dd = self.find_element(*self.TOPIC_POSITION)
         select = Select(topic_dd)
         select.select_by_visible_text(topic)
+
+    def edit_full_name(self, name):
+        self.input_text(name, *self.FULL_NAME_PROFILE)
 
     def verify_option(self, topic):
         locator = self._get_locator(topic)
