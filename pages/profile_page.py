@@ -11,6 +11,8 @@ class ProfilePage(Page):
     TOPIC_POSITION = (By.ID, 'Position')
     TOPIC_OPTION = (By.XPATH, '//option[text()="{TOPIC_OPTION}"]')
     FULL_NAME_PROFILE = (By.CSS_SELECTOR, '[data-name="Fullname"]')
+    NUMBER = (By.CSS_SELECTOR, '[data-name="number"]')
+
     VERIFY_NAME = (By.CSS_SELECTOR, '[id="Fullname"]')
     VERIFY_PHONE = (By.CSS_SELECTOR, '[data-name="number"]')
     VERIFY_WEBSITE = (By.CSS_SELECTOR, '[data-name="Company name"]')
@@ -35,6 +37,9 @@ class ProfilePage(Page):
 
     def edit_full_name(self, name):
         self.input_text(name, *self.FULL_NAME_PROFILE)
+
+    def edit_phone(self, phone):
+        self.input_text(phone, *self.NUMBER)
 
     def verify_option(self, topic):
         locator = self._get_locator(topic)

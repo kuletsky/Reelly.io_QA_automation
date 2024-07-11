@@ -25,7 +25,7 @@ Feature: Tests for user profile page
     When Click on "Settings" option at the left side menu
     And Click on "Edit profile" option
     And Edit the Full name Tester
-#    And Fill in random Phone
+    And Edit random Phone
 #    And Fill in random Email
 #    And Fill in random PSW
 #    And Fill in random Company website

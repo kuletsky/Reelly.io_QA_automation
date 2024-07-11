@@ -1,4 +1,15 @@
 from behave import given, when, then
+import random
+
+
+def generate_random_phone_number():
+    country_code = "+1"
+    area_code = ''.join(random.choices("0123456789", k=3))
+    first_part = ''.join(random.choices("0123456789", k=3))
+    second_part = ''.join(random.choices("0123456789", k=4))
+    # phone_number = f"{country_code}{area_code}{first_part}{second_part}"
+    # return phone_number
+    return f"{country_code} {area_code} {first_part} {second_part}"
 
 
 @when('Click on "Edit profile" option')
@@ -15,6 +26,12 @@ def click_menu(context):
 def fill_in_full_name(context, name):
     context.name = name
     context.app.profile_page.edit_full_name(name)
+
+
+@when('Edit random Phone')
+def fill_in_phone(context):
+    context.phone = generate_random_phone_number()
+    context.app.profile_page.edit_phone(context.phone)
 
 
 @when('Select {topic} role')
