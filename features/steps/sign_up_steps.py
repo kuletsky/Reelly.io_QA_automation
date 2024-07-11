@@ -3,6 +3,7 @@ from behave import given, when, then
 import random
 import string
 from time import sleep
+from features.environment import write_config, read_config
 
 
 def generate_random_email(prefix="testuser", domain="test.com"):
@@ -48,15 +49,35 @@ def fill_in_phone(context):
     context.app.sign_up_page.fill_in_phone(context.phone)
 
 
+# @when('Fill in random Email')
+# def fill_in_email(context):
+#     context.email = generate_random_email()
+#     context.app.sign_up_page.fill_in_email(context.email)
+
+
 @when('Fill in random Email')
 def fill_in_email(context):
     context.email = generate_random_email()
     context.app.sign_up_page.fill_in_email(context.email)
 
+    config = read_config()
+    config['login'] = context.email
+    write_config(config)
+
+
+# @when('Fill in random PSW')
+# def fill_in_psw(context):
+#     context.psw = generate_random_password()
+#     context.app.sign_up_page.fill_in_psw(context.psw)
 
 @when('Fill in random PSW')
 def fill_in_psw(context):
-    context.app.sign_up_page.fill_in_psw(generate_random_password())
+    context.psw = generate_random_password()
+    context.app.sign_up_page.fill_in_psw(context.psw)
+
+    config = read_config()
+    config['psw'] = context.psw
+    write_config(config)
 
 
 @when('Fill in random Company website')

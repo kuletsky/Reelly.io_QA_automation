@@ -1,6 +1,7 @@
 from behave import given, when, then
 import random
 import string
+from features.environment import write_config, read_config
 
 
 def generate_random_phone_number():
@@ -49,6 +50,10 @@ def fill_in_phone(context):
 def fill_in_email(context):
     context.email = generate_random_email()
     context.app.profile_page.edit_email(context.email)
+
+    config = read_config()
+    config['login'] = context.email
+    write_config(config)
 
 
 @when('Edit random Company website')

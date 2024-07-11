@@ -12,3 +12,9 @@ class LoginPage(Page):
         self.input_text(lgn,*self.INPUT_EMAIL)
         self.input_text(psw,*self.INPUT_PSW)
         self.click(*self.BTN_CONTINUE)
+
+    def log_in_to_the_page(self, lgn, psw):
+        # pass
+        self.input_text(lgn, *self.INPUT_EMAIL)
+        self.input_text(psw, *self.INPUT_PSW)
+        self.click(*self.BTN_CONTINUE)

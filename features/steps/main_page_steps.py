@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
 from time import sleep
+from features.environment import write_config, read_config
 
 
 GRID = (By.XPATH, '//div[@wized="listingCardMLS"]')
@@ -19,6 +20,13 @@ def open_in_browser(context):
 @when('Log in to the page {lgn}, {psw}')
 def login_to(context, lgn, psw):
     context.app.login_page.login_to(lgn, psw)
+
+
+@when('Log in to the page')
+def log_in_to_the_page(context):
+    config = read_config()
+    context.app.login_page.log_in_to_the_page(config['login'], config['psw'])
+    # context.app.login_page.log_in_to_the_page(context.email, context.psw)
 
 
 @when('Click on "Secondary" option at the left side menu')

@@ -5,9 +5,30 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.options import Options
+import json
+import os
 
 from app.application import Application
 from log_files.logger import logger
+
+# CONFIG = 'config.json'
+CONFIG = os.path.join(os.path.dirname(__file__), 'config.json')
+
+
+def read_config():
+    with open(CONFIG, 'r') as config:
+        return json.load(config)
+
+
+def write_config(data):
+    with open(CONFIG, 'w') as config:
+        json.dump(data, config)
+
+
+def before_all(context):
+    config = read_config()
+    context.login = config['login']
+    context.password = config['psw']
 
 
 def browser_init(context, scenario_name):

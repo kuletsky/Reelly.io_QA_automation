@@ -5,7 +5,8 @@ Feature: Tests for user profile page
   Background:
     Given Open the main page
     When Click on the "Open in browser"
-    When Log in to the page kuletsky@gmail.com, bJyxsHf5Y@6dnEV
+#    When Log in to the page Tester, 12345678
+    When Log in to the page
 
   Scenario: User can select different roles
     When Click on "Settings" option at the left side menu
@@ -34,6 +35,8 @@ Feature: Tests for user profile page
     And Select language English
     And Click on "Save changes"
     And Click on "Close"
+    And Click on "Edit profile" option
+    Then Verify the right information is present into the input fields on the registration page
 
 
 
