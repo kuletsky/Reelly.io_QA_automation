@@ -55,17 +55,3 @@ class SignUpPage(Page):
 
     def sign_up_page_create_account(self):
         self.click(*self.CREATE_ACCOUNT)
-
-    # def verify_user_phone(self, phone):
-    #     self.verify_input(phone, *self.VERIFY_PHONE)
-
-    # def verify_user_presence(self, name):
-    #     # self.wait_until_visible(*self.FULL_NAME_VERIFACATION)
-    #     self.verify_input(name, *self.FULL_NAME_VERIFACATION)
-
-
-
-    # def select_position_sign(self, position):
-    #     position_dd = self.find_element(*self.POSITION)
-    #     select = Select(position_dd)
-    #     select.select_by_value(position)

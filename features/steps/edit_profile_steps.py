@@ -97,7 +97,7 @@ def verify_role(context, topic):
     context.app.profile_page.verify_option(topic)
 
 
-@then('Verify the right information is present into the input fields on the registration page')
+@then('Verify the right information is present')
 def verify_new_user(context):
     context.app.profile_page.verify_new_user(context.name, context.phone, context.email, context.website)
     # context.app.profile_page.verify_user_presence(context.name)

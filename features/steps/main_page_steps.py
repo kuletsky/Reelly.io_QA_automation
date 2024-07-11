@@ -26,7 +26,6 @@ def login_to(context, lgn, psw):
 def log_in_to_the_page(context):
     config = read_config()
     context.app.login_page.log_in_to_the_page(config['login'], config['psw'])
-    # context.app.login_page.log_in_to_the_page(context.email, context.psw)
 
 
 @when('Click on "Secondary" option at the left side menu')
@@ -42,11 +41,6 @@ def secondary_menu(context):
 @when('Click on "Settings" option at the left side menu')
 def settings_side_menu(context):
     context.app.main_page.menu_settings()
-
-
-# @when('Click on "Connect the company"')
-# def connect_company(context):
-#     context.app.main_page.connect_company()
 
 
 @when('Click on Main page {link_text}')

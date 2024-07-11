@@ -5,7 +5,6 @@ Feature: Tests for user profile page
   Background:
     Given Open the main page
     When Click on the "Open in browser"
-#    When Log in to the page Tester, 12345678
     When Log in to the page
 
   Scenario: User can select different roles
@@ -22,13 +21,12 @@ Feature: Tests for user profile page
     When Select Director / CEO position
     Then Verify that Director / CEO option selected
 
-    Scenario: User can go to settings and edit the personal information
+  Scenario: User can go to settings and edit the personal information
     When Click on "Settings" option at the left side menu
     And Click on "Edit profile" option
     And Edit the Full name Tester
     And Edit random Phone
     And Edit random Email
-#    And Fill in random PSW
     And Edit random Company website
     And Select Broker role
     And Select Director / CEO position
@@ -36,9 +34,7 @@ Feature: Tests for user profile page
     And Click on "Save changes"
     And Click on "Close"
     And Click on "Edit profile" option
-    Then Verify the right information is present into the input fields on the registration page
-
-
+    Then Verify the right information is present
 
   @mobile_web
   Scenario: MOB_WEB User can select different roles

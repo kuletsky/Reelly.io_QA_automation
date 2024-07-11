@@ -16,8 +16,6 @@ def generate_random_phone_number():
     area_code = ''.join(random.choices("0123456789", k=3))
     first_part = ''.join(random.choices("0123456789", k=3))
     second_part = ''.join(random.choices("0123456789", k=4))
-    # phone_number = f"{country_code}{area_code}{first_part}{second_part}"
-    # return phone_number
     return f"{country_code} {area_code} {first_part} {second_part}"
 
 
@@ -49,12 +47,6 @@ def fill_in_phone(context):
     context.app.sign_up_page.fill_in_phone(context.phone)
 
 
-# @when('Fill in random Email')
-# def fill_in_email(context):
-#     context.email = generate_random_email()
-#     context.app.sign_up_page.fill_in_email(context.email)
-
-
 @when('Fill in random Email')
 def fill_in_email(context):
     context.email = generate_random_email()
@@ -64,11 +56,6 @@ def fill_in_email(context):
     config['login'] = context.email
     write_config(config)
 
-
-# @when('Fill in random PSW')
-# def fill_in_psw(context):
-#     context.psw = generate_random_password()
-#     context.app.sign_up_page.fill_in_psw(context.psw)
 
 @when('Fill in random PSW')
 def fill_in_psw(context):
@@ -91,11 +78,6 @@ def select_role_sign(context, topic):
     context.app.sign_up_page.select_role_sign(topic)
 
 
-# @when('Select {position} positions')
-# def select_position_sign(context, position):
-#     context.app.sign_up_page.select_position_sign(position)
-
-
 @when('Select country {country}')
 def select_country(context, country):
     context.app.sign_up_page.select_country(country)
@@ -109,25 +91,3 @@ def select_size(context, size):
 @when('Click "Create account"')
 def click_create_account(context):
     context.app.sign_up_page.sign_up_page_create_account()
-
-
-# @then('Verify the right phone number')
-# def verify_user_phone(context):
-#     context.app.sign_up_page.verify_user_phone(context.phone)
-
-# @then('Verify the right User is present')
-# def verify_user_name(context):
-#     context.app.profile_page.verify_user_presence(context.name)
-
-#
-# def verify_user_email(context):
-#     context.app.sign_up_page.verify_user_presence(generate_random_email())
-#
-#
-# def verify_company(context):
-#     context.app.sign_up_page.verify_company(generate_random_website())
-#
-#
-# def verify_user_phone(context):
-#     context.app.sign_up_page.verify_user_presence(generate_random_phone_number())
-#     sleep(10)

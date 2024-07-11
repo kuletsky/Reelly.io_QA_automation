@@ -18,8 +18,4 @@ Feature: Tests for Sign Up page
     And Click "Create account"
     And Click on "Settings" option at the left side menu
     And Click on "Edit profile" option
-    Then Verify the right information is present into the input fields on the registration page
-#    And Verify the right User name
-#    And Verify the right Phone number
-#    And Verify the right Company website
-#    And Verify the Email
+    Then Verify the right information is present
