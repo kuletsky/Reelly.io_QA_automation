@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/features/steps/main_page_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/main_page_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/off_plan_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/off_plan_steps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/tests/off_plan_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/off_plan_tests.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/off_plan_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/off_plan_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/secondary_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/secondary_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +72,7 @@
     "Behave.off_plan_tests.feature.executor": "Run",
     "Behave.off_plan_tests.feature:Verify that all projects are shown.executor": "Run",
     "Behave.off_plan_tests.feature:Verify that user can click \"Map view\".executor": "Run",
+    "Behave.off_plan_tests.feature:Verify that user can click on Top Menu \"Secondary\".executor": "Run",
     "Behave.secondary_deals_tests.feature.executor": "Run",
     "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
     "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
@@ -100,23 +105,7 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.off_plan_tests.feature:Verify that user can click &quot;Map view&quot;">
-    <configuration name="edit_profile_tests.feature:User can go to settings and edit the personal information" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly.io_QA_automation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/edit_profile_tests.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="User can go to settings and edit the personal information" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Behave.off_plan_tests.feature:Verify that all projects are shown">
     <configuration name="edit_profile_tests.feature:User can select different roles" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -181,13 +170,29 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="off_plan_tests.feature:Verify that user can click on Top Menu &quot;Secondary&quot;" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly.io_QA_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/off_plan_tests.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="Verify that user can click on Top Menu &quot;Secondary&quot;" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Behave.off_plan_tests.feature:Verify that user can click &quot;Map view&quot;" />
         <item itemvalue="Behave.off_plan_tests.feature:Verify that all projects are shown" />
+        <item itemvalue="Behave.off_plan_tests.feature:Verify that user can click on Top Menu &quot;Secondary&quot;" />
+        <item itemvalue="Behave.off_plan_tests.feature:Verify that user can click &quot;Map view&quot;" />
         <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page" />
         <item itemvalue="Behave.edit_profile_tests.feature:User can select different roles" />
-        <item itemvalue="Behave.edit_profile_tests.feature:User can go to settings and edit the personal information" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +243,7 @@
       <workItem from="1720706958259" duration="11342000" />
       <workItem from="1720877604858" duration="3046000" />
       <workItem from="1721090100211" duration="1308000" />
-      <workItem from="1721173417691" duration="3533000" />
+      <workItem from="1721173417691" duration="4897000" />
     </task>
     <servers />
   </component>
@@ -275,6 +280,7 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature.coverage" NAME="main_page_tests.feature Coverage Results" MODIFIED="1720118342994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_go_to_settings_and_edit_the_personal_information.coverage" NAME="user_settings_tests.feature:User can go to settings and edit the personal information Coverage Results" MODIFIED="1720580799814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_select_different_position.coverage" NAME="edit_profile_tests.feature:User can select different position Coverage Results" MODIFIED="1720715996896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_Verify_that_user_can_click_on_Top_Menu__Secondary_.coverage" NAME="off_plan_tests.feature:Verify that user can click on Top Menu &quot;Secondary&quot; Coverage Results" MODIFIED="1721178146327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature.coverage" NAME="secondary_deals_tests.feature Coverage Results" MODIFIED="1717033369364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_access_Whatsapp_and_Telegram_communities.coverage" NAME="user_settings_tests.feature:User can access Whatsapp and Telegram communities Coverage Results" MODIFIED="1717556485620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>

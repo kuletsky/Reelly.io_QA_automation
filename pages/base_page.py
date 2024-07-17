@@ -77,6 +77,16 @@ class Page:
             # print(element.text)
             assert element.text == expected_text, f'Error! Expected {expected_text}, but got {element.text}'
 
+    def verify_all_projects_are_shown(self, *locator):
+        logger.info(f'Verifying all elements are shown: {locator}')
+        self.wait_until_visible(*locator)
+        all_projects = self.find_elements(*locator)
+        print(f'How many elements on the page?: {len(all_projects)}')
+
+        for project in all_projects:
+            assert project, f'Error! Projects are not shown'
+        print(f'All {len(all_projects)} projects are shown')
+
     def verify_text(self, expected_text, *locator):
         actual_text = self.find_element(*locator).text
         assert expected_text == actual_text, f'Error! Expected {expected_text}, but got {actual_text}'
