@@ -21,3 +21,9 @@ Feature: Tests for Off-plan page
     When Click on top Menu "Secondary"
     Then Verify that URL of window contains secondary-listings
     And Verify that all projects on Secondary are shown
+
+  Scenario: Verify that user can click on Top Menu "My listings"
+    When Click on Main page "Off-plan"
+    When Click on top Menu "My listings"
+    Then Verify that URL of window contains my-secondary-listings
+    And Verify that all projects on Secondary are shown
