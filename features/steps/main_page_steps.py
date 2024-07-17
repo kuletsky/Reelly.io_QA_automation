@@ -17,9 +17,9 @@ def open_in_browser(context):
     context.app.main_page.open_in_browser()
 
 
-@when('Log in to the page {lgn}, {psw}')
-def login_to(context, lgn, psw):
-    context.app.login_page.login_to(lgn, psw)
+# @when('Log in to the page {lgn}, {psw}')
+# def login_to(context, lgn, psw):
+#     context.app.login_page.login_to(lgn, psw)
 
 
 @when('Log in to the page')

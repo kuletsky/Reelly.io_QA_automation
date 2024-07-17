@@ -11,7 +11,13 @@ Feature: Tests for Off-plan page
     When Click on Main page "Off-plan"
     Then Verify that all projects are shown
 
-  Scenario: Verify that user can click "Map view"
+  Scenario: Verify that user can click on Top Menu "Map view"
     When Click on Main page "Off-plan"
     When Click on top Menu "Map view"
     Then Verify that URL of window contains map
+
+  Scenario: Verify that user can click on Top Menu "Secondary"
+    When Click on Main page "Off-plan"
+    When Click on top Menu "Secondary"
+    Then Verify that URL of window contains secondary-listings
+    And Verify that all projects are shown

@@ -5,7 +5,7 @@ Feature: Tests for user settings page
   Background:
     Given Open the main page
     When Click on the "Open in browser"
-    When Log in to the page kuletsky@gmail.com, bJyxsHf5Y@6dnEV
+    When Log in to the page
 
   @smoke
   Scenario: User can access Whatsapp and Telegram communities
