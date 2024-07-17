@@ -3,10 +3,10 @@ from selenium.webdriver.common.by import By
 
 
 class OffPlanPage(Page):
-    GRID = (By.XPATH, '//a[@wized="cardOfProperty"]')
+    GRID = (By.CSS_SELECTOR, 'a[wized="cardOfProperty"]')
 
     def verify_all_projects(self):
-        self.wait_until_visible(self.GRID)
+        self.wait_until_visible(*self.GRID)
         all_projects = self.find_elements(*self.GRID)
         print(f'How many elements on the page?: {len(all_projects)}')
 

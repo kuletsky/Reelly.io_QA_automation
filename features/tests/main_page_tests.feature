@@ -5,7 +5,7 @@ Feature: Tests for Main page
   Background:
     Given Open the main page
     When Click on the "Open in browser"
-    When Log in to the page kuletsky@gmail.com, bJyxsHf5Y@6dnEV
+    When Log in to the page
 
   Scenario: Verify the user can click on “Connect the company” on the left side of the main page
     Given Store original window

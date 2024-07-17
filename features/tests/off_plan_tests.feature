@@ -5,9 +5,13 @@ Feature: Tests for Off-plan page
   Background:
     Given Open the main page
     When Click on the "Open in browser"
-    When Log in to the page kuletsky@gmail.com, bJyxsHf5Y@6dnEV
+    When Log in to the page
 
   Scenario: Verify that all projects are shown
     When Click on Main page "Off-plan"
     Then Verify that all projects are shown
 
+  Scenario: Verify that user can click "Map view"
+    When Click on Main page "Off-plan"
+    When Click on top Menu "Map view"
+    Then Verify that URL of window contains map
