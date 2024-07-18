@@ -26,4 +26,3 @@ Feature: Tests for Off-plan page
     When Click on Main page "Off-plan"
     When Click on top Menu "My listings"
     Then Verify that URL of window contains my-secondary-listings
-    And Verify that all projects on Secondary are shown

@@ -21,6 +21,10 @@ Feature: Tests for Main page
     When Click on Main page "Android"
     Then Verify that URL of window contains play.google.com
 
+  Scenario: Verify the user can click on “Main menu” on the left menu of the main page
+    When Click on Main page "Main menu"
+    Then Verify that URL of window contains main-menu
+
   Scenario: Verify the user can click on “Off-plan” on the left menu of the main page
     When Click on Main page "Off-plan"
     Then Verify that URL of window contains soft.reelly.io
@@ -44,4 +48,9 @@ Feature: Tests for Main page
   Scenario: Verify the user can click on “Market” on the left menu of the main page
     When Click on Main page "Market"
     Then Verify that URL of window contains market
+
+  Scenario: Verify the user can change the language from the page
+    Given Click on M
+    When Change the language of the page to Russian
+#    Then Verify the language has changed
 

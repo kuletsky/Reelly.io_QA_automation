@@ -46,3 +46,13 @@ def settings_side_menu(context):
 @when('Click on Main page {link_text}')
 def click_on_link(context, link_text):
     context.app.main_page.click_link(link_text)
+
+
+@when('Change the language of the page to Russian')
+def change_language(context):
+    context.app.main_page.change_language()
+
+
+@then('Verify the language has changed')
+def verify_language(context):
+    context.app.main_page.verify_language()

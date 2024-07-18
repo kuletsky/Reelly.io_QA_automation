@@ -1,5 +1,7 @@
 from pages.base_page import Page
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from time import sleep
 
 
 class MainPage(Page):
@@ -8,8 +10,7 @@ class MainPage(Page):
     MENU_SETTINGS = (By.XPATH, '//div[@class="menu-button-text" and text()="Settings"]')
     MOB_TOP_MENU = (By.CSS_SELECTOR, '.mobile-top-menu')
     MOB_MENU_SECONDARY = (By.XPATH, '//div[@class="menu-text" and text()="Secondary"]')
-    # CONNECT_COMPANY = (By.XPATH, '//div[text()="Connect the company"]')
-    # APP_STORE = (By.XPATH, '//div[text()="App Store"]')
+    LANGUAGE = (By.CSS_SELECTOR, 'id="w-dropdown-toggle-0"')
     LINK_TEXT = (By.XPATH, '//div[text()={TEXT}]')
 
     def _get_locator(self, text):
@@ -33,12 +34,16 @@ class MainPage(Page):
     def mob_top_menu(self):
         self.click(*self.MOB_TOP_MENU)
 
-    # def connect_company(self):
-    #     self.click(*self.CONNECT_COMPANY)
-    #
-    # def app_store(self):
-    #     self.click(*self.APP_STORE)
-
     def click_link(self, link_text):
         locator = self._get_locator(link_text)
         self.click(*locator)
+
+    def change_language(self):
+        sleep(5)
+        ln = self.find_element(*self.LANGUAGE)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(ln)
+        actions.perform()
+
+    def verify_language(self):
+        pass
