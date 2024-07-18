@@ -10,7 +10,7 @@ class MainPage(Page):
     MENU_SETTINGS = (By.XPATH, '//div[@class="menu-button-text" and text()="Settings"]')
     MOB_TOP_MENU = (By.CSS_SELECTOR, '.mobile-top-menu')
     MOB_MENU_SECONDARY = (By.XPATH, '//div[@class="menu-text" and text()="Secondary"]')
-    LANGUAGE = (By.CSS_SELECTOR, 'id="w-dropdown-toggle-0"')
+    LANGUAGE = (By.CSS_SELECTOR, '[id="w-dropdown-toggle-0"]')
     LINK_TEXT = (By.XPATH, '//div[text()={TEXT}]')
 
     def _get_locator(self, text):
@@ -39,11 +39,16 @@ class MainPage(Page):
         self.click(*locator)
 
     def change_language(self):
-        sleep(5)
+        self.wait_until_visible(*self.LANGUAGE)
         ln = self.find_element(*self.LANGUAGE)
+
         actions = ActionChains(self.driver)
         actions.move_to_element(ln)
+        sleep(2)
+        actions.move_by_offset(0, 2)
+        actions.click()
         actions.perform()
+        sleep(5)
 
     def verify_language(self):
         pass

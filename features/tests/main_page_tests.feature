@@ -50,7 +50,7 @@ Feature: Tests for Main page
     Then Verify that URL of window contains market
 
   Scenario: Verify the user can change the language from the page
-    Given Click on M
-    When Change the language of the page to Russian
+    When Click on Main page "Main menu"
+    And Change the language of the page to Russian
 #    Then Verify the language has changed
 
