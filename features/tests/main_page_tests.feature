@@ -52,5 +52,5 @@ Feature: Tests for Main page
   Scenario: Verify the user can change the language from the page
     When Click on Main page "Main menu"
     And Change the language of the page to Russian
-#    Then Verify the language has changed
+    Then Verify the language has changed
 

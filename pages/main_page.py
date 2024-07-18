@@ -11,6 +11,7 @@ class MainPage(Page):
     MOB_TOP_MENU = (By.CSS_SELECTOR, '.mobile-top-menu')
     MOB_MENU_SECONDARY = (By.XPATH, '//div[@class="menu-text" and text()="Secondary"]')
     LANGUAGE = (By.CSS_SELECTOR, '[id="w-dropdown-toggle-0"]')
+    TEXT = (By.CSS_SELECTOR, '.h1-menu')
     LINK_TEXT = (By.XPATH, '//div[text()={TEXT}]')
 
     def _get_locator(self, text):
@@ -44,11 +45,11 @@ class MainPage(Page):
 
         actions = ActionChains(self.driver)
         actions.move_to_element(ln)
-        sleep(2)
-        actions.move_by_offset(0, 2)
+        # sleep(10)
+        actions.move_by_offset(0, 25)
         actions.click()
         actions.perform()
-        sleep(5)
+        sleep(2)
 
     def verify_language(self):
-        pass
+        self.verify_text('Главное меню', *self.TEXT)
