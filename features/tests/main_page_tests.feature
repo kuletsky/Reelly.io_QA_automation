@@ -53,4 +53,3 @@ Feature: Tests for Main page
     When Click on Main page "Main menu"
     And Change the language of the page to Russian
     Then Verify the language has changed
-
