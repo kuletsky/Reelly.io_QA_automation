@@ -37,6 +37,7 @@ class ProfilePage(Page):
 
     def select_position(self, topic):
         topic_dd = self.find_element(*self.TOPIC_POSITION)
+        print(topic_dd)
         select = Select(topic_dd)
         select.select_by_visible_text(topic)
 
