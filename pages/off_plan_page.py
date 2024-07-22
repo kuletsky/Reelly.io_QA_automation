@@ -22,5 +22,8 @@ class OffPlanPage(Page):
         locator = self._get_locator(link_text)
         self.click(*locator)
 
+    def change_location(self, filter_location):
+
+
     def verify_all_projects_on_off_plan(self):
         self.verify_all_projects_are_shown(*self.GRID)
