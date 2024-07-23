@@ -10,7 +10,6 @@ def click_on_top_menu(context, link_text):
 @when('Change Location {filter_location}')
 def change_location(context, filter_location):
     # print(filter_location)
-    # context.total_projects =
     context.app.off_plan_page.change_location(filter_location)
 
 

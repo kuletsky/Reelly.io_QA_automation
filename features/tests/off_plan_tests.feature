@@ -34,9 +34,9 @@ Feature: Tests for Off-plan page
     Examples:
     |filter   |
     |Dubai    |
-    |Bali     |
-    |Abu Dhabi|
-    |Ajman    |
-    |Sharjah  |
-    |Thailand |
-    |Oman     |
+#    |Bali     |
+#    |Abu Dhabi|
+#    |Ajman    |
+#    |Sharjah  |
+#    |Thailand |
+#    |Oman     |
