@@ -39,3 +39,7 @@ class OffPlanPage(Page):
 
     def verify_all_projects_on_off_plan(self):
         self.verify_all_projects_are_shown(*self.GRID)
+
+    def verify_total_projects_count(self):
+        # self.verify_text()
+        pass

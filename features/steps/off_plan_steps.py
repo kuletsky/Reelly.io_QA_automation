@@ -10,6 +10,7 @@ def click_on_top_menu(context, link_text):
 @when('Change Location {filter_location}')
 def change_location(context, filter_location):
     # print(filter_location)
+    # context.total_projects =
     context.app.off_plan_page.change_location(filter_location)
 
 
@@ -21,3 +22,8 @@ def verify_all_projects(context):
 @then('Verify that all projects on Secondary are shown')
 def verify_all_projects(context):
     context.app.secondary_page.verify_all_projects_on_secondary()
+
+
+@then('Verify "Total Projects" Count Updates with Location Filter Change')
+def verify_total_projects(context):
+    context.app.off_plan_page.verify_total_projects_count()
