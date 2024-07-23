@@ -1,6 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from log_files.logger import logger
+from selenium.common.exceptions import TimeoutException
 
 
 class Page:
@@ -40,6 +41,17 @@ class Page:
             EC.invisibility_of_element_located(locator),
             f'Element still visible by: {locator}'
         )
+
+    def wait_until_any_text_appears(self, *locator):
+        def _wait_until_any_text_appears(driver):
+            logger.info(f'Waiting until any text appears by: {locator}')
+            element = driver.find_element(*locator)
+            return bool(element.text.strip())
+
+        try:
+            WebDriverWait(self.driver, 15).until(_wait_until_any_text_appears)
+        except TimeoutException:
+            print(f'Timed out waiting until any text appears by: {locator}')
 
     def input_text(self, text, *locator):
         logger.info(f'Input text by: {text}')
