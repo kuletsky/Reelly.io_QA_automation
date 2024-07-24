@@ -25,4 +25,4 @@ def verify_all_projects(context):
 
 @then('Verify "Total Projects" Count Updates with Location Filter Change')
 def verify_total_projects(context):
-    context.app.off_plan_page.verify_total_projects_count()
+    context.app.off_plan_page.verify_total_projects_count_updates()
