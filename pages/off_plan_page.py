@@ -24,20 +24,22 @@ class OffPlanPage(Page):
 
     def change_location(self, filter_location):
         self.wait_until_any_text_appears(*self.COUNT_PROJECTS)
-        total_projects_before = self.find_element(*self.COUNT_PROJECTS).text
-        print(total_projects_before)
+        self.total_projects_before = self.find_element(*self.COUNT_PROJECTS).text
+        # print(self.total_projects_before)
 
         filter_dd = self.find_element(*self.FILTER_LOCATION)
         select = Select(filter_dd)
         select.select_by_visible_text(filter_location)
 
         self.wait_until_any_text_appears(*self.COUNT_PROJECTS)
-        total_projects_after = self.find_element(*self.COUNT_PROJECTS).text
-        print(total_projects_after)
+        self.total_projects_after = self.find_element(*self.COUNT_PROJECTS).text
+        # print(self.total_projects_after)
 
-        return total_projects_after, total_projects_before
+    def verify_total_projects_count_updates(self):
+        if self.total_projects_before == self.total_projects_after:
+            self.find_element(*self.COUNT_PROJECT).click()
 
     def verify_all_projects_on_off_plan(self):
         self.verify_all_projects_are_shown(*self.GRID)
 
-    # def verify_total_projects_count_updates(self):
+
