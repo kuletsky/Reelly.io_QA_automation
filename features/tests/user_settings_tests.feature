@@ -19,6 +19,14 @@ Feature: Tests for user settings page
     And Click on "News" option
     Then Verify that URL of window contains t.me
 
+  Scenario: User can add a project through the settings
+    When Click on "Settings" option at the left side menu
+    And Click on "Add a project"
+    Then Verify the right page opens
+    When Add some test information to the input fields
+    Then Verify the right information is present in the input fields
+    And Verify “Send an application” button is available and clickable
+
 
   @mobile_web
   Scenario: MOB_WEB User can access Whatsapp and Telegram communities
