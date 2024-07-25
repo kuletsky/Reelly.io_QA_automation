@@ -23,6 +23,11 @@ def verify_all_projects(context):
     context.app.secondary_page.verify_all_projects_on_secondary()
 
 
+@then('Verify "Total Projects" displays accurate project count')
+def verify_total_projects(context):
+    context.app.off_plan_page.verify_total_projects_on_off_plan()
+
+
 @then('Verify "Total Projects" Count Updates with Location Filter Change')
 def verify_total_projects(context):
     context.app.off_plan_page.verify_total_projects_count_updates()

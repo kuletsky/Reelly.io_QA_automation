@@ -27,6 +27,10 @@ Feature: Tests for Off-plan page
     When Click on top Menu "My listings"
     Then Verify that URL of window contains my-secondary-listings
 
+  Scenario: Verify user can see "Total Projects" on Off-plan page
+    When Click on Main page "Off-plan"
+    Then Verify "Total Projects" displays accurate project count
+
   Scenario Outline: Verify "Total Projects" Count Updates with Location Filter Change
     When Click on Main page "Off-plan"
     When Change Location <filter>

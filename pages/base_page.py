@@ -1,5 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+from webdriver_manager.core import driver
+
 from log_files.logger import logger
 from selenium.common.exceptions import TimeoutException
 
@@ -51,7 +53,8 @@ class Page:
         try:
             WebDriverWait(self.driver, 15).until(_wait_until_any_text_appears)
         except TimeoutException:
-            print(f'Timed out waiting until any text appears by: {locator}')
+            print(f'ERROR! Timed out waiting until any text appears by: {locator}')
+            self.find_element(locator)
 
     def input_text(self, text, *locator):
         logger.info(f'Input text by: {text}')
