@@ -27,7 +27,6 @@ Feature: Tests for user settings page
     Then Verify the right information is present in the input fields
     And Verify “Send an application” button is available and clickable
 
-
   @mobile_web
   Scenario: MOB_WEB User can access Whatsapp and Telegram communities
     When Click on "Menu"
