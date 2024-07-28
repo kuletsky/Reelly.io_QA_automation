@@ -10,6 +10,12 @@ class SettingsPage(Page):
     BTN_ADD_PROJECT = (By.XPATH, '//div[@class="setting-text" and text()="Add a project"]')
     INPUT_NAME = (By.CSS_SELECTOR, '[id="Your-name"]')
     INPUT_WEBSITE = (By.CSS_SELECTOR, '[id="Your-company-name"]')
+    INPUT_ROLE = (By.CSS_SELECTOR, '[id="Role"]')
+    INPUT_AGE = (By.CSS_SELECTOR, '[id="Age-of-the-company"]')
+    INPUT_COUNTRY = (By.CSS_SELECTOR, '[id="Country"]')
+    INPUT_PROJECT = (By.CSS_SELECTOR, '[id="Name-project"]')
+    INPUT_PHONE = (By.CSS_SELECTOR, '[id="Phone"]')
+    INPUT_EMAIL = (By.CSS_SELECTOR, '[id="Email-add-project"]')
 
     def generate_random_email(self, prefix="testuser", domain="test.com"):
         suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
@@ -44,4 +50,9 @@ class SettingsPage(Page):
     def add_test_information(self):
         self.input_text('Tester', *self.INPUT_NAME)
         self.input_text(self.generate_random_website(), *self.INPUT_WEBSITE)
-
+        self.input_text('Manager', *self.INPUT_ROLE)
+        self.input_text('11', *self.INPUT_AGE)
+        self.input_text('Test', *self.INPUT_COUNTRY)
+        self.input_text('Test Project', *self.INPUT_PROJECT)
+        self.input_text(self.generate_random_phone_number(), *self.INPUT_PHONE)
+        self.input_text(self.generate_random_email(), *self.INPUT_EMAIL)
