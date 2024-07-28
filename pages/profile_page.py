@@ -18,11 +18,6 @@ class ProfilePage(Page):
     BTN_SAVE_CHANGES = (By.XPATH, '//div[text()="Save changes"]')
     BTN_CLOSE = (By.XPATH, '//a[text()="Close"]')
 
-    # VERIFY_NAME = (By.CSS_SELECTOR, '[id="Fullname"]')
-    # VERIFY_PHONE = (By.CSS_SELECTOR, '[data-name="number"]')
-    # VERIFY_WEBSITE = (By.CSS_SELECTOR, '[data-name="Company name"]')
-    # VERIFY_EMAIL = (By.CSS_SELECTOR, '[data-name="Email 2"]')
-
     def _get_locator(self, text):
         return [self.TOPIC_OPTION[0], self.TOPIC_OPTION[1].replace('{TOPIC_OPTION}', text)]
 
@@ -74,15 +69,3 @@ class ProfilePage(Page):
         self.verify_input(phone, *self.NUMBER)
         self.verify_input(email, *self.EMAIL)
         self.verify_input(website, *self.WEBSITE)
-
-    # def verify_user_presence(self, name):
-    #     self.verify_input(name, *self.VERIFY_NAME)
-    #
-    # def verify_user_phone(self, phone):
-    #     self.verify_input(phone, *self.VERIFY_PHONE)
-    #
-    # def verify_email(self, email):
-    #     self.verify_input(email, *self.VERIFY_EMAIL)
-    #
-    # def verify_company_website(self, website):
-    #     self.verify_input(website, *self.VERIFY_WEBSITE)

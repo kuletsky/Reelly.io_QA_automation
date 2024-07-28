@@ -36,3 +36,14 @@ def go_back_to_original_window(context):
 @when('Click on "News" option')
 def click_on_news(context):
     context.app.settings_page.btn_news()
+
+
+@when('Click on "Add a project"')
+def click_on_add_project(context):
+    context.app.settings_page.btn_add_project()
+
+
+@when('Add some test information to the input fields')
+def add_test_information(context):
+    context.app.settings_page.add_test_information()
+

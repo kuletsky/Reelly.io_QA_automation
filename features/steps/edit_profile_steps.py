@@ -9,8 +9,6 @@ def generate_random_phone_number():
     area_code = ''.join(random.choices("0123456789", k=3))
     first_part = ''.join(random.choices("0123456789", k=3))
     second_part = ''.join(random.choices("0123456789", k=4))
-    # phone_number = f"{country_code}{area_code}{first_part}{second_part}"
-    # return phone_number
     return f"{country_code} {area_code} {first_part} {second_part}"
 
 
@@ -100,27 +98,3 @@ def verify_role(context, topic):
 @then('Verify the right information is present')
 def verify_new_user(context):
     context.app.profile_page.verify_new_user(context.name, context.phone, context.email, context.website)
-    # context.app.profile_page.verify_user_presence(context.name)
-    # context.app.profile_page.verify_user_phone(context.phone)
-    # context.app.profile_page.verify_company_website(context.website)
-    # context.app.profile_page.verify_email(context.email)
-
-
-# @then('Verify the right User name')
-# def verify_user_name(context):
-#     context.app.profile_page.verify_user_presence(context.name)
-#
-#
-# @then('Verify the right Phone number')
-# def verify_user_phone(context):
-#     context.app.profile_page.verify_user_phone(context.phone)
-#
-#
-# @then('Verify the right Company website')
-# def verify_company_website(context):
-#     context.app.profile_page.verify_company_website(context.website)
-#
-#
-# @then('Verify the Email')
-# def verify_email(context):
-#     context.app.profile_page.verify_email(context.email)

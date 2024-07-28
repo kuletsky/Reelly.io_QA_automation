@@ -22,7 +22,7 @@ Feature: Tests for user settings page
   Scenario: User can add a project through the settings
     When Click on "Settings" option at the left side menu
     And Click on "Add a project"
-    Then Verify the right page opens
+    Then Verify that URL of window contains add-a-project
     When Add some test information to the input fields
     Then Verify the right information is present in the input fields
     And Verify “Send an application” button is available and clickable
