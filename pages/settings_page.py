@@ -17,7 +17,7 @@ class SettingsPage(Page):
     INPUT_PHONE = (By.CSS_SELECTOR, '[id="Phone"]')
     INPUT_EMAIL = (By.CSS_SELECTOR, '[id="Email-add-project"]')
     SUBMIT = (By.CSS_SELECTOR, '[type = "submit"]')
-    MSG = (By.CSS_SELECTOR, '[aria-label="Add a project success"]')
+    MSG = (By.XPATH, '//div[text()="Thank you! Your submission has been received!"]')
 
     def generate_random_email(self, prefix="testuser", domain="test.com"):
         suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
@@ -74,5 +74,5 @@ class SettingsPage(Page):
 
     def send_application_button(self):
         self.click(*self.SUBMIT)
-        # self.wait_until_any_text_appears(self.MSG)
+        self.wait_until_any_text_appears(*self.MSG)
         self.verify_text('Thank you! Your submission has been received!', *self.MSG)
