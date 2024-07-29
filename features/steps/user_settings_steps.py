@@ -51,3 +51,8 @@ def add_test_information(context):
 @then('Verify the right information is present in the input fields')
 def verify_test_information(context):
     context.app.settings_page.verify_test_information()
+
+
+@then('Verify “Send an application” button is available and clickable')
+def verify_send_application_button(context):
+    context.app.settings_page.send_application_button()

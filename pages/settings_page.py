@@ -16,6 +16,8 @@ class SettingsPage(Page):
     INPUT_PROJECT = (By.CSS_SELECTOR, '[id="Name-project"]')
     INPUT_PHONE = (By.CSS_SELECTOR, '[id="Phone"]')
     INPUT_EMAIL = (By.CSS_SELECTOR, '[id="Email-add-project"]')
+    SUBMIT = (By.CSS_SELECTOR, '[type = "submit"]')
+    MSG = (By.CSS_SELECTOR, '[aria-label="Add a project success"]')
 
     def generate_random_email(self, prefix="testuser", domain="test.com"):
         suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
@@ -69,3 +71,8 @@ class SettingsPage(Page):
         self.verify_input('Test Project', *self.INPUT_PROJECT)
         self.verify_input(self.phone_number, *self.INPUT_PHONE)
         self.verify_input(self.email, *self.INPUT_EMAIL)
+
+    def send_application_button(self):
+        self.click(*self.SUBMIT)
+        # self.wait_until_any_text_appears(self.MSG)
+        self.verify_text('Thank you! Your submission has been received!', *self.MSG)
