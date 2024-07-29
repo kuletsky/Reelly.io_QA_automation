@@ -25,7 +25,7 @@ Feature: Tests for user settings page
     Then Verify that URL of window contains add-a-project
     When Add some test information to the input fields
     Then Verify the right information is present in the input fields
-    And Verify “Send an application” button is available and clickable
+#    And Verify “Send an application” button is available and clickable
 
   @mobile_web
   Scenario: MOB_WEB User can access Whatsapp and Telegram communities

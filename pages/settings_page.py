@@ -37,7 +37,6 @@ class SettingsPage(Page):
         suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=4))
         return f"{prefix}{suffix}.{domain}"
 
-
     def btn_support(self):
         self.click(*self.BTN_SUPPORT)
 
@@ -49,10 +48,24 @@ class SettingsPage(Page):
 
     def add_test_information(self):
         self.input_text('Tester', *self.INPUT_NAME)
-        self.input_text(self.generate_random_website(), *self.INPUT_WEBSITE)
+        self.website = self.generate_random_website()
+        self.input_text(self.website, *self.INPUT_WEBSITE)
         self.input_text('Manager', *self.INPUT_ROLE)
         self.input_text('11', *self.INPUT_AGE)
         self.input_text('Test', *self.INPUT_COUNTRY)
         self.input_text('Test Project', *self.INPUT_PROJECT)
-        self.input_text(self.generate_random_phone_number(), *self.INPUT_PHONE)
-        self.input_text(self.generate_random_email(), *self.INPUT_EMAIL)
+        self.phone_number = self.generate_random_phone_number()
+        self.input_text(self.phone_number, *self.INPUT_PHONE)
+        self.email = self.generate_random_email()
+        self.input_text(self.email, *self.INPUT_EMAIL)
+
+    def verify_test_information(self):
+        # self.wait_until_any_text_appears(*self.INPUT_EMAIL)
+        self.verify_input('Tester', *self.INPUT_NAME)
+        self.verify_input(self.website, *self.INPUT_WEBSITE)
+        self.verify_input('Manager', *self.INPUT_ROLE)
+        self.verify_input('11', *self.INPUT_AGE)
+        self.verify_input('Test', *self.INPUT_COUNTRY)
+        self.verify_input('Test Project', *self.INPUT_PROJECT)
+        self.verify_input(self.phone_number, *self.INPUT_PHONE)
+        self.verify_input(self.email, *self.INPUT_EMAIL)

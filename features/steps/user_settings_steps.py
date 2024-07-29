@@ -46,3 +46,8 @@ def click_on_add_project(context):
 @when('Add some test information to the input fields')
 def add_test_information(context):
     context.app.settings_page.add_test_information()
+
+
+@then('Verify the right information is present in the input fields')
+def verify_test_information(context):
+    context.app.settings_page.verify_test_information()
