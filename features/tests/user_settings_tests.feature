@@ -27,6 +27,13 @@ Feature: Tests for user settings page
     Then Verify the right information is present in the input fields
     And Verify “Send an application” button is available and clickable
 
+  Scenario: User can open the community page
+    When Click on "Settings" option at the left side menu
+    When Click on "Community" option
+    Then Verify the right page opens
+    And Verify “Contact support” button is available and clickable.
+
+
   @mobile_web
   Scenario: MOB_WEB User can access Whatsapp and Telegram communities
     When Click on "Menu"
