@@ -30,8 +30,8 @@ Feature: Tests for user settings page
   Scenario: User can open the community page
     When Click on "Settings" option at the left side menu
     When Click on "Community" option
-    Then Verify the right page opens
-    And Verify “Contact support” button is available and clickable.
+    Then Verify that URL of window contains community
+    And Verify “Contact support” button is available and clickable
 
 
   @mobile_web

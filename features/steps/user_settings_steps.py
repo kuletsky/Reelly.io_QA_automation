@@ -18,11 +18,6 @@ def switch_window(context):
     context.app.settings_page.switch_to_new_window()
 
 
-@then('Verify that URL of window contains {partial_url}')
-def verify_whatsapp_url(context, partial_url):
-    context.app.settings_page.verify_partial_url(partial_url)
-
-
 @when('Close current page')
 def close(context):
     context.app.settings_page.close()
@@ -48,6 +43,11 @@ def add_test_information(context):
     context.app.settings_page.add_test_information()
 
 
+@when('Click on "Community" option')
+def click_on_community(context):
+    context.app.settings_page.btn_community()
+
+
 @then('Verify the right information is present in the input fields')
 def verify_test_information(context):
     context.app.settings_page.verify_test_information()
@@ -56,3 +56,13 @@ def verify_test_information(context):
 @then('Verify “Send an application” button is available and clickable')
 def verify_send_application_button(context):
     context.app.settings_page.send_application_button()
+
+
+@then('Verify that URL of window contains {partial_url}')
+def verify_whatsapp_url(context, partial_url):
+    context.app.settings_page.verify_partial_url(partial_url)
+
+
+@then('Verify “Contact support” button is available and clickable')
+def verify_contact_support_button(context):
+    context.app.community_page.verify_contact_support_button()

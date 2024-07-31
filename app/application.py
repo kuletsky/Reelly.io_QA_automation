@@ -1,3 +1,4 @@
+from pages.community_page import CommunityPage
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
 from pages.off_plan_page import OffPlanPage
@@ -10,6 +11,7 @@ from pages.sign_up_page import SignUpPage
 class Application:
 
     def __init__(self, driver):
+        self.community_page = CommunityPage(driver)
         self.login_page = LoginPage(driver)
         self.off_plan_page = OffPlanPage(driver)
         self.main_page = MainPage(driver)

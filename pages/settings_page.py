@@ -6,6 +6,7 @@ from pages.base_page import Page
 
 class SettingsPage(Page):
     BTN_SUPPORT = (By.XPATH, '//div[@class="setting-text" and text()="Support"]')
+    BTN_COMMUNITY = (By.XPATH, '//div[@class="setting-text" and text()="Community"]')
     BTN_NEWS = (By.XPATH, '//div[@class="setting-text" and text()="News"]')
     BTN_ADD_PROJECT = (By.XPATH, '//div[@class="setting-text" and text()="Add a project"]')
     INPUT_NAME = (By.CSS_SELECTOR, '[id="Your-name"]')
@@ -47,6 +48,9 @@ class SettingsPage(Page):
 
     def btn_add_project(self):
         self.click(*self.BTN_ADD_PROJECT)
+
+    def btn_community(self):
+        self.click(*self.BTN_COMMUNITY)
 
     def add_test_information(self):
         self.input_text('Tester', *self.INPUT_NAME)
