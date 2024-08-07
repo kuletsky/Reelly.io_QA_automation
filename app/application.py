@@ -1,4 +1,5 @@
 from pages.community_page import CommunityPage
+from pages.contact_us_page import ContactUsPage
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
 from pages.off_plan_page import OffPlanPage
@@ -12,6 +13,7 @@ class Application:
 
     def __init__(self, driver):
         self.community_page = CommunityPage(driver)
+        self.contact_us_page = ContactUsPage(driver)
         self.login_page = LoginPage(driver)
         self.off_plan_page = OffPlanPage(driver)
         self.main_page = MainPage(driver)

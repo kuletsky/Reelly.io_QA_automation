@@ -33,6 +33,13 @@ Feature: Tests for user settings page
     Then Verify that URL of window contains community
     And Verify “Contact support” button is available and clickable
 
+  Scenario: User can open the Contact us page
+    When Click on "Settings" option at the left side menu
+    And Click on "Contact us" option
+    Then Verify that URL of window contains contact-us
+    And Verify there are at least 4 social media icons
+    And Verify “Connect the company” button is available and clickable
+
 
   @mobile_web
   Scenario: MOB_WEB User can access Whatsapp and Telegram communities

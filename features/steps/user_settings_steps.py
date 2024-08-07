@@ -48,6 +48,11 @@ def click_on_community(context):
     context.app.settings_page.btn_community()
 
 
+@when('Click on "Contact us" option')
+def click_on_contact_us(context):
+    context.app.settings_page.btn_contact_us()
+
+
 @then('Verify the right information is present in the input fields')
 def verify_test_information(context):
     context.app.settings_page.verify_test_information()
@@ -63,6 +68,16 @@ def verify_whatsapp_url(context, partial_url):
     context.app.settings_page.verify_partial_url(partial_url)
 
 
+@then('Verify there are at least {number} social media icons')
+def verify_number_of_social_media_icons(context, number):
+    context.app.settings_page.verify_number_of_social_media_icons(number)
+
+
 @then('Verify “Contact support” button is available and clickable')
 def verify_contact_support_button(context):
     context.app.community_page.verify_contact_support_button()
+
+
+@then('Verify “Connect the company” button is available and clickable')
+def verify_connect_button(context):
+    context.app.contact_us_page.verify_connect_button()

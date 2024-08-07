@@ -1,7 +1,7 @@
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.firefox.service import Service as FirefoxService
-from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.options import Options
@@ -38,9 +38,9 @@ def browser_init(context, scenario_name):
     """
 
     ### CHROME ###
-    driver_path = ChromeDriverManager().install()
-    service = Service(driver_path)
-    context.driver = webdriver.Chrome(service=service)
+    # driver_path = ChromeDriverManager().install()
+    # service = Service(driver_path)
+    # context.driver = webdriver.Chrome(service=service)
 
     ### FIREFOX ###
     # driver_path = GeckoDriverManager().install()
@@ -78,21 +78,21 @@ def browser_init(context, scenario_name):
     #                                   options=options)
 
     ### BROWSERSTACK ###
-    # bs_user = 'kuletsky_D18EAl'
-    # bs_key = 'cjrUnYqkUDR8xPwnqxXj'
-    # url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
-    #
-    # options = Options()
-    # bstack_options = {
-    #     'os': 'OS X',
-    #     'osVersion': 'Monterey',
-    #     # 'deviceName': 'Pixel 7',
-    #     # "realMobile": "true",
-    #     'browserName': 'Chrome',
-    #     'sessionName': scenario_name
-    # }
-    # options.set_capability('bstack:options', bstack_options)
-    # context.driver = webdriver.Remote(command_executor=url, options=options)
+    bs_user = 'kuletsky_D18EAl'
+    bs_key = 'cjrUnYqkUDR8xPwnqxXj'
+    url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
+
+    options = Options()
+    bstack_options = {
+        'os': 'OS X',
+        'osVersion': 'Monterey',
+        # 'deviceName': 'Pixel 7',
+        # "realMobile": "true",
+        'browserName': 'Chrome',
+        'sessionName': scenario_name
+    }
+    options.set_capability('bstack:options', bstack_options)
+    context.driver = webdriver.Remote(command_executor=url, options=options)
 
     context.driver.maximize_window()
     context.driver.implicitly_wait(6)

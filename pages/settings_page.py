@@ -5,6 +5,7 @@ from pages.base_page import Page
 
 
 class SettingsPage(Page):
+    BTN_CONTUCT_US = (By.XPATH, '//div[@class="setting-text" and text()="Contact us"]')
     BTN_SUPPORT = (By.XPATH, '//div[@class="setting-text" and text()="Support"]')
     BTN_COMMUNITY = (By.XPATH, '//div[@class="setting-text" and text()="Community"]')
     BTN_NEWS = (By.XPATH, '//div[@class="setting-text" and text()="News"]')
@@ -19,6 +20,7 @@ class SettingsPage(Page):
     INPUT_EMAIL = (By.CSS_SELECTOR, '[id="Email-add-project"]')
     SUBMIT = (By.CSS_SELECTOR, '[type = "submit"]')
     MSG = (By.XPATH, '//div[text()="Thank you! Your submission has been received!"]')
+    SOCIAL_MEDIA_ICONS = (By.CSS_SELECTOR, '.text-social')
 
     def generate_random_email(self, prefix="testuser", domain="test.com"):
         suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
@@ -52,6 +54,9 @@ class SettingsPage(Page):
     def btn_community(self):
         self.click(*self.BTN_COMMUNITY)
 
+    def btn_contact_us(self):
+        self.click(*self.BTN_CONTUCT_US)
+
     def add_test_information(self):
         self.input_text('Tester', *self.INPUT_NAME)
         self.website = self.generate_random_website()
@@ -80,3 +85,14 @@ class SettingsPage(Page):
         self.click(*self.SUBMIT)
         self.wait_until_any_text_appears(*self.MSG)
         self.verify_text('Thank you! Your submission has been received!', *self.MSG)
+
+    def verify_number_of_social_media_icons(self, number):
+        all_social = self.find_elements(*self.SOCIAL_MEDIA_ICONS)
+        print(f'How many SOCIAL on the page?: {len(all_social)}')
+        # all_elements = self.find_elements(*locator)
+        # print(f'How many elements on the page?: {len(all_elements)}')
+
+        assert len(all_social) >= int(number), f'Error! Expected {number}, but got {len(all_social)}'
+        # for element in all_elements:
+            # print(element.text)
+            # assert element.text == expected_text, f'Error! Expected {expected_text}, but got {element.text}'
