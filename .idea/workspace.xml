@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/user_guide_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/user_quide_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/user_quide_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/user_settings_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/user_settings_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/tests/user_guide_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/user_guide_tests.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/settings_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/settings_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +270,7 @@
       <workItem from="1723069472348" duration="2176000" />
       <workItem from="1723500636890" duration="491000" />
       <workItem from="1723501210868" duration="2004000" />
-      <workItem from="1723593891656" duration="1540000" />
+      <workItem from="1723593891656" duration="2245000" />
     </task>
     <servers />
   </component>
