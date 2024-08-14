@@ -10,6 +10,7 @@ class SettingsPage(Page):
     BTN_COMMUNITY = (By.XPATH, '//div[@class="setting-text" and text()="Community"]')
     BTN_NEWS = (By.XPATH, '//div[@class="setting-text" and text()="News"]')
     BTN_ADD_PROJECT = (By.XPATH, '//div[@class="setting-text" and text()="Add a project"]')
+    BTN_USER_GUIDE = (By.XPATH, '//div[@class="setting-text" and text()="User guide"]')
     INPUT_NAME = (By.CSS_SELECTOR, '[id="Your-name"]')
     INPUT_WEBSITE = (By.CSS_SELECTOR, '[id="Your-company-name"]')
     INPUT_ROLE = (By.CSS_SELECTOR, '[id="Role"]')
@@ -56,6 +57,9 @@ class SettingsPage(Page):
 
     def btn_contact_us(self):
         self.click(*self.BTN_CONTUCT_US)
+
+    def btn_user_guide(self):
+        self.click(*self.BTN_USER_GUIDE)
 
     def add_test_information(self):
         self.input_text('Tester', *self.INPUT_NAME)

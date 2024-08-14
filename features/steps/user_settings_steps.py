@@ -52,6 +52,10 @@ def click_on_community(context):
 def click_on_contact_us(context):
     context.app.settings_page.btn_contact_us()
 
+@when('Click on "User Guide" option')
+def click_on_user_guide(context):
+    context.app.settings_page.btn_user_guide()
+
 
 @then('Verify the right information is present in the input fields')
 def verify_test_information(context):

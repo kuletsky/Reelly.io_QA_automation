@@ -7,6 +7,7 @@ from pages.profile_page import ProfilePage
 from pages.secondary_page import SecondaryPage
 from pages.settings_page import SettingsPage
 from pages.sign_up_page import SignUpPage
+from pages.user_guide_page import UserGuidePage
 
 
 class Application:
@@ -21,3 +22,4 @@ class Application:
         self.secondary_page = SecondaryPage(driver)
         self.settings_page = SettingsPage(driver)
         self.sign_up_page = SignUpPage(driver)
+        self.user_guide_page = UserGuidePage(driver)

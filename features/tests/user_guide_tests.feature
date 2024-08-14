@@ -9,5 +9,5 @@ Feature: Tests for user guide page
 
     Scenario: User can open User guide page
       When Click on "Settings" option at the left side menu
-      And Click on "User Guide"
+      And Click on "User Guide" option
       Then Verify that URL of window contains user-guide
