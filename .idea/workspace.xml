@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +108,7 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.user_guide_tests.feature:User can open User guide page">
+  <component name="RunManager" selected="Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page">
     <configuration name="main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -193,10 +191,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page" />
         <item itemvalue="Behave.user_guide_tests.feature:User can open User guide page" />
         <item itemvalue="Behave.user_settings_tests.feature:User can open the Contact us page" />
         <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Main menu” on the left menu of the main page" />
-        <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page" />
         <item itemvalue="Behave.user_settings_tests.feature:User can open the community page" />
       </list>
     </recent_temporary>
@@ -271,6 +269,7 @@
       <workItem from="1723501210868" duration="2004000" />
       <workItem from="1723593891656" duration="7327000" />
       <workItem from="1723767765374" duration="765000" />
+      <workItem from="1723853735727" duration="649000" />
     </task>
     <servers />
   </component>
