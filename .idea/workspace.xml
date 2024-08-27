@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="" />
+    <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/features/tests/change_psw_tests.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Gherkin feature file" />
         <option value="Python Script" />
+        <option value="Gherkin feature file" />
       </list>
     </option>
   </component>
@@ -202,8 +205,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
-        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.428" />
+        <option value="bundled-python-sdk-80e8e15d2b92-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.428" />
       </set>
     </attachedChunks>
   </component>
@@ -269,7 +272,9 @@
       <workItem from="1723501210868" duration="2004000" />
       <workItem from="1723593891656" duration="7327000" />
       <workItem from="1723767765374" duration="765000" />
-      <workItem from="1723853735727" duration="4924000" />
+      <workItem from="1723853735727" duration="8362000" />
+      <workItem from="1724459276197" duration="2585000" />
+      <workItem from="1724802323111" duration="516000" />
     </task>
     <servers />
   </component>
