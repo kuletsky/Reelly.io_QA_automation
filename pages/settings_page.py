@@ -11,6 +11,7 @@ class SettingsPage(Page):
     BTN_NEWS = (By.XPATH, '//div[@class="setting-text" and text()="News"]')
     BTN_ADD_PROJECT = (By.XPATH, '//div[@class="setting-text" and text()="Add a project"]')
     BTN_USER_GUIDE = (By.XPATH, '//div[@class="setting-text" and text()="User guide"]')
+    BTN_CHANGE_PSW = (By.XPATH, '//div[@class="setting-text" and text()="Change password"]')
     INPUT_NAME = (By.CSS_SELECTOR, '[id="Your-name"]')
     INPUT_WEBSITE = (By.CSS_SELECTOR, '[id="Your-company-name"]')
     INPUT_ROLE = (By.CSS_SELECTOR, '[id="Role"]')
@@ -60,6 +61,9 @@ class SettingsPage(Page):
 
     def btn_user_guide(self):
         self.click(*self.BTN_USER_GUIDE)
+
+    def btn_change_password(self):
+        self.click(*self.BTN_CHANGE_PSW)
 
     def add_test_information(self):
         self.input_text('Tester', *self.INPUT_NAME)

@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/features/tests/change_psw_tests.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/steps/change_psw_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/change_psw_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/user_settings_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/user_settings_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/tests/change_psw_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/change_psw_tests.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/tests/user_guide_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/user_guide_tests.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/settings_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/settings_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Python Script" />
         <option value="Gherkin feature file" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -274,7 +279,7 @@
       <workItem from="1723767765374" duration="765000" />
       <workItem from="1723853735727" duration="8362000" />
       <workItem from="1724459276197" duration="2585000" />
-      <workItem from="1724802323111" duration="516000" />
+      <workItem from="1724802323111" duration="1498000" />
     </task>
     <servers />
   </component>
