@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +274,7 @@
       <workItem from="1723767765374" duration="765000" />
       <workItem from="1723853735727" duration="8362000" />
       <workItem from="1724459276197" duration="2585000" />
-      <workItem from="1724802323111" duration="4491000" />
+      <workItem from="1724802323111" duration="5499000" />
     </task>
     <servers />
   </component>
@@ -295,7 +295,7 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_steps.coverage" NAME="secondary_deals_steps Coverage Results" MODIFIED="1716943009283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features/steps" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_go_to_settings_and_edit_the_personal_information.coverage" NAME="edit_profile_tests.feature:User can go to settings and edit the personal information Coverage Results" MODIFIED="1720877960751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_select_different_roles.coverage" NAME="edit_profile_tests.feature:User can select different roles Coverage Results" MODIFIED="1720878025568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$change_psw_tests_feature_User_can_open_change_password_page.coverage" NAME="change_psw_tests.feature:User can open change password page Coverage Results" MODIFIED="1724870972216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$change_psw_tests_feature_User_can_open_change_password_page.coverage" NAME="change_psw_tests.feature:User can open change password page Coverage Results" MODIFIED="1724871222411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_MOB_WEB_Verify_user_can_filter_the_Secondary_deals_by__want_to_buy__option.coverage" NAME="secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to buy&quot; option Coverage Results" MODIFIED="1718415416518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_Verify_user_can_see__Total_Projects__on_Off_plan_page.coverage" NAME="off_plan_tests.feature:Verify user can see &quot;Total Projects&quot; on Off-plan page Coverage Results" MODIFIED="1721872531325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_open_the_Contact_us_page.coverage" NAME="user_settings_tests.feature:User can open the Contact us page Coverage Results" MODIFIED="1723501378657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
