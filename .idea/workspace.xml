@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/features/tests/subscribtion_tests.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/steps/subscription_steps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/subscription_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/user_settings_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/user_settings_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/settings_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/settings_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Python Script" />
         <option value="Gherkin feature file" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -48,63 +49,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Behave.change_psw_tests.feature:User can open change password page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile.feature:MOB_WEB User can select different position.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile.feature:MOB_WEB User can select different roles.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile.feature:User can select different position.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile.feature:User can select different roles.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile_tests.feature:User can go to settings and edit the personal information.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile_tests.feature:User can select different position.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.edit_profile_tests.feature:User can select different roles.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can change the language from the page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “App Store” on the left side of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “Connect the company” on the left side of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “Main menu” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “Market” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “Referral ” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “Secondary” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.main_page_tests.feature:Verify the user can click on “University” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_plan_tests.feature.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_plan_tests.feature:Verify \&quot;Total Projects\&quot; Count Updates with Location Filter Change.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_plan_tests.feature:Verify that all projects are shown.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_plan_tests.feature:Verify that user can click \&quot;Map view\&quot;.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_plan_tests.feature:Verify that user can click on Top Menu \&quot;My listings\&quot;.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_plan_tests.feature:Verify that user can click on Top Menu \&quot;Secondary\&quot;.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.off_plan_tests.feature:Verify user can see \&quot;Total Projects\&quot; on Off-plan page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \&quot;want to buy\&quot; option.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \&quot;want to sell\&quot; option.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \&quot;want to buy\&quot; option.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \&quot;want to sell\&quot; option.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.sign_up_tests.feature:Verify the right information is present into the input fields on the registration page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.user_guide_tests.feature:User can open User guide page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.user_settings_tests.feature:User can add a project through the settings.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.user_settings_tests.feature:User can go to settings and edit the personal information.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.user_settings_tests.feature:User can open the Contact us page.executor&quot;: &quot;Run&quot;,
-    &quot;Behave.user_settings_tests.feature:User can open the community page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.environment.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.secondary_deals_steps.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/costa/code/QA/Projects/Reelly.io_QA_automation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Behave.change_psw_tests.feature:User can open change password page.executor": "Run",
+    "Behave.edit_profile.feature:MOB_WEB User can select different position.executor": "Run",
+    "Behave.edit_profile.feature:MOB_WEB User can select different roles.executor": "Run",
+    "Behave.edit_profile.feature:User can select different position.executor": "Run",
+    "Behave.edit_profile.feature:User can select different roles.executor": "Run",
+    "Behave.edit_profile_tests.feature:User can go to settings and edit the personal information.executor": "Run",
+    "Behave.edit_profile_tests.feature:User can select different position.executor": "Run",
+    "Behave.edit_profile_tests.feature:User can select different roles.executor": "Run",
+    "Behave.main_page_tests.feature.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can change the language from the page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “App Store” on the left side of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Connect the company” on the left side of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Main menu” on the left menu of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Market” on the left menu of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Referral ” on the left menu of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “Secondary” on the left menu of the main page.executor": "Run",
+    "Behave.main_page_tests.feature:Verify the user can click on “University” on the left menu of the main page.executor": "Run",
+    "Behave.off_plan_tests.feature.executor": "Run",
+    "Behave.off_plan_tests.feature:Verify \"Total Projects\" Count Updates with Location Filter Change.executor": "Run",
+    "Behave.off_plan_tests.feature:Verify that all projects are shown.executor": "Run",
+    "Behave.off_plan_tests.feature:Verify that user can click \"Map view\".executor": "Run",
+    "Behave.off_plan_tests.feature:Verify that user can click on Top Menu \"My listings\".executor": "Run",
+    "Behave.off_plan_tests.feature:Verify that user can click on Top Menu \"Secondary\".executor": "Run",
+    "Behave.off_plan_tests.feature:Verify user can see \"Total Projects\" on Off-plan page.executor": "Run",
+    "Behave.secondary_deals_tests.feature.executor": "Run",
+    "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
+    "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
+    "Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
+    "Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
+    "Behave.sign_up_tests.feature:Verify the right information is present into the input fields on the registration page.executor": "Run",
+    "Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page.executor": "Run",
+    "Behave.subscribtion_tests.feature:User can open Subscription & payments page.executor": "Run",
+    "Behave.user_guide_tests.feature:User can open User guide page.executor": "Run",
+    "Behave.user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities.executor": "Run",
+    "Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities.executor": "Run",
+    "Behave.user_settings_tests.feature:User can add a project through the settings.executor": "Run",
+    "Behave.user_settings_tests.feature:User can go to settings and edit the personal information.executor": "Run",
+    "Behave.user_settings_tests.feature:User can open the Contact us page.executor": "Run",
+    "Behave.user_settings_tests.feature:User can open the community page.executor": "Run",
+    "Python.environment.executor": "Debug",
+    "Python.secondary_deals_steps.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/costa/code/QA/Projects/Reelly.io_QA_automation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -114,7 +116,7 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.change_psw_tests.feature:User can open change password page">
+  <component name="RunManager" selected="Behave.subscribtion_tests.feature:User can open Subscription &amp; payments page">
     <configuration name="change_psw_tests.feature:User can open change password page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -147,7 +149,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main_page_tests.feature:Verify the user can click on “Main menu” on the left menu of the main page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="subscribtion_tests.feature:User can open Subscription &amp; payments page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,8 +160,8 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/main_page_tests.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="Verify the user can click on “Main menu” on the left menu of the main page" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/subscribtion_tests.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open Subscription &amp; payments page" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -197,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.subscribtion_tests.feature:User can open Subscription &amp; payments page" />
         <item itemvalue="Behave.change_psw_tests.feature:User can open change password page" />
         <item itemvalue="Behave.user_guide_tests.feature:User can open User guide page" />
         <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page" />
         <item itemvalue="Behave.user_settings_tests.feature:User can open the Contact us page" />
-        <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Main menu” on the left menu of the main page" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +280,7 @@
       <workItem from="1723853735727" duration="8362000" />
       <workItem from="1724459276197" duration="2585000" />
       <workItem from="1724802323111" duration="6868000" />
-      <workItem from="1725410145870" duration="539000" />
+      <workItem from="1725410145870" duration="2507000" />
     </task>
     <servers />
   </component>
@@ -289,8 +291,8 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_roles.coverage" NAME="edit_profile.feature:User can select different roles Coverage Results" MODIFIED="1718159721747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_MOB_WEB_Verify_user_can_filter_the_Secondary_deals_by__want_to_sell__option.coverage" NAME="secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to sell&quot; option Coverage Results" MODIFIED="1718240473785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Calendar_on_the_left_menu_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page Coverage Results" MODIFIED="1720228646123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature.coverage" NAME="off_plan_tests.feature Coverage Results" MODIFIED="1720488654157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_select_different_position.coverage" NAME="edit_profile_tests.feature:User can select different position Coverage Results" MODIFIED="1721614643018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature.coverage" NAME="off_plan_tests.feature Coverage Results" MODIFIED="1720488654157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_go_to_settings_and_edit_the_personal_information.coverage" NAME="user_settings_tests.feature:User can go to settings and edit the personal information Coverage Results" MODIFIED="1720580799814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Off_plan_on_the_left_menu_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page Coverage Results" MODIFIED="1721174686453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_add_a_project_through_the_settings.coverage" NAME="user_settings_tests.feature:User can add a project through the settings Coverage Results" MODIFIED="1723069847270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -302,6 +304,7 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$change_psw_tests_feature_User_can_open_change_password_page.coverage" NAME="change_psw_tests.feature:User can open change password page Coverage Results" MODIFIED="1724871222411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_MOB_WEB_Verify_user_can_filter_the_Secondary_deals_by__want_to_buy__option.coverage" NAME="secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to buy&quot; option Coverage Results" MODIFIED="1718415416518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_Verify_user_can_see__Total_Projects__on_Off_plan_page.coverage" NAME="off_plan_tests.feature:Verify user can see &quot;Total Projects&quot; on Off-plan page Coverage Results" MODIFIED="1721872531325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$subscribtion_tests_feature_User_can_open_Subscription___payments_page.coverage" NAME="subscribtion_tests.feature:User can open Subscription &amp; payments page Coverage Results" MODIFIED="1725412490942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_open_the_Contact_us_page.coverage" NAME="user_settings_tests.feature:User can open the Contact us page Coverage Results" MODIFIED="1723501378657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Main_menu_on_the_left_menu_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Main menu” on the left menu of the main page Coverage Results" MODIFIED="1723501342646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_Verify_that_user_can_click_on_Top_Menu__My_listings_.coverage" NAME="off_plan_tests.feature:Verify that user can click on Top Menu &quot;My listings&quot; Coverage Results" MODIFIED="1721249833219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
