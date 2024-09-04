@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/features/tests/subscribtion_tests.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/user_settings_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/user_settings_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/settings_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/settings_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Gherkin feature file" />
         <option value="Python Script" />
+        <option value="Gherkin feature file" />
       </list>
     </option>
   </component>
@@ -45,63 +48,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Behave.change_psw_tests.feature:User can open change password page.executor": "Run",
-    "Behave.edit_profile.feature:MOB_WEB User can select different position.executor": "Run",
-    "Behave.edit_profile.feature:MOB_WEB User can select different roles.executor": "Run",
-    "Behave.edit_profile.feature:User can select different position.executor": "Run",
-    "Behave.edit_profile.feature:User can select different roles.executor": "Run",
-    "Behave.edit_profile_tests.feature:User can go to settings and edit the personal information.executor": "Run",
-    "Behave.edit_profile_tests.feature:User can select different position.executor": "Run",
-    "Behave.edit_profile_tests.feature:User can select different roles.executor": "Run",
-    "Behave.main_page_tests.feature.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can change the language from the page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “App Store” on the left side of the main page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “Connect the company” on the left side of the main page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “Main menu” on the left menu of the main page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “Market” on the left menu of the main page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “Referral ” on the left menu of the main page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “Secondary” on the left menu of the main page.executor": "Run",
-    "Behave.main_page_tests.feature:Verify the user can click on “University” on the left menu of the main page.executor": "Run",
-    "Behave.off_plan_tests.feature.executor": "Run",
-    "Behave.off_plan_tests.feature:Verify \"Total Projects\" Count Updates with Location Filter Change.executor": "Run",
-    "Behave.off_plan_tests.feature:Verify that all projects are shown.executor": "Run",
-    "Behave.off_plan_tests.feature:Verify that user can click \"Map view\".executor": "Run",
-    "Behave.off_plan_tests.feature:Verify that user can click on Top Menu \"My listings\".executor": "Run",
-    "Behave.off_plan_tests.feature:Verify that user can click on Top Menu \"Secondary\".executor": "Run",
-    "Behave.off_plan_tests.feature:Verify user can see \"Total Projects\" on Off-plan page.executor": "Run",
-    "Behave.secondary_deals_tests.feature.executor": "Run",
-    "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
-    "Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
-    "Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \"want to buy\" option.executor": "Run",
-    "Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \"want to sell\" option.executor": "Run",
-    "Behave.sign_up_tests.feature:Verify the right information is present into the input fields on the registration page.executor": "Run",
-    "Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page.executor": "Run",
-    "Behave.user_guide_tests.feature:User can open User guide page.executor": "Run",
-    "Behave.user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities.executor": "Run",
-    "Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities.executor": "Run",
-    "Behave.user_settings_tests.feature:User can add a project through the settings.executor": "Run",
-    "Behave.user_settings_tests.feature:User can go to settings and edit the personal information.executor": "Run",
-    "Behave.user_settings_tests.feature:User can open the Contact us page.executor": "Run",
-    "Behave.user_settings_tests.feature:User can open the community page.executor": "Run",
-    "Python.environment.executor": "Debug",
-    "Python.secondary_deals_steps.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/costa/code/QA/Projects/Reelly.io_QA_automation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Behave.change_psw_tests.feature:User can open change password page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile.feature:MOB_WEB User can select different position.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile.feature:MOB_WEB User can select different roles.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile.feature:User can select different position.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile.feature:User can select different roles.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile_tests.feature:User can go to settings and edit the personal information.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile_tests.feature:User can select different position.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.edit_profile_tests.feature:User can select different roles.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can change the language from the page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “App Store” on the left side of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “Connect the company” on the left side of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “Main menu” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “Market” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “Referral ” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “Secondary” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.main_page_tests.feature:Verify the user can click on “University” on the left menu of the main page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.off_plan_tests.feature.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.off_plan_tests.feature:Verify \&quot;Total Projects\&quot; Count Updates with Location Filter Change.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.off_plan_tests.feature:Verify that all projects are shown.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.off_plan_tests.feature:Verify that user can click \&quot;Map view\&quot;.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.off_plan_tests.feature:Verify that user can click on Top Menu \&quot;My listings\&quot;.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.off_plan_tests.feature:Verify that user can click on Top Menu \&quot;Secondary\&quot;.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.off_plan_tests.feature:Verify user can see \&quot;Total Projects\&quot; on Off-plan page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \&quot;want to buy\&quot; option.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by \&quot;want to sell\&quot; option.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \&quot;want to buy\&quot; option.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by \&quot;want to sell\&quot; option.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.sign_up_tests.feature:Verify the right information is present into the input fields on the registration page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.user_guide_tests.feature:User can open User guide page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.user_settings_tests.feature:User can add a project through the settings.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.user_settings_tests.feature:User can go to settings and edit the personal information.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.user_settings_tests.feature:User can open the Contact us page.executor&quot;: &quot;Run&quot;,
+    &quot;Behave.user_settings_tests.feature:User can open the community page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.environment.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.secondary_deals_steps.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/costa/code/QA/Projects/Reelly.io_QA_automation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -274,7 +277,8 @@
       <workItem from="1723767765374" duration="765000" />
       <workItem from="1723853735727" duration="8362000" />
       <workItem from="1724459276197" duration="2585000" />
-      <workItem from="1724802323111" duration="5499000" />
+      <workItem from="1724802323111" duration="6868000" />
+      <workItem from="1725410145870" duration="539000" />
     </task>
     <servers />
   </component>

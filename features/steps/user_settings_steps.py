@@ -63,6 +63,11 @@ def click_on_change_password(context):
     context.app.settings_page.btn_change_password()
 
 
+@when('Click on "Subscription & payments" option')
+def click_on_subscription(context):
+    context.app.settings_page.btn_subscription()
+
+
 @then('Verify the right information is present in the input fields')
 def verify_test_information(context):
     context.app.settings_page.verify_test_information()
