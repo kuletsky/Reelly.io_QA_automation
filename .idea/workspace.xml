@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/user_settings_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/user_settings_steps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/tests/user_settings_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/user_settings_tests.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/settings_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/settings_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +289,7 @@
       <workItem from="1726011876297" duration="3702000" />
       <workItem from="1726148904685" duration="942000" />
       <workItem from="1727307369567" duration="209000" />
-      <workItem from="1727311905309" duration="1447000" />
+      <workItem from="1727311905309" duration="3208000" />
     </task>
     <servers />
   </component>
@@ -306,7 +308,7 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_position.coverage" NAME="edit_profile.feature:User can select different position Coverage Results" MODIFIED="1717728780441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Android_on_the_left_side_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page Coverage Results" MODIFIED="1724021502835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_steps.coverage" NAME="secondary_deals_steps Coverage Results" MODIFIED="1716943009283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features/steps" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_go_to_settings_and_see_the_right_number_of_UI_elements.coverage" NAME="user_settings_tests.feature:User can go to settings and see the right number of UI elements Coverage Results" MODIFIED="1727315212425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_go_to_settings_and_see_the_right_number_of_UI_elements.coverage" NAME="user_settings_tests.feature:User can go to settings and see the right number of UI elements Coverage Results" MODIFIED="1727316695998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_go_to_settings_and_edit_the_personal_information.coverage" NAME="edit_profile_tests.feature:User can go to settings and edit the personal information Coverage Results" MODIFIED="1720877960751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_select_different_roles.coverage" NAME="edit_profile_tests.feature:User can select different roles Coverage Results" MODIFIED="1720878025568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$change_psw_tests_feature_User_can_open_change_password_page.coverage" NAME="change_psw_tests.feature:User can open change password page Coverage Results" MODIFIED="1724871222411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

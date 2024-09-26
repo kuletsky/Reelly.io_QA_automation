@@ -44,7 +44,7 @@ Feature: Tests for user settings page
   Scenario: User can go to settings and see the right number of UI elements
     When Click on "Settings" option at the left side menu
     Then Verify that URL of window contains settings
-    And Verify there are 12 options for settings
+    And Verify there are 13 options for settings
     And Verify "connect the company" button is available
 
 

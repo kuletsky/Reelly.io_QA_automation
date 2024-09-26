@@ -78,6 +78,11 @@ def verify_send_application_button(context):
     context.app.settings_page.send_application_button()
 
 
+@then('Verify "connect the company" button is available')
+def verify_connect_button(context):
+    context.app.settings_page.connect_button()
+
+
 @then('Verify that URL of window contains {partial_url}')
 def verify_whatsapp_url(context, partial_url):
     context.app.settings_page.verify_partial_url(partial_url)
@@ -96,3 +101,8 @@ def verify_contact_support_button(context):
 @then('Verify “Connect the company” button is available and clickable')
 def verify_connect_button(context):
     context.app.contact_us_page.verify_connect_button()
+
+
+@then('Verify there are {number} options for settings')
+def verify_number_of_settings(context, number):
+    context.app.settings_page.verify_number_of_settings(number)

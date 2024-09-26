@@ -13,6 +13,7 @@ class SettingsPage(Page):
     BTN_USER_GUIDE = (By.XPATH, '//div[@class="setting-text" and text()="User guide"]')
     BTN_CHANGE_PSW = (By.XPATH, '//div[@class="setting-text" and text()="Change password"]')
     BTN_SUBSCRIPTION = (By.XPATH, '//div[@class="setting-text" and text()="Subscription & payments"]')
+    BTN_CONNECT = (By.CSS_SELECTOR, '.settings-block-menu .get-free-period.menu')
     INPUT_NAME = (By.CSS_SELECTOR, '[id="Your-name"]')
     INPUT_WEBSITE = (By.CSS_SELECTOR, '[id="Your-company-name"]')
     INPUT_ROLE = (By.CSS_SELECTOR, '[id="Role"]')
@@ -24,6 +25,8 @@ class SettingsPage(Page):
     SUBMIT = (By.CSS_SELECTOR, '[type = "submit"]')
     MSG = (By.XPATH, '//div[text()="Thank you! Your submission has been received!"]')
     SOCIAL_MEDIA_ICONS = (By.CSS_SELECTOR, '.text-social')
+    OPTIONS_NUMBER = (By.CSS_SELECTOR, '.page-setting-block')
+
 
     def generate_random_email(self, prefix="testuser", domain="test.com"):
         suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
@@ -98,6 +101,9 @@ class SettingsPage(Page):
         self.wait_until_any_text_appears(*self.MSG)
         self.verify_text('Thank you! Your submission has been received!', *self.MSG)
 
+    def connect_button(self):
+        self.find_element(*self.BTN_CONNECT)
+
     def verify_number_of_social_media_icons(self, number):
         all_social = self.find_elements(*self.SOCIAL_MEDIA_ICONS)
         print(f'How many SOCIAL on the page?: {len(all_social)}')
@@ -108,3 +114,8 @@ class SettingsPage(Page):
         # for element in all_elements:
             # print(element.text)
             # assert element.text == expected_text, f'Error! Expected {expected_text}, but got {element.text}'
+
+    def verify_number_of_settings(self, number):
+        all_options = self.find_elements(*self.OPTIONS_NUMBER)
+        print(f'How many options on the page?: {len(all_options)}')
+        assert len(all_options) >= int(number), f'Error! Expected {number}, but got {len(all_options)}'
