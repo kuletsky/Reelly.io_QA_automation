@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/tests/user_settings_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/user_settings_tests.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +89,7 @@
     "Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities.executor": "Run",
     "Behave.user_settings_tests.feature:User can add a project through the settings.executor": "Run",
     "Behave.user_settings_tests.feature:User can go to settings and edit the personal information.executor": "Run",
+    "Behave.user_settings_tests.feature:User can go to settings and see the right number of UI elements.executor": "Run",
     "Behave.user_settings_tests.feature:User can open the Contact us page.executor": "Run",
     "Behave.user_settings_tests.feature:User can open the community page.executor": "Run",
     "Python.environment.executor": "Debug",
@@ -113,7 +115,7 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.subscribtion_tests.feature:User can open Subscription &amp; payments page">
+  <component name="RunManager" selected="Behave.user_settings_tests.feature:User can go to settings and see the right number of UI elements">
     <configuration name="change_psw_tests.feature:User can open change password page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -178,7 +180,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="user_settings_tests.feature:User can open the Contact us page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="user_settings_tests.feature:User can go to settings and see the right number of UI elements" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -190,25 +192,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/user_settings_tests.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open the Contact us page" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can go to settings and see the right number of UI elements" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.user_settings_tests.feature:User can go to settings and see the right number of UI elements" />
         <item itemvalue="Behave.subscribtion_tests.feature:User can open Subscription &amp; payments page" />
         <item itemvalue="Behave.change_psw_tests.feature:User can open change password page" />
         <item itemvalue="Behave.user_guide_tests.feature:User can open User guide page" />
         <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page" />
-        <item itemvalue="Behave.user_settings_tests.feature:User can open the Contact us page" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.428" />
-        <option value="bundled-python-sdk-80e8e15d2b92-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.428" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.22855.92" />
+        <option value="bundled-python-sdk-b068d85d1acf-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.22855.92" />
       </set>
     </attachedChunks>
   </component>
@@ -277,7 +279,15 @@
       <workItem from="1723853735727" duration="8362000" />
       <workItem from="1724459276197" duration="2585000" />
       <workItem from="1724802323111" duration="6868000" />
-      <workItem from="1725410145870" duration="12866000" />
+      <workItem from="1725410145870" duration="14119000" />
+      <workItem from="1725680790981" duration="4000" />
+      <workItem from="1725680814260" duration="342000" />
+      <workItem from="1725820687963" duration="2000000" />
+      <workItem from="1725922235137" duration="1335000" />
+      <workItem from="1726011876297" duration="3702000" />
+      <workItem from="1726148904685" duration="942000" />
+      <workItem from="1727307369567" duration="209000" />
+      <workItem from="1727311905309" duration="1447000" />
     </task>
     <servers />
   </component>
@@ -288,14 +298,15 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_roles.coverage" NAME="edit_profile.feature:User can select different roles Coverage Results" MODIFIED="1718159721747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_MOB_WEB_Verify_user_can_filter_the_Secondary_deals_by__want_to_sell__option.coverage" NAME="secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to sell&quot; option Coverage Results" MODIFIED="1718240473785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Calendar_on_the_left_menu_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Calendar” on the left menu of the main page Coverage Results" MODIFIED="1720228646123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_select_different_position.coverage" NAME="edit_profile_tests.feature:User can select different position Coverage Results" MODIFIED="1721614643018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature.coverage" NAME="off_plan_tests.feature Coverage Results" MODIFIED="1720488654157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_select_different_position.coverage" NAME="edit_profile_tests.feature:User can select different position Coverage Results" MODIFIED="1721614643018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_go_to_settings_and_edit_the_personal_information.coverage" NAME="user_settings_tests.feature:User can go to settings and edit the personal information Coverage Results" MODIFIED="1720580799814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Off_plan_on_the_left_menu_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page Coverage Results" MODIFIED="1721174686453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_add_a_project_through_the_settings.coverage" NAME="user_settings_tests.feature:User can add a project through the settings Coverage Results" MODIFIED="1723069847270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_position.coverage" NAME="edit_profile.feature:User can select different position Coverage Results" MODIFIED="1717728780441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Android_on_the_left_side_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page Coverage Results" MODIFIED="1724021502835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_steps.coverage" NAME="secondary_deals_steps Coverage Results" MODIFIED="1716943009283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features/steps" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_go_to_settings_and_see_the_right_number_of_UI_elements.coverage" NAME="user_settings_tests.feature:User can go to settings and see the right number of UI elements Coverage Results" MODIFIED="1727315212425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_go_to_settings_and_edit_the_personal_information.coverage" NAME="edit_profile_tests.feature:User can go to settings and edit the personal information Coverage Results" MODIFIED="1720877960751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_select_different_roles.coverage" NAME="edit_profile_tests.feature:User can select different roles Coverage Results" MODIFIED="1720878025568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$change_psw_tests_feature_User_can_open_change_password_page.coverage" NAME="change_psw_tests.feature:User can open change password page Coverage Results" MODIFIED="1724871222411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
