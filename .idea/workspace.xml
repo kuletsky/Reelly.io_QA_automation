@@ -112,7 +112,7 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.user_settings_tests.feature:User can go to settings and see the right number of UI elements">
+  <component name="RunManager" selected="Behave.subscribtion_tests.feature:User can open Subscription &amp; payments page">
     <configuration name="change_psw_tests.feature:User can open change password page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -126,22 +126,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/change_psw_tests.feature" />
       <SCENRAIO_NAMES SCENRAIO_NAMES="User can open change password page" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly.io_QA_automation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/main_page_tests.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="Verify the user can click on “Android” on the left side of the main page" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -177,6 +161,22 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="user_settings_tests.feature:User can access Whatsapp and Telegram communities" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly.io_QA_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/user_settings_tests.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can access Whatsapp and Telegram communities" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="user_settings_tests.feature:User can go to settings and see the right number of UI elements" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -195,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Behave.user_settings_tests.feature:User can go to settings and see the right number of UI elements" />
         <item itemvalue="Behave.subscribtion_tests.feature:User can open Subscription &amp; payments page" />
+        <item itemvalue="Behave.user_settings_tests.feature:User can access Whatsapp and Telegram communities" />
+        <item itemvalue="Behave.user_settings_tests.feature:User can go to settings and see the right number of UI elements" />
         <item itemvalue="Behave.change_psw_tests.feature:User can open change password page" />
         <item itemvalue="Behave.user_guide_tests.feature:User can open User guide page" />
-        <item itemvalue="Behave.main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page" />
       </list>
     </recent_temporary>
   </component>
@@ -289,6 +289,7 @@
       <workItem from="1727485780361" duration="1222000" />
       <workItem from="1727564355250" duration="626000" />
       <workItem from="1727658648049" duration="61000" />
+      <workItem from="1728003974390" duration="358000" />
     </task>
     <servers />
   </component>
