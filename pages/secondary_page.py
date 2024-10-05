@@ -12,12 +12,16 @@ class SecondaryPage(Page):
     FILTER_BUY_SELL = (By.XPATH, '//div[@class="tag-text-filters" and text()="{FILTER}"]')
     BTN_APPLY_FILTER = (By.XPATH, '//a[text()="Apply filter"]')
     ALL_LIST_FOR_FILTER = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
+    FORWARD = (By.CSS_SELECTOR, '[wized="nextPageMLS"]')
+    BACK = (By.CSS_SELECTOR, '[wized="previousPageMLS"]')
+    TOTAL_PAGE = (By.CSS_SELECTOR, '[wized="totalPageProperties"]')
+
 
     def _get_locator(self, text):
         return [self.FILTER_BUY_SELL[0], self.FILTER_BUY_SELL[1].replace('{FILTER}', text)]
 
     def btn_filter(self):
-        self.wait_until_visible(self.GRID)
+        self.wait_until_visible(*self.GRID)
         self.click(*self.BTN_FILTER)
 
     def filter_want_to_sell_buy(self, filter_sell_buy):
@@ -31,8 +35,27 @@ class SecondaryPage(Page):
         self.verify_right_page_opened(*self.TXT_LISTINGS)
 
     def verify_text_for_secondary_filter(self, expected_filter):
-        self.wait_until_visible(self.GRID)
+        self.wait_until_visible(*self.GRID)
         self.verify_text_for_all_elements(expected_filter, *self.ALL_LIST_FOR_FILTER)
 
     def verify_all_projects_on_secondary(self):
         self.verify_all_projects_are_shown(*self.GRID)
+
+    def go_to_final_page(self):
+        self.wait_until_visible(*self.GRID)
+        total_page = self.find_element(*self.TOTAL_PAGE).text
+        print(total_page)
+        i = 1
+        while i < int(total_page):
+            print(i)
+            self.wait_until_visible(*self.GRID)
+            self.click(*self.FORWARD)
+            i += 1
+
+        self.click(*self.BACK)
+        while i != 1:
+            print(i)
+            self.wait_until_visible(*self.GRID)
+            self.click(*self.BACK)
+            i -= 1
+

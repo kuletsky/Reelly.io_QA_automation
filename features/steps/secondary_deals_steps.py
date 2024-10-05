@@ -18,3 +18,8 @@ def verify_tag_for_buy(context, expected_filter):
 @then('Verify the right page opens')
 def verify_right_page(context):
     context.app.secondary_page.verify_right_page()
+
+
+@when('Go to the final page using the pegination button and back')
+def go_to_final_page(context):
+    context.app.secondary_page.go_to_final_page()
