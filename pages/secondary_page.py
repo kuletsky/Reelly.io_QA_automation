@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+from time import sleep
 from pages.base_page import Page
 
 
@@ -10,11 +10,15 @@ class SecondaryPage(Page):
     FILTER_SELL = (By.XPATH, '//div[text()="Want to sell"]')
     FILTER_BUY = (By.XPATH, '//div[@class="tag-text-filters" and text()="Want to buy"]')
     FILTER_BUY_SELL = (By.XPATH, '//div[@class="tag-text-filters" and text()="{FILTER}"]')
+    FILTER_PRICE_FROM = (By.CSS_SELECTOR, '[wized="unitPriceFromFilter"]')
+    FILTER_PRICE_TO = (By.CSS_SELECTOR, '[wized="unitPriceToFilter"]')
     BTN_APPLY_FILTER = (By.XPATH, '//a[text()="Apply filter"]')
     ALL_LIST_FOR_FILTER = (By.CSS_SELECTOR, 'div[wized="saleTagMLS"]')
+    ALL_LIST_FOR_PRICE = (By.CSS_SELECTOR, 'div[wized="unitPriceMLS"]')
     FORWARD = (By.CSS_SELECTOR, '[wized="nextPageMLS"]')
     BACK = (By.CSS_SELECTOR, '[wized="previousPageMLS"]')
     TOTAL_PAGE = (By.CSS_SELECTOR, '[wized="totalPageProperties"]')
+
 
 
     def _get_locator(self, text):
@@ -27,6 +31,21 @@ class SecondaryPage(Page):
     def filter_want_to_sell_buy(self, filter_sell_buy):
         locator = self._get_locator(filter_sell_buy)
         self.click(*locator)
+
+    def set_filter_range(self, min_price, max_price):
+        self.input_text(int(min_price), *self.FILTER_PRICE_FROM)
+        self.input_text(int(max_price), *self.FILTER_PRICE_TO)
+        # sleep(10)
+
+    def verify_range_of_price(self, min_price, max_price):
+        self.wait_until_visible(*self.GRID)
+        all_elements = self.find_elements(*self.ALL_LIST_FOR_PRICE)
+        print(f'How many elements on the page?: {len(all_elements)}')
+
+        for element in all_elements:
+            # print(element.text)
+            price = element.text.replace('AED','').replace(',','')
+            assert int(min_price) < int(price) < int(max_price), f'Error! Expected {price} between {min_price} and {max_price}'
 
     def btn_apply_filter(self):
         self.click(*self.BTN_APPLY_FILTER)

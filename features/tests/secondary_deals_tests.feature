@@ -23,6 +23,14 @@ Feature: Tests for secondary deals page
     Then Verify that all cards have Want to buy tag
 
 
+  Scenario: Verify user can filter the Secondary deals by Unit price range
+    When Click on "Secondary" option at the left side menu
+    Then Verify the right page opens
+    When Click on Filters
+    When Filter the price of products range from 1200000 to 2000000 AED
+    Then Verify the price in all cards is inside the range
+
+
   Scenario: Verify user can open the Secondary deals and go through the pagination
     When Click on "Secondary" option at the left side menu
     Then Verify the right page opens
