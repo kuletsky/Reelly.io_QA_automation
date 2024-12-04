@@ -11,6 +11,7 @@ class OffPlanPage(Page):
     FILTER_LOCATION = (By.ID, 'Location')
     FILTER_TEXT = (By.XPATH, '//option[text()="{TEXT}"]')
     COUNT_PROJECTS = (By.CSS_SELECTOR, '[wized = "1totalPropertyCounter"]')
+    TXT = ((By.XPATH, '//div[text()="Total projects"]'))
 
     def _get_locator(self, text):
         return [self.LINK_TEXT[0], self.LINK_TEXT[1].replace('{TEXT}', text)]
@@ -44,3 +45,6 @@ class OffPlanPage(Page):
 
     def verify_all_projects_on_off_plan(self):
         self.verify_all_projects_are_shown(*self.GRID)
+
+    def verify_right_page(self):
+        self.verify_right_page_opened(*self.TXT)

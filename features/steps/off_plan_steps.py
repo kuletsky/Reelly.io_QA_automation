@@ -31,3 +31,11 @@ def verify_total_projects(context):
 @then('Verify "Total Projects" Count Updates with Location Filter Change')
 def verify_total_projects(context):
     context.app.off_plan_page.verify_total_projects_count_updates()
+
+@then('Verify the right page opens Off-plan')
+def verify_right_page_off_plan(context):
+    context.app.off_plan_page.verify_right_page()
+
+# @when('Go to the final page using the pegination button and back')
+# def go_to_final_page(context):
+#     context.app.secondary_page.go_to_final_page()
