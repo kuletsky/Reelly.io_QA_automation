@@ -48,4 +48,4 @@ Feature: Tests for Off-plan page
   Scenario: Verify user can open the Off plan page and go through the pagination
     When Click on Main page "Off-plan"
     Then Verify the right page opens Off-plan
-    When Go to the final page using the pegination button and back
+    When Go to the final page using the pegination button and back on Off-plan

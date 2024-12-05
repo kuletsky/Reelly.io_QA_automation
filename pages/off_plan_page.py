@@ -12,6 +12,9 @@ class OffPlanPage(Page):
     FILTER_TEXT = (By.XPATH, '//option[text()="{TEXT}"]')
     COUNT_PROJECTS = (By.CSS_SELECTOR, '[wized = "1totalPropertyCounter"]')
     TXT = ((By.XPATH, '//div[text()="Total projects"]'))
+    TOTAL_PAGE = (By.CSS_SELECTOR, '[wized="totalPageProperties"]')
+    FORWARD = (By.CSS_SELECTOR, '[wized="nextPageProperties"]')
+    BACK = (By.CSS_SELECTOR, '[wized="previousPageProperties"]')
 
     def _get_locator(self, text):
         return [self.LINK_TEXT[0], self.LINK_TEXT[1].replace('{TEXT}', text)]
@@ -38,7 +41,7 @@ class OffPlanPage(Page):
 
     def verify_total_projects_count_updates(self):
         if self.total_projects_before == self.total_projects_after:
-            self.find_element(*self.COUNT_PROJECT).click()
+            self.find_element(*self.COUNT_PROJECTS).click()
 
     def verify_total_projects_on_off_plan(self):
         self.wait_until_any_text_appears(*self.COUNT_PROJECTS)
@@ -48,3 +51,21 @@ class OffPlanPage(Page):
 
     def verify_right_page(self):
         self.verify_right_page_opened(*self.TXT)
+
+    def go_to_final_page_offplan(self):
+        self.wait_until_visible(*self.GRID)
+        total_page = self.find_element(*self.TOTAL_PAGE).text
+        print(total_page)
+        i = 1
+        while i < int(total_page):
+            print(i)
+            self.wait_until_visible(*self.GRID)
+            self.click(*self.FORWARD)
+            i += 1
+
+        self.click(*self.BACK)
+        while i != 1:
+            print(i)
+            self.wait_until_visible(*self.GRID)
+            self.click(*self.BACK)
+            i -= 1

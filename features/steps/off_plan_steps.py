@@ -36,6 +36,6 @@ def verify_total_projects(context):
 def verify_right_page_off_plan(context):
     context.app.off_plan_page.verify_right_page()
 
-# @when('Go to the final page using the pegination button and back')
-# def go_to_final_page(context):
-#     context.app.secondary_page.go_to_final_page()
+@when('Go to the final page using the pegination button and back on Off-plan')
+def go_to_final_page(context):
+    context.app.off_plan_page.go_to_final_page_offplan()

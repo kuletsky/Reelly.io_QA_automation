@@ -61,6 +61,8 @@ class SecondaryPage(Page):
         self.verify_all_projects_are_shown(*self.GRID)
 
     def go_to_final_page(self):
+        # self.wait_until_visible(*self.GRID)
+        # self.verify_pegination(*self.GRID, *self.TOTAL_PAGE, *self.FORWARD, *self.BACK)
         self.wait_until_visible(*self.GRID)
         total_page = self.find_element(*self.TOTAL_PAGE).text
         print(total_page)
