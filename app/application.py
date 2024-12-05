@@ -1,6 +1,7 @@
 from pages.community_page import CommunityPage
 from pages.change_psw_page import ChangePswPage
 from pages.contact_us_page import ContactUsPage
+from pages.filter_page import FilterPage
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
 from pages.off_plan_page import OffPlanPage
@@ -18,6 +19,7 @@ class Application:
         self.community_page = CommunityPage(driver)
         self.change_psw_page = ChangePswPage(driver)
         self.contact_us_page = ContactUsPage(driver)
+        self.filter_page = FilterPage(driver)
         self.login_page = LoginPage(driver)
         self.off_plan_page = OffPlanPage(driver)
         self.main_page = MainPage(driver)

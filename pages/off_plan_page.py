@@ -15,6 +15,8 @@ class OffPlanPage(Page):
     TOTAL_PAGE = (By.CSS_SELECTOR, '[wized="totalPageProperties"]')
     FORWARD = (By.CSS_SELECTOR, '[wized="nextPageProperties"]')
     BACK = (By.CSS_SELECTOR, '[wized="previousPageProperties"]')
+    BTN_FILTER = (By.CSS_SELECTOR, 'a .filter-text')
+    ALL_LIST_FOR_PRICE = (By.CSS_SELECTOR, '[wized="projectMinimumPrice"]')
 
     def _get_locator(self, text):
         return [self.LINK_TEXT[0], self.LINK_TEXT[1].replace('{TEXT}', text)]
@@ -69,3 +71,18 @@ class OffPlanPage(Page):
             self.wait_until_visible(*self.GRID)
             self.click(*self.BACK)
             i -= 1
+
+    def btn_filter(self):
+        self.wait_until_visible(*self.GRID)
+        self.click(*self.BTN_FILTER)
+
+    def verify_range_of_price(self, min_price, max_price):
+        self.wait_until_visible(*self.GRID)
+        all_elements = self.find_elements(*self.ALL_LIST_FOR_PRICE)
+        print(f'How many elements on the page?: {len(all_elements)}')
+
+        for element in all_elements:
+            # print(element.text)
+            price = element.text.replace('AED', '').replace(',', '')
+            assert int(min_price) < int(price) < int(
+                max_price), f'Error! Expected {price} between {min_price} and {max_price}'

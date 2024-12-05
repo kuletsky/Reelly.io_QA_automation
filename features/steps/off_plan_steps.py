@@ -39,3 +39,11 @@ def verify_right_page_off_plan(context):
 @when('Go to the final page using the pegination button and back on Off-plan')
 def go_to_final_page(context):
     context.app.off_plan_page.go_to_final_page_offplan()
+
+@when('Click on Filters on Off-plan')
+def click_on_filters(context):
+    context.app.off_plan_page.btn_filter()
+
+@then('Verify the price in all cards is inside the range off-plan')
+def verify_range_of_price(context):
+    context.app.off_plan_page.verify_range_of_price(context.min_price, context.max_price)

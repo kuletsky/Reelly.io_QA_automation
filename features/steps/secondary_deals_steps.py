@@ -22,12 +22,12 @@ def click_on_filters(context):
     context.app.secondary_page.btn_filter()
 
 
-@when('Filter the price of products range from {min_price} to {max_price} AED')
-def filter_range_of_price(context, min_price, max_price):
-    context.app.secondary_page.set_filter_range(min_price, max_price)
-    context.app.secondary_page.btn_apply_filter()
-    context.min_price = min_price
-    context.max_price = max_price
+# @when('Filter the price of products range from {min_price} to {max_price} AED')
+# def filter_range_of_price(context, min_price, max_price):
+#     context.app.secondary_page.set_filter_range(min_price, max_price)
+#     context.app.secondary_page.btn_apply_filter()
+#     context.min_price = min_price
+#     context.max_price = max_price
 
 @then('Verify the price in all cards is inside the range')
 def verify_range_of_price(context):
