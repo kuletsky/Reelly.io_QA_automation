@@ -1,3 +1,5 @@
+from itertools import product
+
 from pages.base_page import Page
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
@@ -10,13 +12,15 @@ class OffPlanPage(Page):
     LINK_TEXT = (By.XPATH, '//a[text()={TEXT}]')
     FILTER_LOCATION = (By.ID, 'Location')
     FILTER_TEXT = (By.XPATH, '//option[text()="{TEXT}"]')
-    COUNT_PROJECTS = (By.CSS_SELECTOR, '[wized = "1totalPropertyCounter"]')
+    COUNT_PROJECTS = (By.CSS_SELECTOR, '[wized = "totalPropertyCounter"]')
     TXT = ((By.XPATH, '//div[text()="Total projects"]'))
     TOTAL_PAGE = (By.CSS_SELECTOR, '[wized="totalPageProperties"]')
     FORWARD = (By.CSS_SELECTOR, '[wized="nextPageProperties"]')
     BACK = (By.CSS_SELECTOR, '[wized="previousPageProperties"]')
     BTN_FILTER = (By.CSS_SELECTOR, 'a .filter-text')
     ALL_LIST_FOR_PRICE = (By.CSS_SELECTOR, '[wized="projectMinimumPrice"]')
+    TITLE = (By.CSS_SELECTOR, '.project-name')
+    PIC = (By.CSS_SELECTOR, '.project-image')
 
     def _get_locator(self, text):
         return [self.LINK_TEXT[0], self.LINK_TEXT[1].replace('{TEXT}', text)]
@@ -86,3 +90,17 @@ class OffPlanPage(Page):
             price = element.text.replace('AED', '').replace(',', '')
             assert int(min_price) < int(price) < int(
                 max_price), f'Error! Expected {price} between {min_price} and {max_price}'
+
+    def verify_right_product(self):
+        self.wait_until_visible(*self.GRID)
+        products = self.find_elements(*self.GRID)
+        print(f'How many products on the page?: {len(products)}')
+
+        for product in products:
+        # first approach
+            assert product.find_element(*self.TITLE).is_displayed(), f'Error! Item does not have title'
+            assert product.find_element(*self.PIC).is_displayed(), f'Error! Item {product.find_element(*self.TITLE).text} does not have Picture'
+
+        # second approach
+            assert product.find_element(*self.TITLE).text, f'Error! Item does not have title'
+            assert product.find_element(*self.PIC), f'Error! Item {product.find_element(*self.TITLE).text} does not have Picture'

@@ -47,3 +47,7 @@ def click_on_filters(context):
 @then('Verify the price in all cards is inside the range off-plan')
 def verify_range_of_price(context):
     context.app.off_plan_page.verify_range_of_price(context.min_price, context.max_price)
+
+@then('Verify each product on this page contains a title and picture visible')
+def verify_each_product(context):
+    context.app.off_plan_page.verify_right_product()
