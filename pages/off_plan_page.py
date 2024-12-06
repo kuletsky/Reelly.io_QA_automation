@@ -1,4 +1,5 @@
 from itertools import product
+from select import select
 
 from pages.base_page import Page
 from selenium.webdriver.common.by import By
@@ -11,6 +12,7 @@ class OffPlanPage(Page):
     GRID = (By.CSS_SELECTOR, 'a[wized="cardOfProperty"]')
     LINK_TEXT = (By.XPATH, '//a[text()={TEXT}]')
     FILTER_LOCATION = (By.ID, 'Location')
+    FILTER_SALE = (By.ID, 'Location-2')
     FILTER_TEXT = (By.XPATH, '//option[text()="{TEXT}"]')
     COUNT_PROJECTS = (By.CSS_SELECTOR, '[wized = "totalPropertyCounter"]')
     TXT = ((By.XPATH, '//div[text()="Total projects"]'))
@@ -21,6 +23,7 @@ class OffPlanPage(Page):
     ALL_LIST_FOR_PRICE = (By.CSS_SELECTOR, '[wized="projectMinimumPrice"]')
     TITLE = (By.CSS_SELECTOR, '.project-name')
     PIC = (By.CSS_SELECTOR, '.project-image')
+    TAG = (By.CSS_SELECTOR, '[wized="projectStatus"]')
 
     def _get_locator(self, text):
         return [self.LINK_TEXT[0], self.LINK_TEXT[1].replace('{TEXT}', text)]
@@ -44,6 +47,21 @@ class OffPlanPage(Page):
         self.wait_until_any_text_appears(*self.COUNT_PROJECTS)
         self.total_projects_after = self.find_element(*self.COUNT_PROJECTS).text
         # print(self.total_projects_after)
+
+    def set_filtersale(self, filter_sale):
+        self.wait_until_visible(*self.GRID)
+
+        filter_dd = self.find_element(*self.FILTER_SALE)
+        select = Select(filter_dd)
+        select.select_by_value(filter_sale)
+
+    def verify_filtersale(self, filter_sale):
+        self.wait_until_visible(*self.GRID)
+
+        products = self.find_elements(*self.GRID)
+        for product in products:
+            tag = product.find_element(*self.TAG).text
+            assert filter_sale in tag, f'Error! Expected {filter_sale} BUT got {tag}'
 
     def verify_total_projects_count_updates(self):
         if self.total_projects_before == self.total_projects_after:
@@ -97,10 +115,12 @@ class OffPlanPage(Page):
         print(f'How many products on the page?: {len(products)}')
 
         for product in products:
-        # first approach
+            # first approach
             assert product.find_element(*self.TITLE).is_displayed(), f'Error! Item does not have title'
-            assert product.find_element(*self.PIC).is_displayed(), f'Error! Item {product.find_element(*self.TITLE).text} does not have Picture'
+            assert product.find_element(
+                *self.PIC).is_displayed(), f'Error! Item {product.find_element(*self.TITLE).text} does not have Picture'
 
-        # second approach
+            # second approach
             assert product.find_element(*self.TITLE).text, f'Error! Item does not have title'
-            assert product.find_element(*self.PIC), f'Error! Item {product.find_element(*self.TITLE).text} does not have Picture'
+            assert product.find_element(
+                *self.PIC), f'Error! Item {product.find_element(*self.TITLE).text} does not have Picture'

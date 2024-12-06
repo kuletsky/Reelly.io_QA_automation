@@ -13,6 +13,16 @@ def change_location(context, filter_location):
     context.app.off_plan_page.change_location(filter_location)
 
 
+@when('Set filter by sale status of {filter_sale}')
+def set_filter(context, filter_sale):
+    context.app.off_plan_page.set_filtersale(filter_sale)
+
+
+@then('Verify each product contains the {filter_sale}')
+def verify_filer(context, filter_sale):
+    context.app.off_plan_page.verify_filtersale(filter_sale)
+
+
 @then('Verify that all projects on Off-plan are shown')
 def verify_all_projects(context):
     context.app.off_plan_page.verify_all_projects_on_off_plan()
@@ -32,21 +42,26 @@ def verify_total_projects(context):
 def verify_total_projects(context):
     context.app.off_plan_page.verify_total_projects_count_updates()
 
+
 @then('Verify the right page opens Off-plan')
 def verify_right_page_off_plan(context):
     context.app.off_plan_page.verify_right_page()
+
 
 @when('Go to the final page using the pegination button and back on Off-plan')
 def go_to_final_page(context):
     context.app.off_plan_page.go_to_final_page_offplan()
 
+
 @when('Click on Filters on Off-plan')
 def click_on_filters(context):
     context.app.off_plan_page.btn_filter()
 
+
 @then('Verify the price in all cards is inside the range off-plan')
 def verify_range_of_price(context):
     context.app.off_plan_page.verify_range_of_price(context.min_price, context.max_price)
+
 
 @then('Verify each product on this page contains a title and picture visible')
 def verify_each_product(context):

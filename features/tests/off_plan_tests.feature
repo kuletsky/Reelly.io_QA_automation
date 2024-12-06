@@ -61,3 +61,16 @@ Feature: Tests for Off-plan page
     When Click on Main page "Off-plan"
     Then Verify the right page opens Off-plan
     And Verify each product on this page contains a title and picture visible
+
+  Scenario Outline: User can filter by sale status
+    When Click on Main page "Off-plan"
+    Then Verify the right page opens Off-plan
+    When Set filter by sale status of <filter>
+    Then Verify each product contains the <filter>
+    Examples:
+      | filter         |
+      | Announced      |
+      | Presale(EOI)   |
+      | Start of sales |
+      | On sale        |
+      | Out of stock   |
