@@ -71,14 +71,3 @@ def verify_range_of_price(context):
 @then('Verify each product on this page contains a title and picture visible')
 def verify_each_product(context):
     context.app.off_plan_page.verify_right_product()
-
-@then('Verify the one of the three options of visualization are {option_1}, {option_2}, {option_3}')
-def verify_one_option(context, option_1, option_2, option_3):
-    context.app.off_plan_page.verify_option(option_1, option_2, option_3)
-    context.option_1 = option_1
-    context.option_2 = option_2
-    context.option_3 = option_3
-
-@then('Verify the visualizatoin option are clickable')
-def verify_clickable(context):
-    context.app.off_plan_page.verify_clickable(context.option_1, context.option_2, context.option_3)
