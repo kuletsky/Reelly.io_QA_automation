@@ -73,6 +73,7 @@
     "Behave.main_page_tests.feature:Verify the user can click on “University” on the left menu of the main page.executor": "Run",
     "Behave.off_plan_tests.feature.executor": "Run",
     "Behave.off_plan_tests.feature:User can filter by sale status.executor": "Run",
+    "Behave.off_plan_tests.feature:User can open product detail and see at least one of the three options are available.executor": "Run",
     "Behave.off_plan_tests.feature:User can see titles and pictures on each product inside the off plan page.executor": "Run",
     "Behave.off_plan_tests.feature:Verify \"Total Projects\" Count Updates with Location Filter Change.executor": "Run",
     "Behave.off_plan_tests.feature:Verify that all projects are shown.executor": "Run",
@@ -124,7 +125,7 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.off_plan_tests.feature:User can filter by sale status">
+  <component name="RunManager" selected="Behave.off_plan_tests.feature:User can open product detail and see at least one of the three options are available">
     <configuration name="off_plan_tests.feature:User can filter by sale status" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -138,6 +139,22 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/off_plan_tests.feature" />
       <SCENRAIO_NAMES SCENRAIO_NAMES="User can filter by sale status" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="off_plan_tests.feature:User can open product detail and see at least one of the three options are available" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly.io_QA_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/off_plan_tests.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open product detail and see at least one of the three options are available" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -173,22 +190,6 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="off_plan_tests.feature:Verify user can open the Off plan page and go through the pagination" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly.io_QA_automation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/off_plan_tests.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="Verify user can open the Off plan page and go through the pagination" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="secondary_deals_tests.feature:Verify user can filter the Secondary deals by Unit price range" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -207,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.off_plan_tests.feature:User can open product detail and see at least one of the three options are available" />
         <item itemvalue="Behave.off_plan_tests.feature:User can filter by sale status" />
         <item itemvalue="Behave.off_plan_tests.feature:User can see titles and pictures on each product inside the off plan page" />
         <item itemvalue="Behave.off_plan_tests.feature:Verify user can filter the Off plan by Unit price range" />
         <item itemvalue="Behave.secondary_deals_tests.feature:Verify user can filter the Secondary deals by Unit price range" />
-        <item itemvalue="Behave.off_plan_tests.feature:Verify user can open the Off plan page and go through the pagination" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +324,8 @@
       <workItem from="1733254352684" duration="2428000" />
       <workItem from="1733338842745" duration="8280000" />
       <workItem from="1733404794811" duration="16920000" />
-      <workItem from="1733493403549" duration="7834000" />
+      <workItem from="1733493403549" duration="9377000" />
+      <workItem from="1733792639916" duration="7682000" />
     </task>
     <servers />
   </component>
@@ -371,8 +373,8 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_MOB_WEB_Verify_user_can_filter_the_Secondary_deals_by__want_to_sell__option.coverage" NAME="secondary_deals_tests.feature:MOB_WEB Verify user can filter the Secondary deals by &quot;want to sell&quot; option Coverage Results" MODIFIED="1718240473785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_University_on_the_left_menu_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “University” on the left menu of the main page Coverage Results" MODIFIED="1720271039304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_Verify_user_can_open_the_Secondary_deals_and_go_through_the_pagination.coverage" NAME="secondary_deals_tests.feature:Verify user can open the Secondary deals and go through the pagination Coverage Results" MODIFIED="1733366422529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_guide_tests_feature_User_can_open_User_guide_page.coverage" NAME="user_guide_tests.feature:User can open User guide page Coverage Results" MODIFIED="1724112117298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Connect_the_company_on_the_left_side_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Connect the company” on the left side of the main page Coverage Results" MODIFIED="1720715947642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_guide_tests_feature_User_can_open_User_guide_page.coverage" NAME="user_guide_tests.feature:User can open User guide page Coverage Results" MODIFIED="1724112117298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Off_plan_on_the_left_menu_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Off-plan” on the left menu of the main page Coverage Results" MODIFIED="1721174686453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_Verify__Total_Projects__Count_Updates_with_Location_Filter_Change.coverage" NAME="off_plan_tests.feature:Verify &quot;Total Projects&quot; Count Updates with Location Filter Change Coverage Results" MODIFIED="1733339746023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$sign_up_tests_feature_Verify_user_can_enter_the_information_into_the_input_fields_on_the_registration_page.coverage" NAME="sign_up_tests.feature:Verify user can enter the information into the input fields on the registration page Coverage Results" MODIFIED="1719843191970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -381,9 +383,10 @@
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$sign_up_tests_feature_Verify_the_right_information_is_present_into_the_input_fields_on_the_registration_page.coverage" NAME="sign_up_tests.feature:Verify the right information is present into the input fields on the registration page Coverage Results" MODIFIED="1723068553704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_User_can_access_Whatsapp_and_Telegram_communities.coverage" NAME="user_settings_tests.feature:User can access Whatsapp and Telegram communities Coverage Results" MODIFIED="1728004325633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_tests_feature_Verify_user_can_filter_the_Secondary_deals_by__want_to_sell__option.coverage" NAME="secondary_deals_tests.feature:Verify user can filter the Secondary deals by &quot;want to sell&quot; option Coverage Results" MODIFIED="1728686992868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_User_can_filter_by_sale_status.coverage" NAME="off_plan_tests.feature:User can filter by sale status Coverage Results" MODIFIED="1733500797499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_User_can_filter_by_sale_status.coverage" NAME="off_plan_tests.feature:User can filter by sale status Coverage Results" MODIFIED="1733502212991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_MOB_WEB_User_can_access_Whatsapp_and_Telegram_communities.coverage" NAME="user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities Coverage Results" MODIFIED="1718240801776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$secondary_deals_steps.coverage" NAME="secondary_deals_steps Coverage Results" MODIFIED="1716943009283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features/steps" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_User_can_open_product_detail_and_see_at_least_one_of_the_three_options_are_available.coverage" NAME="off_plan_tests.feature:User can open product detail and see at least one of the three options are available Coverage Results" MODIFIED="1733800266423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature_Verify_the_user_can_click_on_Android_on_the_left_side_of_the_main_page.coverage" NAME="main_page_tests.feature:Verify the user can click on “Android” on the left side of the main page Coverage Results" MODIFIED="1724021502835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_feature_User_can_select_different_position.coverage" NAME="edit_profile.feature:User can select different position Coverage Results" MODIFIED="1717728780441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$edit_profile_tests_feature_User_can_select_different_position.coverage" NAME="edit_profile_tests.feature:User can select different position Coverage Results" MODIFIED="1721614643018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

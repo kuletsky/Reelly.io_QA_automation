@@ -1,5 +1,6 @@
 from itertools import product
 from select import select
+from time import sleep
 
 from pages.base_page import Page
 from selenium.webdriver.common.by import By
@@ -24,6 +25,7 @@ class OffPlanPage(Page):
     TITLE = (By.CSS_SELECTOR, '.project-name')
     PIC = (By.CSS_SELECTOR, '.project-image')
     TAG = (By.CSS_SELECTOR, '[wized="projectStatus"]')
+    OPTION = (By.CSS_SELECTOR, '.tab div')
 
     def _get_locator(self, text):
         return [self.LINK_TEXT[0], self.LINK_TEXT[1].replace('{TEXT}', text)]
@@ -124,3 +126,24 @@ class OffPlanPage(Page):
             assert product.find_element(*self.TITLE).text, f'Error! Item does not have title'
             assert product.find_element(
                 *self.PIC), f'Error! Item {product.find_element(*self.TITLE).text} does not have Picture'
+
+    def click_first_product(self):
+        self.click(*self.TITLE)
+
+    def verify_option(self, option_1, option_2, option_3):
+        elements = self.find_elements(*self.OPTION)
+        options = [element.text.strip().lower() for element in elements]
+        # print(options)
+
+        expected_options = {option_1, option_2, option_3}
+        assert expected_options.intersection(options), "None of the expected options are present!"
+
+    def verify_clickable(self, option_1, option_2, option_3):
+        elements = self.find_elements(*self.OPTION)
+        expected_options = {option_1, option_2, option_3}
+
+        for element in elements:
+            text = element.text.strip().lower()
+            if text in expected_options:
+                element.click()
+                # print(element.text)

@@ -74,3 +74,9 @@ Feature: Tests for Off-plan page
       | Start of sales |
       | On sale        |
       | Out of stock   |
+
+  Scenario: User can open product detail and see at least one of the three options are available
+    When Click on Main page "Off-plan"
+    And Click on the first product
+    Then Verify the one of the three options of visualization are architecture, interior, lobby
+    And Verify the visualizatoin option are clickable
