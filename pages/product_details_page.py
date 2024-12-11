@@ -11,15 +11,14 @@ class ProductDetailsPage(Page):
         options = [element.text.strip().lower() for element in elements]
         # print(options)
 
-        expected_options = {option_1, option_2, option_3}
-        assert expected_options.intersection(options), "None of the expected options are present!"
+        self.expected_options = {option_1, option_2, option_3}
+        assert self.expected_options.intersection(options), "None of the expected options are present!"
 
-    def verify_clickable(self, option_1, option_2, option_3):
+    def verify_clickable(self):
         elements = self.find_elements(*self.OPTION)
-        expected_options = {option_1, option_2, option_3}
 
         for element in elements:
             text = element.text.strip().lower()
-            if text in expected_options:
+            if text in self.expected_options:
                 element.click()
                 # print(element.text)
