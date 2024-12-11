@@ -4,6 +4,7 @@ from pages.contact_us_page import ContactUsPage
 from pages.filter_page import FilterPage
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
+from pages.market_page import MarketPage
 from pages.off_plan_page import OffPlanPage
 from pages.profile_page import ProfilePage
 from pages.product_details_page import ProductDetailsPage
@@ -24,6 +25,7 @@ class Application:
         self.login_page = LoginPage(driver)
         self.off_plan_page = OffPlanPage(driver)
         self.main_page = MainPage(driver)
+        self.market_page = MarketPage(driver)
         self.profile_page = ProfilePage(driver)
         self.product_details_page = ProductDetailsPage(driver)
         self.secondary_page = SecondaryPage(driver)

@@ -36,19 +36,20 @@ Feature: Tests for Off-plan page
     When Change Location <filter>
     Then Verify "Total Projects" Count Updates with Location Filter Change
     Examples:
-    |filter   |
-    |Dubai    |
-    |Bali     |
-    |Abu Dhabi|
-    |Ajman    |
-    |Sharjah  |
-    |Thailand |
-    |Oman     |
+      | filter    |
+      | Dubai     |
+      | Bali      |
+      | Abu Dhabi |
+      | Ajman     |
+      | Sharjah   |
+      | Thailand  |
+      | Oman      |
 
   Scenario: Verify user can open the Off plan page and go through the pagination
     When Click on Main page "Off-plan"
     Then Verify the right page opens Off-plan
-    When Go to the final page using the pegination button and back on Off-plan
+    And Verify pagination to final page of Off-plan
+    And Verify pagination to first page of Off-plan
 
   Scenario: Verify user can filter the Off plan by Unit price range
     When Click on Main page "Off-plan"

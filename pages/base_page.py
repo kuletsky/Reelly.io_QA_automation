@@ -102,24 +102,6 @@ class Page:
             assert project, f'Error! Projects are not shown'
         print(f'All {len(all_projects)} projects are shown')
 
-    # def verify_pegination(self, *GRID, *TOTAL_PAGE, *FORWARD, *BACK):
-    #     # self.wait_until_visible(GRID)
-    #     total_page = self.find_element(*TOTAL_PAGE).text
-    #     print(total_page)
-    #     i = 1
-    #     while i < int(total_page):
-    #         print(i)
-    #         self.wait_until_visible(*GRID)
-    #         self.click(*FORWARD)
-    #         i += 1
-    #
-    #     self.click(*BACK)
-    #     while i != 1:
-    #         print(i)
-    #         self.wait_until_visible(*GRID)
-    #         self.click(*BACK)
-    #         i -= 1
-
     def verify_text(self, expected_text, *locator):
         actual_text = self.find_element(*locator).text
         assert expected_text == actual_text, f'Error! Expected {expected_text}, but got {actual_text}'

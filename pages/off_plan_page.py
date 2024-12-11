@@ -83,18 +83,21 @@ class OffPlanPage(Page):
         total_page = self.find_element(*self.TOTAL_PAGE).text
         print(total_page)
         i = 1
-        while i < int(total_page):
+        while i <= int(total_page):
             print(i)
             self.wait_until_visible(*self.GRID)
             self.click(*self.FORWARD)
             i += 1
+        self.i = i
 
+    def go_to_first_page_offplan(self):
+        self.wait_until_visible(*self.GRID)
         self.click(*self.BACK)
-        while i != 1:
-            print(i)
+        while self.i != 1:
+            print(self.i)
             self.wait_until_visible(*self.GRID)
             self.click(*self.BACK)
-            i -= 1
+            self.i -= 1
 
     def btn_filter(self):
         self.wait_until_visible(*self.GRID)
