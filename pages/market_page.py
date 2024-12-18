@@ -11,6 +11,8 @@ class MarketPage(Page):
     BACK = (By.CSS_SELECTOR, '[wized="previousPageMarket"]')
     DEV = (By.CSS_SELECTOR, '[wized="marketTagDevelopers"]')
     TAGS = (By.CSS_SELECTOR, '[wized="marketCompanyTagText"]')
+    AGENC = (By.CSS_SELECTOR, '[wized="marketTagAgencies"]')
+    TAG_AGEN = (By.XPATH, '//div[text()="Real Estate Agency"]')
 
     def market_opens(self):
         self.verify_right_page_opened(*self.MARKET)
@@ -39,10 +41,9 @@ class MarketPage(Page):
     def click_dev(self):
         self.click(*self.DEV)
 
+    def click_agen(self):
+        self.click(*self.AGENC)
+
     def verify_tag(self, option):
         self.wait_until_visible(*self.GRID)
         self.verify_text_for_all_elements(option, *self.TAGS)
-        # tags = self.find_elements(*self.TAGS)
-        #
-        # for tag in tags:
-        #     assert tag.text == 'Developers', f'Error!'

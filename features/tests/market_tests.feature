@@ -18,3 +18,9 @@ Feature: Tests for Market page
     Then Verify the right page Market opens
     When Click on Developers at the top of the page
     Then Verify all cards has the license tag Developers
+
+#  Scenario: User can open market tab and filter by Agencies option
+#    When Click on Main page "Market"
+#    Then Verify the right page Market opens
+#    When Click on Agencies at the top of the page
+#    Then Verify all cards has the license tag Real Estate Agency
