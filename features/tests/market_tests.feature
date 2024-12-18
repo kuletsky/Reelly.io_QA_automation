@@ -12,3 +12,9 @@ Feature: Tests for Market page
     Then Verify the right page Market opens
     And Verify pagination to final page of Market
     And Verify pagination to first page of Market
+
+  Scenario: User can open market tab and filter by Developers option
+    When Click on Main page "Market"
+    Then Verify the right page Market opens
+    When Click on Developers at the top of the page
+    Then Verify all cards has the license tag Developers

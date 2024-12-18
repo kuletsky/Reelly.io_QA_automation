@@ -9,6 +9,8 @@ class MarketPage(Page):
     TOTAL_PAGE = (By.CSS_SELECTOR, '[wized="totalPageMarket"]')
     FORWARD = (By.CSS_SELECTOR, '[wized="nextPageMarket"]')
     BACK = (By.CSS_SELECTOR, '[wized="previousPageMarket"]')
+    DEV = (By.CSS_SELECTOR, '[wized="marketTagDevelopers"]')
+    TAGS = (By.CSS_SELECTOR, '[wized="marketCompanyTagText"]')
 
     def market_opens(self):
         self.verify_right_page_opened(*self.MARKET)
@@ -33,3 +35,14 @@ class MarketPage(Page):
             self.wait_until_visible(*self.GRID)
             self.click(*self.BACK)
             self.i -= 1
+
+    def click_dev(self):
+        self.click(*self.DEV)
+
+    def verify_tag(self, option):
+        self.wait_until_visible(*self.GRID)
+        self.verify_text_for_all_elements(option, *self.TAGS)
+        # tags = self.find_elements(*self.TAGS)
+        #
+        # for tag in tags:
+        #     assert tag.text == 'Developers', f'Error!'

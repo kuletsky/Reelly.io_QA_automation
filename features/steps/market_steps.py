@@ -15,3 +15,11 @@ def to_final_page(context):
 @then('Verify pagination to first page of Market')
 def verify_first_pagination(context):
     context.app.market_page.verify_first_pagination()
+
+@when('Click on Developers at the top of the page')
+def click_on_dev(context):
+    context.app.market_page.click_dev()
+
+@then('Verify all cards has the license tag {option}')
+def verify_tags(context, option):
+    context.app.market_page.verify_tag(option)
