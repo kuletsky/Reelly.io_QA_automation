@@ -24,6 +24,6 @@ def click_on_dev(context):
 def click_agencies(context):
     context.app.market_page.click_agen()
 
-@then('Verify all cards has the license tag {option}')
+@then('Verify all cards has the {option} tag')
 def verify_tags(context, option):
     context.app.market_page.verify_tag(option)

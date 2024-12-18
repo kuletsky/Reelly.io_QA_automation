@@ -10,9 +10,9 @@ class MarketPage(Page):
     FORWARD = (By.CSS_SELECTOR, '[wized="nextPageMarket"]')
     BACK = (By.CSS_SELECTOR, '[wized="previousPageMarket"]')
     DEV = (By.CSS_SELECTOR, '[wized="marketTagDevelopers"]')
-    TAGS = (By.CSS_SELECTOR, '[wized="marketCompanyTagText"]')
+    # TAGS = (By.CSS_SELECTOR, '[wized="marketCompanyTagText"]')
     AGENC = (By.CSS_SELECTOR, '[wized="marketTagAgencies"]')
-    TAG_AGEN = (By.XPATH, '//div[text()="Real Estate Agency"]')
+    TAGS = (By.XPATH, '//div[text()="License"]')
 
     def market_opens(self):
         self.verify_right_page_opened(*self.MARKET)
