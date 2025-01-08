@@ -13,6 +13,7 @@ class SettingsPage(Page):
     BTN_USER_GUIDE = (By.XPATH, '//div[@class="setting-text" and text()="User guide"]')
     BTN_CHANGE_PSW = (By.XPATH, '//div[@class="setting-text" and text()="Change password"]')
     BTN_SUBSCRIPTION = (By.XPATH, '//div[@class="setting-text" and text()="Subscription & payments"]')
+    BTN_VERIFICATION = (By.XPATH, '//div[@class="setting-text" and text()="Verification"]')
     BTN_CONNECT = (By.CSS_SELECTOR, '.settings-block-menu .get-free-period.menu')
     INPUT_NAME = (By.CSS_SELECTOR, '[id="Your-name"]')
     INPUT_WEBSITE = (By.CSS_SELECTOR, '[id="Your-company-name"]')
@@ -72,6 +73,9 @@ class SettingsPage(Page):
     def btn_subscription(self):
         self.click(*self.BTN_SUBSCRIPTION)
 
+    def btn_verification(self):
+        self.click(*self.BTN_VERIFICATION)
+
     def add_test_information(self):
         self.input_text('Tester', *self.INPUT_NAME)
         self.website = self.generate_random_website()
@@ -119,3 +123,6 @@ class SettingsPage(Page):
         all_options = self.find_elements(*self.OPTIONS_NUMBER)
         print(f'How many options on the page?: {len(all_options)}')
         assert len(all_options) >= int(number), f'Error! Expected {number}, but got {len(all_options)}'
+
+    def verify_verification_page():
+

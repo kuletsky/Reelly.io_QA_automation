@@ -68,6 +68,11 @@ def click_on_subscription(context):
     context.app.settings_page.btn_subscription()
 
 
+@when('Click on the verification option')
+def click_verification_option(context):
+    context.app.settings_page.btn_verification()
+
+
 @then('Verify the right information is present in the input fields')
 def verify_test_information(context):
     context.app.settings_page.verify_test_information()
@@ -81,6 +86,11 @@ def verify_send_application_button(context):
 @then('Verify "connect the company" button is available')
 def verify_connect_button(context):
     context.app.settings_page.connect_button()
+
+
+@then('Verify the right page Verification opens')
+def verify_verification(context):
+    context.app.settings_page.verify_verification_page()
 
 
 @then('Verify that URL of window contains {partial_url}')

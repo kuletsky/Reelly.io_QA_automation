@@ -5,7 +5,7 @@ from time import sleep
 
 
 class MainPage(Page):
-    BTN_OPEN_IN_BROWSER = (By.XPATH, '//div[text()="Open in browser"]')
+    BTN_OPEN_IN_BROWSER = (By.XPATH, '//div[text()="Log in"]')
     MENU_SECONDARY = (By.XPATH, '//div[@class="menu-button-text" and text()="Secondary"]')
     MENU_SETTINGS = (By.XPATH, '//div[@class="menu-button-text" and text()="Settings"]')
     MOB_TOP_MENU = (By.CSS_SELECTOR, '.mobile-top-menu')
