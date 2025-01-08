@@ -13,6 +13,7 @@ from pages.settings_page import SettingsPage
 from pages.sign_up_page import SignUpPage
 from pages.subscription_page import SubscriptionPage
 from pages.user_guide_page import UserGuidePage
+from pages.verification_page import VerificationPage
 
 
 class Application:
@@ -33,3 +34,4 @@ class Application:
         self.sign_up_page = SignUpPage(driver)
         self.subscription_page = SubscriptionPage(driver)
         self.user_guide_page = UserGuidePage(driver)
+        self.verification_page = VerificationPage(driver)

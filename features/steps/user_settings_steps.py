@@ -88,11 +88,6 @@ def verify_connect_button(context):
     context.app.settings_page.connect_button()
 
 
-@then('Verify the right page Verification opens')
-def verify_verification(context):
-    context.app.settings_page.verify_verification_page()
-
-
 @then('Verify that URL of window contains {partial_url}')
 def verify_whatsapp_url(context, partial_url):
     context.app.settings_page.verify_partial_url(partial_url)

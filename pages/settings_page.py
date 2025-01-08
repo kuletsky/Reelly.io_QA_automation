@@ -123,6 +123,3 @@ class SettingsPage(Page):
         all_options = self.find_elements(*self.OPTIONS_NUMBER)
         print(f'How many options on the page?: {len(all_options)}')
         assert len(all_options) >= int(number), f'Error! Expected {number}, but got {len(all_options)}'
-
-    def verify_verification_page():
-

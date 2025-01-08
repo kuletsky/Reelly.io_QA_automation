@@ -47,13 +47,6 @@ Feature: Tests for user settings page
     And Verify there are 13 options for settings
     And Verify "connect the company" button is available
 
-  Scenario: User can click on verifications settings option and verify the right page opens
-    When Click on "Settings" option at the left side menu
-    When Click on the verification option
-    Then Verify the right page Verification opens
-#    And Verify “upload image” and “Next step” buttons are available
-
-
 
   @mobile_web
   Scenario: MOB_WEB User can access Whatsapp and Telegram communities
