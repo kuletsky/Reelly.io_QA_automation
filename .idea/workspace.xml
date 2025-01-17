@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a3653fad-e08f-472d-ae54-52e38566b41d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/market_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/market_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/tests/market_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/market_tests.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/market_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/market_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +72,7 @@
     "Behave.main_page_tests.feature:Verify the user can click on “Referral ” on the left menu of the main page.executor": "Run",
     "Behave.main_page_tests.feature:Verify the user can click on “Secondary” on the left menu of the main page.executor": "Run",
     "Behave.main_page_tests.feature:Verify the user can click on “University” on the left menu of the main page.executor": "Run",
+    "Behave.market_tests.feature:User can open market tab and add Company option.executor": "Run",
     "Behave.market_tests.feature:User can open market tab and filter by Agencies option.executor": "Run",
     "Behave.market_tests.feature:User can open market tab and filter by Developers option.executor": "Run",
     "Behave.market_tests.feature:User can open market tab and filter by developers option.executor": "Run",
@@ -130,7 +135,23 @@
       <recent name="$PROJECT_DIR$/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Behave.verification_tests.feature:User can click on verifications settings option and verify the right page opens">
+  <component name="RunManager" selected="Behave.market_tests.feature:User can open market tab and add Company option">
+    <configuration name="market_tests.feature:User can open market tab and add Company option" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="Reelly.io_QA_automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/market_tests.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open market tab and add Company option" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="market_tests.feature:User can open market tab and filter by Agencies option" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="Reelly.io_QA_automation" />
       <option name="ENV_FILES" value="" />
@@ -160,22 +181,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/market_tests.feature" />
       <SCENRAIO_NAMES SCENRAIO_NAMES="User can open market tab and filter by Developers option" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="market_tests.feature:User can open market tab and filter by developers option" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="Reelly.io_QA_automation" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/tests/market_tests.feature" />
-      <SCENRAIO_NAMES SCENRAIO_NAMES="User can open market tab and filter by developers option" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -213,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Behave.market_tests.feature:User can open market tab and add Company option" />
         <item itemvalue="Behave.verification_tests.feature:User can click on verifications settings option and verify the right page opens" />
         <item itemvalue="Behave.user_settings_tests.feature:User can click on verifications settings option and verify the right page opens" />
         <item itemvalue="Behave.market_tests.feature:User can open market tab and filter by Agencies option" />
         <item itemvalue="Behave.market_tests.feature:User can open market tab and filter by Developers option" />
-        <item itemvalue="Behave.market_tests.feature:User can open market tab and filter by developers option" />
       </list>
     </recent_temporary>
   </component>
@@ -340,6 +345,8 @@
       <workItem from="1734712631403" duration="3039000" />
       <workItem from="1736294963284" duration="2571000" />
       <workItem from="1736366737872" duration="5215000" />
+      <workItem from="1736462398803" duration="1233000" />
+      <workItem from="1737126125837" duration="3615000" />
     </task>
     <servers />
   </component>
@@ -358,11 +365,12 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$market_tests_feature_User_can_open_market_tab_and_add_Company_option.coverage" NAME="market_tests.feature:User can open market tab and add Company option Coverage Results" MODIFIED="1737129656268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_Verify_that_all_projects_are_shown.coverage" NAME="off_plan_tests.feature:Verify that all projects are shown Coverage Results" MODIFIED="1732980383404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$market_tests_feature_User_can_open_market_tab_and_go_through_the_pagination.coverage" NAME="market_tests.feature:User can open market tab and go through the pagination Coverage Results" MODIFIED="1733931253065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_Verify_that_user_can_click_on_Top_Menu__My_listings_.coverage" NAME="off_plan_tests.feature:Verify that user can click on Top Menu &quot;My listings&quot; Coverage Results" MODIFIED="1721249833219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_MOB_WEB_User_can_access_Whatsapp_and_Telegram_communities.coverage" NAME="user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities Coverage Results" MODIFIED="1718240801776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$change_psw_tests_feature_User_can_open_change_password_page.coverage" NAME="change_psw_tests.feature:User can open change password page Coverage Results" MODIFIED="1724871222411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$user_settings_tests_feature_MOB_WEB_User_can_access_Whatsapp_and_Telegram_communities.coverage" NAME="user_settings_tests.feature:MOB_WEB User can access Whatsapp and Telegram communities Coverage Results" MODIFIED="1718240801776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_Verify_that_user_can_click_on_Top_Menu__My_listings_.coverage" NAME="off_plan_tests.feature:Verify that user can click on Top Menu &quot;My listings&quot; Coverage Results" MODIFIED="1721249833219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$verification_tests_feature_User_can_click_on_verifications_settings_option_and_verify_the_right_page_opens.coverage" NAME="verification_tests.feature:User can click on verifications settings option and verify the right page opens Coverage Results" MODIFIED="1736369652345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$main_page_tests_feature.coverage" NAME="main_page_tests.feature Coverage Results" MODIFIED="1720118342994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Reelly_io_QA_automation$off_plan_tests_feature_User_can_filter_by_sale_status.coverage" NAME="off_plan_tests.feature:User can filter by sale status Coverage Results" MODIFIED="1733502212991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

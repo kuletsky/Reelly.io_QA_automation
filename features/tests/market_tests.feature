@@ -24,3 +24,10 @@ Feature: Tests for Market page
     Then Verify the right page Market opens
     When Click on Agencies at the top of the page
     Then Verify all cards has the License tag
+
+  Scenario: User can open market tab and add Company option
+    When Click on Main page "Market"
+    Then Verify the right page Market opens
+    When Click on "Add company" button
+    Then Verify the right page opened
+    And Verify the button “Publish my company” is available.

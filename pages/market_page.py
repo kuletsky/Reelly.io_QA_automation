@@ -13,6 +13,9 @@ class MarketPage(Page):
     # TAGS = (By.CSS_SELECTOR, '[wized="marketCompanyTagText"]')
     AGENC = (By.CSS_SELECTOR, '[wized="marketTagAgencies"]')
     TAGS = (By.XPATH, '//div[text()="License"]')
+    BTN_ADD_COMP = (By.CSS_SELECTOR, '.add-company-button')
+    TITLE_PAGE = (By.CSS_SELECTOR, '.h1-company')
+    PUBLISH = (By.XPATH, '//*[text()="Publish my company"]')
 
     def market_opens(self):
         self.verify_right_page_opened(*self.MARKET)
@@ -47,3 +50,14 @@ class MarketPage(Page):
     def verify_tag(self, option):
         self.wait_until_visible(*self.GRID)
         self.verify_text_for_all_elements(option, *self.TAGS)
+
+    def click_add_company(self):
+        self.find_element(*self.BTN_ADD_COMP).click()
+
+    def verify_page(self):
+        self.verify_right_page_opened(*self.TITLE_PAGE)
+
+    def verify_btn(self):
+        assert self.find_element(*self.PUBLISH).is_displayed(), "'Publish my company' button is not visible."
+        assert self.find_element(*self.PUBLISH).is_enabled(), "'Publish my company' button is not enabled."
+
