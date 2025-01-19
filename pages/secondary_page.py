@@ -19,8 +19,6 @@ class SecondaryPage(Page):
     BACK = (By.CSS_SELECTOR, '[wized="previousPageMLS"]')
     TOTAL_PAGE = (By.CSS_SELECTOR, '[wized="totalPageProperties"]')
 
-
-
     def _get_locator(self, text):
         return [self.FILTER_BUY_SELL[0], self.FILTER_BUY_SELL[1].replace('{FILTER}', text)]
 
@@ -44,8 +42,9 @@ class SecondaryPage(Page):
 
         for element in all_elements:
             # print(element.text)
-            price = element.text.replace('AED','').replace(',','')
-            assert int(min_price) < int(price) < int(max_price), f'Error! Expected {price} between {min_price} and {max_price}'
+            price = element.text.replace('AED', '').replace(',', '')
+            assert int(min_price) < int(price) < int(
+                max_price), f'Error! Expected {price} between {min_price} and {max_price}'
 
     def btn_apply_filter(self):
         self.click(*self.BTN_APPLY_FILTER)
@@ -79,4 +78,3 @@ class SecondaryPage(Page):
             self.wait_until_visible(*self.GRID)
             self.click(*self.BACK)
             i -= 1
-

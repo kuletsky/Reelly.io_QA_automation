@@ -28,7 +28,6 @@ class SettingsPage(Page):
     SOCIAL_MEDIA_ICONS = (By.CSS_SELECTOR, '.text-social')
     OPTIONS_NUMBER = (By.CSS_SELECTOR, '.page-setting-block')
 
-
     def generate_random_email(self, prefix="testuser", domain="test.com"):
         suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
         return f"{prefix}_{suffix}@{domain}"
@@ -111,13 +110,7 @@ class SettingsPage(Page):
     def verify_number_of_social_media_icons(self, number):
         all_social = self.find_elements(*self.SOCIAL_MEDIA_ICONS)
         print(f'How many SOCIAL on the page?: {len(all_social)}')
-        # all_elements = self.find_elements(*locator)
-        # print(f'How many elements on the page?: {len(all_elements)}')
-
         assert len(all_social) >= int(number), f'Error! Expected {number}, but got {len(all_social)}'
-        # for element in all_elements:
-            # print(element.text)
-            # assert element.text == expected_text, f'Error! Expected {expected_text}, but got {element.text}'
 
     def verify_number_of_settings(self, number):
         all_options = self.find_elements(*self.OPTIONS_NUMBER)

@@ -40,7 +40,6 @@ class OffPlanPage(Page):
     def change_location(self, filter_location):
         self.wait_until_any_text_appears(*self.COUNT_PROJECTS)
         self.total_projects_before = self.find_element(*self.COUNT_PROJECTS).text
-        # print(self.total_projects_before)
 
         filter_dd = self.find_element(*self.FILTER_LOCATION)
         select = Select(filter_dd)
@@ -48,7 +47,6 @@ class OffPlanPage(Page):
 
         self.wait_until_any_text_appears(*self.COUNT_PROJECTS)
         self.total_projects_after = self.find_element(*self.COUNT_PROJECTS).text
-        # print(self.total_projects_after)
 
     def set_filtersale(self, filter_sale):
         self.wait_until_visible(*self.GRID)

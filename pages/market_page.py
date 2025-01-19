@@ -60,4 +60,3 @@ class MarketPage(Page):
     def verify_btn(self):
         assert self.find_element(*self.PUBLISH).is_displayed(), "'Publish my company' button is not visible."
         assert self.find_element(*self.PUBLISH).is_enabled(), "'Publish my company' button is not enabled."
-
