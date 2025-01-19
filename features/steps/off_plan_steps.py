@@ -9,7 +9,6 @@ def click_on_top_menu(context, link_text):
 
 @when('Change Location {filter_location}')
 def change_location(context, filter_location):
-    # print(filter_location)
     context.app.off_plan_page.change_location(filter_location)
 
 
@@ -52,9 +51,11 @@ def verify_right_page_off_plan(context):
 def go_to_final_page(context):
     context.app.off_plan_page.go_to_final_page_offplan()
 
+
 @then('Verify pagination to first page of Off-plan')
 def go_to_first_page(context):
     context.app.off_plan_page.go_to_first_page_offplan()
+
 
 @when('Click on the first product')
 def click_first_product(context):
