@@ -2,9 +2,6 @@ from selenium.webdriver.common.by import By
 from behave import given, when, then
 from time import sleep
 
-from selenium.webdriver.common.devtools.v85.debugger import pause
-
-
 @when('Filter the products by {filter_sell_buy}')
 def filter_want_sell_buy(context, filter_sell_buy):
     context.app.secondary_page.btn_filter()
